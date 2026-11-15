@@ -87,7 +87,14 @@ function buildSearchCatalog(): MonographSearchEntry[] {
     },
   });
 
-  vanDenBoschControversyData.forEach((c) => {
+  vanDenBoschControversyData.forEach((c, idx) => {
+    const mappedCrisisId =
+      idx < 2
+        ? backgroundData.crises[0]?.id ?? 'maritim-pra-eropa'
+        : idx < 4
+        ? backgroundData.crises[1]?.id ?? 'kemitraan-voc-1619'
+        : backgroundData.crises[2]?.id ?? 'geger-pecinan-1740';
+
     entries.push({
       id: `search-controversy-${c.id}`,
       title: c.title,
@@ -98,7 +105,7 @@ function buildSearchCatalog(): MonographSearchEntry[] {
       keywords: `${c.title} ${c.badge} ${c.description} ${c.historicalDetail} kepeng syahbandar VOC Batavia Banten`,
       target: {
         sectionId: 'latar-belakang',
-        elementId: c.id,
+        elementId: `crisis-card-${mappedCrisisId}`,
       },
     });
   });
@@ -113,12 +120,17 @@ function buildSearchCatalog(): MonographSearchEntry[] {
     keywords: `${everydayFarmerLifeData.title} Banten Cakradana Masjid Pacinan Tinggi Lasem Semarang Tuban ${everydayFarmerLifeData.aspects.map((a) => a.title + ' ' + a.description).join(' ')}`,
     target: {
       sectionId: 'latar-belakang',
-      elementId: 'farmer-bivak-section',
+      elementId: 'vandenbosch-concept-section',
     },
   });
 
   // Klimaks Bab I: Bara Perlawanan, Tragedi Kolonial & Fajar Kebangsaan (1740–1932)
   impactData.famineCases.forEach((fam, idx) => {
+    const mappedCrisisId =
+      idx === 0
+        ? backgroundData.crises[2]?.id ?? 'geger-pecinan-1740'
+        : backgroundData.crises[3]?.id ?? 'kebangkitan-pergerakan-1900';
+
     entries.push({
       id: `search-famine-${idx}`,
       title: `Tragedi Kolonial: ${fam.region} (${fam.years})`,
@@ -129,7 +141,7 @@ function buildSearchCatalog(): MonographSearchEntry[] {
       keywords: `Geger Pecinan Perang Kongsi Koelie Ordonnantie ${fam.region} ${fam.years} ${fam.cause} ${fam.victimCount} ${fam.description}`,
       target: {
         sectionId: 'latar-belakang',
-        elementId: `famine-case-${idx}`,
+        elementId: `crisis-card-${mappedCrisisId}`,
       },
     });
   });
@@ -145,12 +157,20 @@ function buildSearchCatalog(): MonographSearchEntry[] {
       keywords: `kontribusi positif monetisasi akulturasi pers nasionalisme ${pos.title} ${pos.description}`,
       target: {
         sectionId: 'latar-belakang',
+        subTabId: 'positive',
         elementId: 'tab-impact-positive',
       },
     });
   });
 
-  peasantResistanceData.forEach((res) => {
+  peasantResistanceData.forEach((res, idx) => {
+    const mappedElementId =
+      idx < 2
+        ? `crisis-card-${backgroundData.crises[2]?.id ?? 'geger-pecinan-1740'}`
+        : idx < 4
+        ? `crisis-card-${backgroundData.crises[3]?.id ?? 'kebangkitan-pergerakan-1900'}`
+        : 'fajar-kebangsaan-section';
+
     entries.push({
       id: `search-res-${res.id}`,
       title: `Perlawanan & Agensi: ${res.title}`,
@@ -161,7 +181,7 @@ function buildSearchCatalog(): MonographSearchEntry[] {
       keywords: `perlawanan Geger Pecinan Perang Kongsi THHK Sin Po PTI ${res.category} ${res.title} ${res.locationOrYear} ${res.description} ${res.historicalImpact}`,
       target: {
         sectionId: 'latar-belakang',
-        elementId: res.id,
+        elementId: mappedElementId,
       },
     });
   });
@@ -182,7 +202,9 @@ function buildSearchCatalog(): MonographSearchEntry[] {
     });
   });
 
-  prianganMonetizationData.forEach((pm) => {
+  prianganMonetizationData.forEach((pm, idx) => {
+    const mappedCrisisId = backgroundData.crises[idx]?.id ?? 'maritim-pra-eropa';
+
     entries.push({
       id: `search-monetization-${pm.id}`,
       title: `Periodisasi Sejarah (${pm.phase}): ${pm.title}`,
@@ -193,7 +215,7 @@ function buildSearchCatalog(): MonographSearchEntry[] {
       keywords: `periodisasi fase maritim VOC kolonial kebangkitan ${pm.phase} ${pm.periodLabel} ${pm.title} ${pm.characteristics.join(' ')} ${pm.keyFact}`,
       target: {
         sectionId: 'latar-belakang',
-        elementId: pm.id,
+        elementId: `crisis-card-${mappedCrisisId}`,
       },
     });
   });
@@ -225,7 +247,7 @@ function buildSearchCatalog(): MonographSearchEntry[] {
       keywords: `benang merah refleksi sintesis sejarah ${vr.title} ${vr.findings.join(' ')} ${vr.significance}`,
       target: {
         sectionId: 'latar-belakang',
-        elementId: vr.id,
+        elementId: 'vandenbosch-concept-section',
       },
     });
   });
@@ -256,7 +278,7 @@ function buildSearchCatalog(): MonographSearchEntry[] {
       keywords: `${h.scholar} ${h.interpretation} sejarawan Tionghoa Nusantara`,
       target: {
         sectionId: 'latar-belakang',
-        elementId: h.id,
+        elementId: 'lensa-historiografi-section',
       },
     });
   });
@@ -272,7 +294,8 @@ function buildSearchCatalog(): MonographSearchEntry[] {
     keywords: `komparasi VOC Hindia Belanda Pachtstelsel perantara ${exploitationData.vocComparison.map((v) => `${v.aspect} ${v.voc} ${v.cultuurstelsel}`).join(' ')}`,
     target: {
       sectionId: 'eksploitasi',
-      elementId: 'voc-comparison-section',
+      tabId: 'financial',
+      elementId: 'commodity-tab-kopi',
     },
   });
 
@@ -295,7 +318,9 @@ function buildSearchCatalog(): MonographSearchEntry[] {
     });
   });
 
+  const finCommodityMap = ['kopi', 'nila', 'tebu', 'teh'];
   commodityFinancialData.forEach((fin, idx) => {
+    const mappedCommId = finCommodityMap[idx] ?? 'kopi';
     entries.push({
       id: `search-fin-${idx}`,
       title: `Jejak Ekonomi & Fiskal: ${fin.commodity}`,
@@ -307,7 +332,8 @@ function buildSearchCatalog(): MonographSearchEntry[] {
       target: {
         sectionId: 'eksploitasi',
         tabId: 'financial',
-        elementId: `fin-card-${idx}`,
+        subTabId: mappedCommId,
+        elementId: `commodity-tab-${mappedCommId}`,
       },
     });
   });
@@ -325,7 +351,7 @@ function buildSearchCatalog(): MonographSearchEntry[] {
       target: {
         sectionId: 'eksploitasi',
         tabId: 'batig-slot',
-        elementId: b.id,
+        elementId: 'batig-allocation-section',
       },
     });
   });
@@ -376,7 +402,7 @@ function buildSearchCatalog(): MonographSearchEntry[] {
       target: {
         sectionId: 'eksploitasi',
         tabId: 'ecology',
-        elementId: stat.id,
+        elementId: 'ecological-zoning-section',
       },
     });
   });
@@ -417,6 +443,7 @@ function buildSearchCatalog(): MonographSearchEntry[] {
 
   // 3. Bab III · Kedudukan dalam Struktur Sosial (#pelaksanaan — 3 Tabs: 'staatsblad' | 'bupati' | 'three-residencies')
   implementationData.laws.forEach((law, idx) => {
+    const activeLawCardIdx = Math.min(idx, 3);
     entries.push({
       id: `search-law-${law.ruleNumber}`,
       title: `Regulasi Kolonial 0${law.ruleNumber}: ${law.article}`,
@@ -428,7 +455,7 @@ function buildSearchCatalog(): MonographSearchEntry[] {
       target: {
         sectionId: 'pelaksanaan',
         tabId: 'staatsblad',
-        elementId: `law-card-${idx}`,
+        elementId: `law-card-${activeLawCardIdx}`,
       },
     });
   });
@@ -490,13 +517,13 @@ function buildSearchCatalog(): MonographSearchEntry[] {
       title: `Komparasi Sosial-Spasial: ${res.residency}`,
       category: 'Komparasi 3 Wilayah',
       sectionLabel: 'Bab III · Tab 3 Harmoni Banten & Cina Benteng',
-      badge: res.farmerWelfareStatus,
+      badge: res.islandArea,
       snippet: `Sektor: ${res.dominantCrops}. ${res.keyMechanism}`,
-      keywords: `${res.residency} ${res.islandArea} ${res.dominantCrops} ${res.farmerWelfareStatus} ${res.keyMechanism} ${res.historiographicalRelevance}`,
+      keywords: `${res.residency} ${res.islandArea} ${res.dominantCrops} ${res.keyMechanism} ${res.historiographicalRelevance}`,
       target: {
         sectionId: 'pelaksanaan',
         tabId: 'three-residencies',
-        elementId: `residency-card-${idx}`,
+        elementId: 'residency-comparison-table',
       },
     });
   });
@@ -513,7 +540,7 @@ function buildSearchCatalog(): MonographSearchEntry[] {
       target: {
         sectionId: 'pelaksanaan',
         tabId: 'three-residencies',
-        elementId: `region-card-${reg.id}`,
+        elementId: 'residency-comparison-table',
       },
     });
   });

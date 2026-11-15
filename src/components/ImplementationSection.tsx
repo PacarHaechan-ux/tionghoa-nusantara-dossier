@@ -2,10 +2,9 @@ import React, { useState, useEffect } from 'react';
 import {
   implementationData,
   residencyComparisonData,
-  exploitationData,
   bupatiRolesData,
   preangerBlueprintData,
-  vocExpansionData
+  vocExpansionData,
 } from '../data/historyContent';
 import {
   MONOGRAPH_NAVIGATE_EVENT,
@@ -17,15 +16,11 @@ import {
   CheckCircle,
   XCircle,
   AlertTriangle,
-  Coffee,
   Scale,
-  TrendingDown,
-  TrendingUp,
-  MapPin,
   Crown,
   GitBranch,
   ArrowRight,
-  Coins
+  Coins,
 } from 'lucide-react';
 import './ImplementationSection.css';
 
@@ -166,9 +161,9 @@ export const ImplementationSection: React.FC = () => {
               </article>
             </div>
 
-            {/* 7 Law Rules Grid — Flat 2-Column Ledger inside Each Sheet (Zero Nested Boxes) */}
+            {/* 4 Core Law Rules Grid — Flat 2-Column Ledger inside Each Sheet */}
             <div className="law-rules-grid">
-              {implementationData.laws.map((law, index) => (
+              {implementationData.laws.slice(0, 4).map((law, index) => (
                 <article key={index} className="parchment-card law-card" id={`law-card-${index}`}>
                   <div className="law-card-top">
                     <div className="law-header-left">
@@ -331,7 +326,7 @@ export const ImplementationSection: React.FC = () => {
               </p>
             </div>
 
-            <div className="comparison-table-wrapper residency-table-wrap">
+            <div className="comparison-table-wrapper residency-table-wrap" id="residency-comparison-table">
               <table className="residency-data-table adaptive-table">
                 <thead>
                   <tr>
@@ -400,98 +395,6 @@ export const ImplementationSection: React.FC = () => {
               </table>
             </div>
 
-            <div className="residency-cards-grid">
-              {residencyComparisonData.map((item, idx) => (
-                <article key={idx} className="parchment-card res-card" id={`residency-card-${idx}`}>
-                  <div className="res-card-top">
-                    <div>
-                      <h4 className="res-name">{item.residency}</h4>
-                      <span className="res-island-tag">{item.islandArea}</span>
-                    </div>
-                    <span
-                      className={`status-tag ${
-                        item.farmerWelfareStatus === 'Surplus Uang'
-                          ? 'status-surplus'
-                          : item.farmerWelfareStatus === 'Nombok Pajak'
-                          ? 'status-defisit'
-                          : 'status-feodal'
-                      }`}
-                    >
-                      {item.farmerWelfareStatus === 'Surplus Uang' && <TrendingUp size={13} strokeWidth={1.5} />}
-                      {item.farmerWelfareStatus === 'Nombok Pajak' && <TrendingDown size={13} strokeWidth={1.5} />}
-                      {item.farmerWelfareStatus === 'Feodalisme & Kemiskinan' && <AlertTriangle size={13} strokeWidth={1.5} />}
-                      <span>{item.farmerWelfareStatus}</span>
-                    </span>
-                  </div>
-
-                  <div className="res-crops-row">
-                    <Coffee size={15} strokeWidth={1.5} />
-                    <span>Komoditas &amp; Aktivitas: <strong>{item.dominantCrops}</strong></span>
-                  </div>
-
-                  <div className="res-mechanism-box">
-                    <span className="res-box-label">Dinamika struktur sosial &amp; ruang</span>
-                    <p className="res-box-desc">{item.keyMechanism}</p>
-                  </div>
-
-                  <div className="res-historiography-box">
-                    <span className="res-box-label">Tinjauan sejarawan</span>
-                    <p className="res-box-desc">{item.historiographicalRelevance}</p>
-                  </div>
-                </article>
-              ))}
-            </div>
-
-            {/* Persebaran Spasial 5 Kawasan Nusantara */}
-            <div className="tab-lead-open bupati-sub-top">
-              <div className="tab-lead-title-row">
-                <h3 className="residency-lead-title">
-                  {exploitationData.outerJavaExpansion.title}
-                </h3>
-                <span className="badge badge-gold">{exploitationData.outerJavaExpansion.subtitle}</span>
-              </div>
-              <p className="residency-lead-desc">
-                {exploitationData.outerJavaExpansion.overview}
-              </p>
-            </div>
-
-            <div className="outer-java-grid">
-              {exploitationData.outerJavaExpansion.regions.map((reg) => (
-                <article key={reg.id} className="parchment-card outer-region-card" id={`region-card-${reg.id}`}>
-                  <div className="region-card-top">
-                    <h4 className="region-name">{reg.region}</h4>
-                    <span className="badge badge-gold">{reg.island}</span>
-                  </div>
-                  <div className="region-commodity-row">
-                    <Coffee size={15} strokeWidth={1.5} />
-                    <span>Fokus: <strong>{reg.primaryCommodity}</strong> · Jaringan: {reg.targetMarket}</span>
-                  </div>
-                  <p className="region-desc">{reg.description}</p>
-                </article>
-              ))}
-            </div>
-
-            <div className="parchment-card outer-contrast-card">
-              <div className="outer-contrast-header">
-                <MapPin size={19} strokeWidth={1.5} className="outer-contrast-icon" />
-                <h4>Diferensiasi Struktur: Perantara Peranakan Jawa vs Produsen Primer Luar Jawa</h4>
-              </div>
-              <div className="outer-contrast-ledger">
-                <div className="contrast-col">
-                  <span className="contrast-label">Jawa &amp; Banten (Peranakan, Niaga &amp; Akulturasi)</span>
-                  <p>
-                    Didominasi komunitas <em>Peranakan</em> yang telah menetap lintas generasi di kota pelabuhan, Pecinan Banten, dan Tangerang. Berperan sebagai pedagang perantara, pengrajin, syahbandar (era pra-kolonial), hingga pelopor sekolah THHK dan pers <em>Sin Po</em>.
-                  </p>
-                </div>
-                <div className="contrast-col">
-                  <span className="contrast-label alt">Luar Jawa (Totok/Sinkeh, Kongsi Tambang &amp; Kuli Deli)</span>
-                  <p>
-                    Didominasi imigran <em>Totok (Sinkeh)</em> abad ke-18–19 yang bekerja langsung sebagai penambang emas dan timah dalam federasi otonom (<em>Kongsi</em> di Kalimantan Barat dan Bangka-Belitung) maupun kuli kontrak perkebunan tembakau Deli.
-                  </p>
-                </div>
-              </div>
-            </div>
-
             {/* Rujukan Silang Kuratorial kembali ke Bab I Benang Merah Sejarah */}
             <div className="monetization-open-section monetization-crossref-bar">
               <div className="crossref-info">
@@ -509,11 +412,11 @@ export const ImplementationSection: React.FC = () => {
                 onClick={() =>
                   navigateToMonographTarget({
                     sectionId: 'latar-belakang',
-                    elementId: 'van-rees-monetization-section',
+                    elementId: 'galeri-tokoh-section',
                   })
                 }
               >
-                <span>Lihat Benang Merah Sejarah (Bab I)</span>
+                <span>Lihat Galeri Tokoh &amp; Benang Merah (Bab I)</span>
                 <ArrowRight size={16} strokeWidth={1.5} />
               </button>
             </div>

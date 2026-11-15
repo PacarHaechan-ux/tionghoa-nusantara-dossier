@@ -2,14 +2,9 @@ import React, { useState, useEffect, useMemo } from 'react';
 import {
   backgroundData,
   heroData,
-  vanDenBoschControversyData,
-  everydayFarmerLifeData,
   impactData,
-  peasantResistanceData,
   parliamentaryPoliticsData,
   historiographicalSynthesisData,
-  vanReesReportData,
-  prianganMonetizationData,
 } from '../data/historyContent';
 import type { HistoricalImage } from '../data/historyContent';
 import {
@@ -26,7 +21,6 @@ import {
   XCircle,
   User,
   FileText,
-  ArrowUpRight,
 } from 'lucide-react';
 import './BackgroundSection.css';
 import './ImpactSection.css';
@@ -34,18 +28,6 @@ import './ImpactSection.css';
 interface BackgroundSectionProps {
   onOpenImage?: (image: HistoricalImage, title: string) => void;
 }
-
-const getMonetizationBadgeClass = (level: string) => {
-  switch (level) {
-    case 'Sangat Rendah':
-    case 'Rendah':
-      return 'badge-crimson';
-    case 'Terbatas':
-      return 'badge-gold';
-    default:
-      return 'badge-verdigris';
-  }
-};
 
 export const BackgroundSection: React.FC<BackgroundSectionProps> = ({ onOpenImage }) => {
   const [activeImpactPolarity, setActiveImpactPolarity] = useState<'negative' | 'positive'>('negative');
@@ -226,136 +208,6 @@ export const BackgroundSection: React.FC<BackgroundSectionProps> = ({ onOpenImag
           </div>
         </div>
 
-        {/* 6 Jejak Kunci Pra-Kolonial & VOC */}
-        <div className="controversy-block">
-          <div className="monograph-sub-opener">
-            <h3 className="controversy-title">
-              Enam Jejak Kunci: Dari Uang Kepeng Majapahit hingga Geger Pecinan
-            </h3>
-            <p className="controversy-subtitle">
-              Menelusuri revolusi koin kepeng, kiprah Syahbandar di Kesultanan Banten, institusi Kapiten Batavia 1619, hingga tragedi Oktober 1740 dan diaspora pesisir Jawa
-            </p>
-          </div>
-
-          <div className="controversy-grid">
-            {vanDenBoschControversyData.map((item) => (
-              <article key={item.id} className="parchment-card controversy-card" id={item.id}>
-                <div className="controversy-card-header">
-                  <h4 className="controversy-item-title">{item.title}</h4>
-                  <span className="badge badge-crimson">{item.badge}</span>
-                </div>
-                <p className="controversy-item-desc">{item.description}</p>
-                <div className="controversy-detail-footer">
-                  <span className="detail-tag">Catatan arsip</span>
-                  <p className="detail-text">{item.historicalDetail}</p>
-                </div>
-              </article>
-            ))}
-          </div>
-        </div>
-
-        {/* Ekosistem Permukiman Niaga Pecinan Awal & Siklus Angin Muson */}
-        <div className="farmer-life-open-section" id="farmer-bivak-section">
-          <div className="monograph-sub-opener">
-            <h3 className="farmer-life-title">{everydayFarmerLifeData.title}</h3>
-            <p className="farmer-life-subtitle">{everydayFarmerLifeData.subtitle}</p>
-          </div>
-
-          <div className="farmer-aspects-grid">
-            {everydayFarmerLifeData.aspects.map((aspect, idx) => (
-              <article key={idx} className="parchment-card farmer-aspect-card">
-                <div className="aspect-card-top">
-                  <h4 className="aspect-title">
-                    <span className="aspect-number tabular-nums">{idx + 1}.</span> {aspect.title}
-                  </h4>
-                  <span className="badge badge-gold">{aspect.tag}</span>
-                </div>
-                <p className="aspect-desc">{aspect.description}</p>
-              </article>
-            ))}
-          </div>
-
-          <figure className="quote-card farmer-quote-extract">
-            <blockquote className="quote-text">
-              “{everydayFarmerLifeData.quote.text}”
-            </blockquote>
-            <figcaption className="quote-author">
-              <span className="quote-role">{everydayFarmerLifeData.quote.source}</span>
-            </figcaption>
-          </figure>
-        </div>
-
-        {/* CLIMAX OF BAB I: BARA PERLAWANAN & FAJAR PERGERAKAN (1740–1932) */}
-        <div className="controversy-block" id="bara-perlawanan-section">
-          <div className="monograph-sub-opener">
-            <div>
-              <span className="badge badge-crimson chapter-kicker-badge">Klimaks Sejarah · 1740–1932</span>
-              <h3 className="controversy-title">
-                Bara Perlawanan &amp; Fajar Kebangsaan: Dari Geger Pecinan hingga Sumpah Pemuda
-              </h3>
-            </div>
-            <p className="controversy-subtitle">
-              Rekam jejak tragedi Oktober 1740, aliansi militer Tionghoa–Jawa, Perang Kongsi di Kalimantan Barat, hingga kebangkitan THHK 1900, pers Sin Po 1928, dan Partai Tionghoa Indonesia 1932
-            </p>
-          </div>
-
-          {/* 3 Tragedi & Titik Balik Kekerasan Kolonial */}
-          <div className="famine-cases-block">
-            <div className="famine-cards-grid">
-              {impactData.famineCases.map((famine, index) => (
-                <article key={index} className="parchment-card famine-card" id={`famine-case-${index}`}>
-                  <div className="famine-card-top">
-                    <h4 className="famine-region-name">{famine.region}</h4>
-                    <span className="badge badge-crimson tabular-nums">{famine.years}</span>
-                  </div>
-
-                  <div className="famine-meta-item">
-                    <span className="famine-meta-label">Akar pemicu struktural</span>
-                    <p className="famine-meta-val">{famine.cause}</p>
-                  </div>
-
-                  <div className="famine-meta-item victim-row">
-                    <span className="famine-meta-label">Skala korban &amp; dampak</span>
-                    <strong className="famine-victim-text tabular-nums">{famine.victimCount}</strong>
-                  </div>
-
-                  <p className="famine-detail-text">{famine.description}</p>
-                </article>
-              ))}
-            </div>
-          </div>
-
-          {/* 6 Tonggak Perlawanan Bersenjata, Perang Kongsi & Emansipasi */}
-          <div className="resistance-cards-grid">
-            {peasantResistanceData.map((res) => (
-              <article key={res.id} className="parchment-card resistance-card" id={res.id}>
-                <div className="resistance-card-header">
-                  <span className="badge badge-crimson">{res.category}</span>
-                  <span className="resistance-loc-tag tabular-nums">{res.locationOrYear}</span>
-                </div>
-
-                <h4 className="resistance-card-title">{res.title}</h4>
-                <p className="resistance-card-desc">{res.description}</p>
-
-                <div className="resistance-impact-footer">
-                  <span className="res-impact-label">Dampak historis</span>
-                  <p className="res-impact-text">{res.historicalImpact}</p>
-                </div>
-              </article>
-            ))}
-          </div>
-
-          <figure className="quote-card breman-resistance-extract">
-            <figcaption className="breman-extract-heading">
-              <span className="badge badge-gold">Refleksi Historiografi (Daradjadi, 2013 &amp; Onghokham, 2008)</span>
-              <h4>Trauma Kolonial atas Bersatunya Laskar Tionghoa dan Prajurit Jawa (1740–1743)</h4>
-            </figcaption>
-            <blockquote className="quote-text">
-              “Perang Geger Pecinan 1740–1743 membuktikan bahwa ketika masyarakat Tionghoa dan rakyat pribumi bersatu mengangkat senjata, kekuasaan VOC di seluruh Jawa nyaris runtuh. Trauma mendalam atas aliansi inilah yang mendorong pemerintah kolonial menciptakan sekat hukum Vreemde Oosterlingen, Wijkenstelsel, dan Passenstelsel agar kedua kelompok tidak pernah lagi bersatu.”
-            </blockquote>
-          </figure>
-        </div>
-
         {/* Kebangkitan Pendidikan Modern, Pers & Tiga Haluan Politik (1900–1932) */}
         <div className="controversy-block" id="fajar-kebangsaan-section">
           <div className="monograph-sub-opener">
@@ -461,35 +313,6 @@ export const BackgroundSection: React.FC<BackgroundSectionProps> = ({ onOpenImag
                   </article>
                 )
               )}
-            </div>
-          </div>
-
-          {/* 4 Fase Evolusi Lintas Zaman */}
-          <div className="van-rees-monetization-open" id="van-rees-monetization-section">
-            <div className="van-rees-monetization-header">
-              <ArrowUpRight size={19} strokeWidth={1.5} className="van-rees-gold-icon" />
-              <h4>Empat Fase Evolusi Peran Ekonomi &amp; Kedudukan Sosial Tionghoa di Nusantara</h4>
-            </div>
-            <div className="van-rees-phases-grid">
-              {prianganMonetizationData.map((phase) => (
-                <article key={phase.id} className="parchment-card van-rees-phase-item" id={phase.id}>
-                  <div className="van-rees-phase-top">
-                    <strong className="van-rees-phase-title">{phase.title}</strong>
-                    <span className={`badge ${getMonetizationBadgeClass(phase.monetizationLevel)}`}>
-                      Integrasi: {phase.monetizationLevel}
-                    </span>
-                  </div>
-                  <span className="van-rees-phase-label tabular-nums">
-                    {phase.phase} · {phase.periodLabel}
-                  </span>
-                  <ul className="van-rees-phase-list">
-                    {phase.characteristics.map((c, i) => (
-                      <li key={i}>{c}</li>
-                    ))}
-                  </ul>
-                  <div className="van-rees-phase-fact">{phase.keyFact}</div>
-                </article>
-              ))}
             </div>
           </div>
         </div>
@@ -616,40 +439,6 @@ export const BackgroundSection: React.FC<BackgroundSectionProps> = ({ onOpenImag
           </div>
         </div>
 
-        {/* TIGA BENANG MERAH SEJARAH & SINTESIS SEJARAWAN */}
-        <div className="controversy-block" id="benang-merah-sejarah-section">
-          <div className="monograph-sub-opener">
-            <h3 className="controversy-title">Benang Merah Sejarah &amp; Refleksi Lintas Zaman</h3>
-            <p className="controversy-subtitle">
-              Merangkai kesinambungan antara kemitraan maritim pra-kolonial, paradoks ekonomi-hukum Hindia Belanda, dan integrasi kebangsaan Indonesia
-            </p>
-          </div>
-
-          <div className="staatsblad-cards-grid">
-            {vanReesReportData.map((section) => (
-              <article key={section.id} className="staatsblad-card parchment-card" id={section.id}>
-                <div className="staatsblad-card-header">
-                  <span className="rule-number-badge">Simpul {String(section.sectionNumber).padStart(2, '0')}</span>
-                  <span className={`badge ${section.sectionNumber === 4 ? 'badge-amber' : 'badge-red'}`}>
-                    {section.badge}
-                  </span>
-                </div>
-                <h4 className="staatsblad-rule-title">{section.title}</h4>
-                <div className="staatsblad-reality-block">
-                  <ul className="staatsblad-reality-list">
-                    {section.findings.map((f, i) => (
-                      <li key={i}>{f}</li>
-                    ))}
-                  </ul>
-                </div>
-                <div className="source-citation-box">
-                  <span className="source-label">Intisari:</span> {section.significance}
-                </div>
-              </article>
-            ))}
-          </div>
-        </div>
-
         {/* Tiga Lensa Historiografi Sejarawan */}
         <div className="interpretations-block" id="lensa-historiografi-section">
           <div className="monograph-sub-opener">
@@ -659,52 +448,7 @@ export const BackgroundSection: React.FC<BackgroundSectionProps> = ({ onOpenImag
             </p>
           </div>
 
-          <div className="comparison-table-wrapper hist-table-wrap">
-            <table className="hist-data-table adaptive-table">
-              <thead>
-                <tr>
-                  <th>Dimensi Analisis</th>
-                  <th>Reid, Lombard &amp; Blussé</th>
-                  <th>Rush, Diehl &amp; Heidhues</th>
-                  <th>Suryadinata, Adam &amp; Fauziah</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td data-label="Dimensi Analisis"><strong>Mazhab &amp; Fokus Kajian</strong></td>
-                  <td data-label="Reid, Lombard & Blussé">{historiographicalSynthesisData[0].schoolName}</td>
-                  <td data-label="Rush, Diehl & Heidhues">{historiographicalSynthesisData[1].schoolName}</td>
-                  <td data-label="Suryadinata, Adam & Fauziah">{historiographicalSynthesisData[2].schoolName}</td>
-                </tr>
-                <tr>
-                  <td data-label="Dimensi Analisis"><strong>Perspektif Utama</strong></td>
-                  <td data-label="Reid, Lombard & Blussé">{historiographicalSynthesisData[0].primaryPerspective}</td>
-                  <td data-label="Rush, Diehl & Heidhues">{historiographicalSynthesisData[1].primaryPerspective}</td>
-                  <td data-label="Suryadinata, Adam & Fauziah">{historiographicalSynthesisData[2].primaryPerspective}</td>
-                </tr>
-                <tr>
-                  <td data-label="Dimensi Analisis"><strong>Sumber Data Primer</strong></td>
-                  <td data-label="Reid, Lombard & Blussé">{historiographicalSynthesisData[0].primarySources}</td>
-                  <td data-label="Rush, Diehl & Heidhues">{historiographicalSynthesisData[1].primarySources}</td>
-                  <td data-label="Suryadinata, Adam & Fauziah">{historiographicalSynthesisData[2].primarySources}</td>
-                </tr>
-                <tr>
-                  <td data-label="Dimensi Analisis"><strong>Temuan Ekonomi Kunci</strong></td>
-                  <td data-label="Reid, Lombard & Blussé">{historiographicalSynthesisData[0].economicAssessment}</td>
-                  <td data-label="Rush, Diehl & Heidhues">{historiographicalSynthesisData[1].economicAssessment}</td>
-                  <td data-label="Suryadinata, Adam & Fauziah">{historiographicalSynthesisData[2].economicAssessment}</td>
-                </tr>
-                <tr>
-                  <td data-label="Dimensi Analisis"><strong>Penjelasan Transformasi Sosial</strong></td>
-                  <td data-label="Reid, Lombard & Blussé">{historiographicalSynthesisData[0].collapseExplanation}</td>
-                  <td data-label="Rush, Diehl & Heidhues">{historiographicalSynthesisData[1].collapseExplanation}</td>
-                  <td data-label="Suryadinata, Adam & Fauziah">{historiographicalSynthesisData[2].collapseExplanation}</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div className="hist-cards-grid" style={{ marginBottom: '2rem' }}>
+          <div className="hist-cards-grid">
             {historiographicalSynthesisData.map((hist, idx) => (
               <article key={idx} className="parchment-card hist-lens-card" id={`hist-lens-card-${idx}`}>
                 <div className="hist-lens-top">
@@ -732,15 +476,6 @@ export const BackgroundSection: React.FC<BackgroundSectionProps> = ({ onOpenImag
                     <p>{hist.collapseExplanation}</p>
                   </div>
                 </div>
-              </article>
-            ))}
-          </div>
-
-          <div className="interp-grid">
-            {backgroundData.historianInterpretations.map((item) => (
-              <article key={item.id} className="parchment-card interp-card" id={item.id}>
-                <h4 className="interp-scholar-heading">{item.scholar}</h4>
-                <p className="interp-text">{item.interpretation}</p>
               </article>
             ))}
           </div>
