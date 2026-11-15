@@ -418,11 +418,11 @@ export const heroData = {
     { label: "Sekat Hukum & Fajar", value: "Vreemde Oosterlingen", note: "Wijkenstelsel, Passenstelsel & Kebangkitan 1900" },
   ],
   image: {
-    src: "/images/jung-maritim-kepeng.svg",
-    thumbSrc: "/images/jung-maritim-kepeng.svg",
-    alt: "Ilustrasi Arsip Pelayaran Jung Tiongkok di Jalur Sutra Maritim dan Koin Kepeng",
-    caption: "Pelayaran kapal jung Tiongkok yang mengikuti siklus angin muson menuju bandar Nusantara (Banten, Malaka, Tuban, Gresik, Palembang) dengan membawa sutra, porselen, dan koin tembaga (kepeng/picis) yang memicu revolusi finansial pertama di Nusantara.",
-    archiveSource: "Kronik Faxian (Foguo Ji, Abad V) · Prasasti Kencana (860 M) · Anthony Reid (Age of Commerce, 1450–1680)"
+    src: "/images/koin-kepeng.jpg",
+    thumbSrc: "/images/koin-kepeng.jpg",
+    alt: "Artefak Untaian Koin Tembaga Berlubang Persegi (Uang Kepeng / Picis) di Nusantara",
+    caption: "Untaian koin tembaga Tiongkok berlubang persegi (uang picis atau kepeng) yang diikat dengan tali—dibawa oleh kapal-kapal jung angin muson dan diresmikan Majapahit hingga Kesultanan Banten sebagai alat tukar sah yang memicu revolusi finansial pertama di Nusantara.",
+    archiveSource: "Koleksi Numismatik Nusantara · Kronik Faxian (Abad V) · Anthony Reid (Age of Commerce, 1450–1680)"
   },
   quickSummary: {
     badge: "Alur Kisah Utama",
@@ -1449,10 +1449,10 @@ export const implementationData = {
       ],
       historicalFigures: ["Faxian (Peziarah Buddha Abad ke-5)", "Pejabat Juru Cina (Prasasti Kencana 860 M)"],
       image: {
-        src: "/images/jung-maritim-kepeng.svg",
-        alt: "Jalur Sutra Maritim dan Koin Kepeng",
-        caption: "Jalur pelayaran jung Tiongkok dan adopsi koin tembaga kepeng di Nusantara.",
-        archiveSource: "Kronik Foguo Ji (Abad V) & Prasasti Kencana (860 M)"
+        src: "/images/koin-kepeng.jpg",
+        alt: "Artefak Untaian Koin Tembaga Kepeng (Uang Picis) di Jalur Maritim Nusantara",
+        caption: "Untaian koin tembaga berlubang persegi (kepeng/picis) yang dibawa pelayaran jung Tiongkok dan menjadi alat tukar resmi di Nusantara.",
+        archiveSource: "Koleksi Numismatik · Kronik Foguo Ji (Abad V) & Prasasti Kencana (860 M)"
       }
     },
     {
