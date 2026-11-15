@@ -523,10 +523,10 @@ export const backgroundData = {
       impact: "Anjloknya harga gula dunia di paruh pertama abad ke-18 membuat puluhan pabrik penggilingan gula di Ommelanden Batavia bangkrut dan memicu pengangguran ribuan buruh imigran (singkek). Rencana sewenang-wenang VOC untuk mendeportasi warga Tionghoa tanpa surat izin ke Sri Lanka atau Banda—disertai desas-desus bahwa mereka akan ditenggelamkan di tengah laut—menyulut perlawanan. Pada Oktober 1740, di bawah perintah Gubernur Jenderal Adriaan Valckenier, serdadu VOC membantai lebih dari 10.000 jiwa warga Tionghoa di Batavia dan memenjarakan Kapiten Nie Hoe Kong. Para penyintas di bawah pimpinan Sepanjang (Khe Panjang) dan Singseh (Tan Sin Ko, sahabat seperjuangan Raden Mas Said yang bertempur di Demak, Grobogan, Welahan, Kudus, Pati, Juwana, hingga gugur dipenggal di Lasem pada Oktober 1742) bergerak ke timur dan bersekutu dengan prajurit Mataram dalam Perang Geger Pecinan (1740–1743), sempat menduduki keraton Kartasura, serta melahirkan diaspora Pecinan di sepanjang pesisir utara Jawa.",
       cost: "> 10.000 Jiwa Tewas & Perang Jawa 1740–1743",
       image: {
-        src: "/images/khe-panjang.jpg",
-        alt: "Monumen Patung Sepanjang (Khe Panjang), Panglima Perang Geger Pecinan 1740–1743",
-        caption: "Sepanjang (Khe Panjang / Oei Panko), pemimpin laskar Tionghoa yang selamat dari pembantaian Batavia Oktober 1740 dan menjalin aliansi militer bersama prajurit Jawa melawan VOC (1740–1743).",
-        archiveSource: "Daradjadi (2013), Geger Pacinan 1740–1743: Persekutuan Tionghoa-Jawa Melawan VOC"
+        src: "/images/geger-pecinan-1740.jpg",
+        alt: "Ukiran Tembaga Arsip Pembakaran Rumah Warga Tionghoa dan Pembantaian di Batavia, 9 Oktober 1740 (J. van der Schley)",
+        caption: "Afbeelding van dat Gedeelte van Batavia... den 9 Octob. 1740 (karya J. van der Schley): deretan rumah dan toko warga Tionghoa di sepanjang kanal Batavia dibakar habis oleh serdadu VOC dalam tragedi Geger Pecinan yang merenggut lebih dari 10.000 jiwa.",
+        archiveSource: "Rijksmuseum / KITLV (J. van der Schley, ca. 1740) · Daradjadi (2013)"
       }
     },
     {
@@ -1518,10 +1518,10 @@ export const implementationData = {
       ],
       historicalFigures: ["Adriaan Valckenier", "Kapiten Nie Hoe Kong", "Sepanjang (Khe Panjang)", "Singseh (Tan Sin Ko)", "Raden Mas Said"],
       image: {
-        src: "/images/makam-tan-sin-ko.jpg",
-        alt: "Monumen Makam Panglima Tan Sin Ko alias Singseh di Lasem (Gugur Oktober 1742)",
-        caption: "Monumen Makam Panglima Tan Sin Ko alias Singseh di Lasem yang gugur pada Oktober 1742 dalam Perang Geger Pecinan (1740–1743) melawan VOC.",
-        archiveSource: "Situs Sejarah Lasem · Daradjadi (2013)"
+        src: "/images/geger-pecinan-1740.jpg",
+        alt: "Ukiran Arsip Pembakaran Rumah Warga Tionghoa di Batavia pada 9 Oktober 1740 (Geger Pecinan)",
+        caption: "Ukiran arsip J. van der Schley (9 Oktober 1740) yang merekam pembakaran deretan rumah warga Tionghoa dan pembantaian di tepi kanal Batavia saat Geger Pecinan.",
+        archiveSource: "Rijksmuseum / KITLV · Daradjadi (2013)"
       }
     },
     {
