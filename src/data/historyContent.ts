@@ -1944,18 +1944,34 @@ export const impactData = {
     },
     {
       id: "tokoh-phoa-lie",
-      name: "Phoa Keng Hek & Lie Kim Hok",
-      role: "Pendiri Tiong Hoa Hwee Koan (THHK) & Pembaru Pendidikan/Sastra",
-      period: "17 Maret 1900 – Awal Abad ke-20",
+      name: "Phoa Keng Hek",
+      role: "Presiden Pertama Tiong Hoa Hwee Koan (THHK 1900)",
+      period: "1857 – 1937 (THHK 17 Maret 1900)",
       category: "Sastrawan & Moral",
-      keyContribution: "Memimpin pendirian organisasi pembaru Tiong Hoa Hwee Koan (THHK) di Batavia pada 17 Maret 1900 (dengan Phoa Keng Hek sebagai Presiden pertama), mengampanyekan pemurnian ajaran Konfusianisme (Khonghucu) dari adat takhayul yang boros, serta mendirikan jaringan sekolah modern Tiong Hoa Hak Tong sejak 1901 yang membuka pendidikan setara bagi anak laki-laki dan perempuan.",
-      workOrCitation: "Nio Joe Lan (1940) · Williams (1960) · Somers (1965) · Adam (1995)",
+      keyContribution: "Memimpin pendirian organisasi pembaru Tiong Hoa Hwee Koan (THHK) di Batavia pada 17 Maret 1900 sebagai Presiden pertama. Ia mengampanyekan pemurnian ajaran Konfusianisme (Khonghucu) dari adat takhayul yang boros serta mendirikan jaringan sekolah modern Tiong Hoa Hak Tong sejak 1901 yang membuka pendidikan setara bagi anak laki-laki dan perempuan.",
+      workOrCitation: "Nio Joe Lan (1940) · Williams (1960) · Somers (1965)",
       impactNote: "Memicu kebangkitan sosial-pendidikan modern Tionghoa di seluruh Hindia Belanda dan memaksa pemerintah kolonial mendirikan HCS pada 1908.",
       image: {
         src: "/images/phoa-keng-hek.jpg",
         alt: "Potret Arsip Phoa Keng Hek, Presiden Pertama Tiong Hoa Hwee Koan (THHK 1900)",
         caption: "Phoa Keng Hek (1857–1937), Presiden pertama Tiong Hoa Hwee Koan (THHK, 17 Maret 1900) dan pelopor gerakan pendidikan modern Tionghoa di Hindia Belanda.",
         archiveSource: "Nio Joe Lan (1940), Riwajat 40 Taon T.H.H.K. Batavia · Williams (1960)"
+      }
+    },
+    {
+      id: "tokoh-lie-kim-hok",
+      name: "Lie Kim Hok",
+      role: "Bapak Sastra Melayu-Tionghoa & Pendiri THHK (1900)",
+      period: "1853 – 1912 (THHK 1900)",
+      category: "Sastrawan & Moral",
+      keyContribution: "Sastrawan, pendidik, dan pembaru sosial kelahiran Bogor yang menyusun buku tata bahasa 'Melajoe Betawi' (1884), merintis pers serta kesusastraan Melayu-Tionghoa, dan bersama Phoa Keng Hek mendirikan Tiong Hoa Hwee Koan (THHK) pada 17 Maret 1900 untuk memajukan pendidikan modern lintas gender serta pembaruan adat masyarakat Tionghoa.",
+      workOrCitation: "Adam (1995) · Nio Joe Lan (1940) · Suryadinata (1981, 2020)",
+      impactNote: "Meletakkan fondasi tata bahasa Melayu Pasar tertulis yang kelak mematangkan Bahasa Indonesia sebagai lingua franca pergerakan nasional.",
+      image: {
+        src: "/images/lie-kim-hok.jpg",
+        alt: "Potret Arsip Lie Kim Hok (1853–1912), Bapak Sastra Melayu-Tionghoa dan Pendiri THHK",
+        caption: "Lie Kim Hok (1853–1912), pelopor kesusastraan dan pers Melayu-Tionghoa sekaligus tokoh pendiri Tiong Hoa Hwee Koan (THHK, 1900).",
+        archiveSource: "Adam (1995) · Nio Joe Lan (1940) · Williams (1960)"
       }
     },
     {
