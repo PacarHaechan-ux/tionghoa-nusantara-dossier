@@ -1587,10 +1587,10 @@ export const implementationData = {
       ],
       historicalFigures: ["Phoa Keng Hek", "Lie Kim Hok", "Dr. Sun Yat-sen"],
       image: {
-        src: "/images/phoa-keng-hek.jpg",
-        alt: "Potret Arsip Phoa Keng Hek, Presiden Pertama Tiong Hoa Hwee Koan (1900)",
-        caption: "Phoa Keng Hek, Presiden pertama Tiong Hoa Hwee Koan (THHK, 17 Maret 1900) yang mempelopori kebangkitan pendidikan modern di Hindia Belanda.",
-        archiveSource: "Nio Joe Lan (1940) · Somers (1965) · Williams (1960)"
+        src: "/images/thhk-sungailiat-1914.jpg",
+        alt: "Foto Arsip Gedung Sekolah Tiong Hoa Hwee Koan (THHK) di Sungailiat, Bangka, 1914",
+        caption: "Gedung sekolah Tiong Hoa Hwee Koan (THHK) di Sungailiat, Bangka pada tahun 1914—bukti meluasnya jaringan sekolah modern THHK dari Batavia hingga ke sentra pertambangan timah di Luar Jawa.",
+        archiveSource: "Koleksi KITLV / Tropenmuseum (1914) · Williams (1960) · Somers (1965)"
       }
     },
     {

@@ -263,25 +263,59 @@ export const BackgroundSection: React.FC<BackgroundSectionProps> = ({ onOpenImag
             </div>
 
             <div
-              className="crisis-image-container"
-              style={{ marginTop: '1.25rem' }}
-              onClick={() =>
-                onOpenImage?.(
-                  {
-                    src: '/images/chung-hwa-hui-1932.jpg',
-                    alt: 'Foto Arsip Pengurus (Bestuur) Chung Hwa Hui (中華會) Periode November 1932 – November 1933',
-                    caption:
-                      'Jajaran pengurus (Bestuur) organisasi Chung Hwa Hui (中華會) periode November 1932 – November 1933 dengan spanduk beraksara Mandarin Chung Hwa Hui—representasi kalangan intelektual dan mahasiswa Peranakan Tionghoa berpendidikan Belanda.',
-                    archiveSource: 'Koleksi Arsip Tan Kian Hong (tankianhong.nl) · Suryadinata (1981)',
-                  },
-                  'Pengurus Chung Hwa Hui (1932–1933)'
-                )
-              }
-              role="button"
-              tabIndex={0}
-              title="Klik untuk memperbesar foto arsip Pengurus Chung Hwa Hui (1932–1933)"
-              onKeyDown={(e) => {
-                if (e.key === 'Enter' || e.key === ' ') {
+              className="crisis-cards-grid"
+              style={{ marginTop: '1.25rem', marginBottom: 0 }}
+            >
+              <div
+                className="crisis-image-container"
+                style={{ margin: 0 }}
+                onClick={() =>
+                  onOpenImage?.(
+                    {
+                      src: '/images/thhk-sungailiat-1914.jpg',
+                      alt: 'Foto Arsip Gedung Sekolah Tiong Hoa Hwee Koan (THHK) Sungailiat, Bangka, 1914',
+                      caption:
+                        'Gedung sekolah Tiong Hoa Hwee Koan (THHK) di Sungailiat, Pulau Bangka (1914)—menunjukkan pesatnya penyebaran sekolah modern THHK dari Batavia hingga ke kota-kota pertambangan di Luar Jawa.',
+                      archiveSource: 'Koleksi KITLV / Tropenmuseum (1914) · Williams (1960) · Heidhues (1992)',
+                    },
+                    'Tiong Hoa Hwee Koan (THHK) Sungailiat, Bangka (1914)'
+                  )
+                }
+                role="button"
+                tabIndex={0}
+                title="Klik untuk memperbesar foto arsip THHK Sungailiat, Bangka (1914)"
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    onOpenImage?.(
+                      {
+                        src: '/images/thhk-sungailiat-1914.jpg',
+                        alt: 'Foto Arsip Gedung Sekolah Tiong Hoa Hwee Koan (THHK) Sungailiat, Bangka, 1914',
+                        caption:
+                          'Gedung sekolah Tiong Hoa Hwee Koan (THHK) di Sungailiat, Pulau Bangka (1914)—menunjukkan pesatnya penyebaran sekolah modern THHK dari Batavia hingga ke kota-kota pertambangan di Luar Jawa.',
+                        archiveSource: 'Koleksi KITLV / Tropenmuseum (1914) · Williams (1960) · Heidhues (1992)',
+                      },
+                      'Tiong Hoa Hwee Koan (THHK) Sungailiat, Bangka (1914)'
+                    );
+                  }
+                }}
+              >
+                <img
+                  src="/images/thhk-sungailiat-1914.jpg"
+                  alt="Foto Arsip Gedung Sekolah Tiong Hoa Hwee Koan (THHK) Sungailiat, Bangka, 1914"
+                  className="crisis-image-media"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <div className="crisis-image-zoom-tag">
+                  <ZoomIn size={13} strokeWidth={1.5} />
+                  <span>Gedung THHK Sungailiat, Bangka (1914) · Perbesar</span>
+                </div>
+              </div>
+
+              <div
+                className="crisis-image-container"
+                style={{ margin: 0 }}
+                onClick={() =>
                   onOpenImage?.(
                     {
                       src: '/images/chung-hwa-hui-1932.jpg',
@@ -291,20 +325,37 @@ export const BackgroundSection: React.FC<BackgroundSectionProps> = ({ onOpenImag
                       archiveSource: 'Koleksi Arsip Tan Kian Hong (tankianhong.nl) · Suryadinata (1981)',
                     },
                     'Pengurus Chung Hwa Hui (1932–1933)'
-                  );
+                  )
                 }
-              }}
-            >
-              <img
-                src="/images/chung-hwa-hui-1932.jpg"
-                alt="Foto Arsip Pengurus (Bestuur) Chung Hwa Hui (中華會) Periode November 1932 – November 1933"
-                className="crisis-image-media"
-                loading="lazy"
-                decoding="async"
-              />
-              <div className="crisis-image-zoom-tag">
-                <ZoomIn size={13} strokeWidth={1.5} />
-                <span>Arsip Pengurus Chung Hwa Hui (Nov 1932 – Nov 1933) · Perbesar</span>
+                role="button"
+                tabIndex={0}
+                title="Klik untuk memperbesar foto arsip Pengurus Chung Hwa Hui (1932–1933)"
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    onOpenImage?.(
+                      {
+                        src: '/images/chung-hwa-hui-1932.jpg',
+                        alt: 'Foto Arsip Pengurus (Bestuur) Chung Hwa Hui (中華會) Periode November 1932 – November 1933',
+                        caption:
+                          'Jajaran pengurus (Bestuur) organisasi Chung Hwa Hui (中華會) periode November 1932 – November 1933 dengan spanduk beraksara Mandarin Chung Hwa Hui—representasi kalangan intelektual dan mahasiswa Peranakan Tionghoa berpendidikan Belanda.',
+                        archiveSource: 'Koleksi Arsip Tan Kian Hong (tankianhong.nl) · Suryadinata (1981)',
+                      },
+                      'Pengurus Chung Hwa Hui (1932–1933)'
+                    );
+                  }
+                }}
+              >
+                <img
+                  src="/images/chung-hwa-hui-1932.jpg"
+                  alt="Foto Arsip Pengurus (Bestuur) Chung Hwa Hui (中華會) Periode November 1932 – November 1933"
+                  className="crisis-image-media"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <div className="crisis-image-zoom-tag">
+                  <ZoomIn size={13} strokeWidth={1.5} />
+                  <span>Pengurus Chung Hwa Hui (1932–1933) · Perbesar</span>
+                </div>
               </div>
             </div>
           </div>
