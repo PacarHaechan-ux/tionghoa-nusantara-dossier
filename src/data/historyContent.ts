@@ -497,10 +497,10 @@ export const backgroundData = {
       impact: "Dalam kurun niaga Asia Tenggara (Age of Commerce, 1450–1680) sebagaimana dipetakan sejarawan Anthony Reid, para pelaut dan saudagar Tionghoa menghidupkan bandar Malaka, Banten, Tuban, Gresik, Palembang, dan Makassar. Masuknya koin tembaga berlubang persegi (picis/kepeng) yang diikat per 1.000 keping membebaskan transaksi Nusantara dari kelemahan barter murni dan memicu monetisasi pasar desa hingga pelabuhan. Di lingkungan istana, Prasasti Kencana (860 M) mencatat jabatan resmi Juru Cina (yang diperkuat di bawah Rakryan Kanuruhan pada era Majapahit), sementara di Kesultanan Banten abad ke-17 saudagar Tionghoa Muslim Tantseko dipercaya menyandang gelar Kiyai Ngabehi Cakradana sebagai Syahbandar utama sekaligus arsitek benteng pesisir, tembok Istana Surosowan, dan gudang lada.",
       cost: "Monetisasi Koin Kepeng & Integrasi Syahbandar",
       image: {
-        src: "/images/kyai-ngabehi-cakradana.jpg",
-        alt: "Potret Kiyai Ngabehi Cakradana dan Menara Masjid Pacinan Tinggi di Kesultanan Banten",
-        caption: "Kiyai Ngabehi Cakradana (Tantseko), Syahbandar utama Kesultanan Banten abad ke-17 sekaligus arsitek benteng Istana Surosowan, dengan latar Menara Masjid Pacinan Tinggi di Banten Lama.",
-        archiveSource: "Fauziah (2009) · Nayati (1985) · Fauziah & Rohman (2019)"
+        src: "/images/peta-angin-muson.jpg",
+        alt: "Peta Siklus Angin Muson Timur Laut dan Barat Daya dalam Pelayaran Jung Tiongkok–Nusantara",
+        caption: "Peta arah hembusan angin muson timur laut (November–Maret, membawa jung dari Tiongkok Selatan ke Nusantara) dan muson barat daya/tenggara (Mei–September, membawa jung kembali ke utara) yang melahirkan masa tunggu dan permukiman Pecinan awal.",
+        archiveSource: "Kronik Faxian (Abad V) · Anthony Reid (Age of Commerce, 1450–1680)"
       }
     },
     {
@@ -1449,10 +1449,10 @@ export const implementationData = {
       ],
       historicalFigures: ["Faxian (Peziarah Buddha Abad ke-5)", "Pejabat Juru Cina (Prasasti Kencana 860 M)"],
       image: {
-        src: "/images/koin-kepeng.jpg",
-        alt: "Artefak Untaian Koin Tembaga Kepeng (Uang Picis) di Jalur Maritim Nusantara",
-        caption: "Untaian koin tembaga berlubang persegi (kepeng/picis) yang dibawa pelayaran jung Tiongkok dan menjadi alat tukar resmi di Nusantara.",
-        archiveSource: "Koleksi Numismatik · Kronik Foguo Ji (Abad V) & Prasasti Kencana (860 M)"
+        src: "/images/peta-angin-muson.jpg",
+        alt: "Peta Siklus Angin Muson Pelayaran Laut Tiongkok–Nusantara",
+        caption: "Siklus angin muson timur laut (Nov–Mar) dan barat daya (Mei–Sep) yang mengatur ritme pelayaran jung Tiongkok menuju bandar-bandar Nusantara.",
+        archiveSource: "Kronik Foguo Ji (Abad V) · Prasasti Kencana (860 M) · Anthony Reid (1993)"
       }
     },
     {

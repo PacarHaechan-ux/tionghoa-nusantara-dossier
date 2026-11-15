@@ -23,10 +23,22 @@ interface CuratorialPlate {
 
 const curatorialPlates: CuratorialPlate[] = [
   {
+    id: 'plate-angin-muson',
+    shortLabel: 'Siklus Angin Muson',
+    year: 'Nov–Mar & Mei–Sep',
+    title: 'Peta Siklus Angin Muson Pelayaran Jung Tiongkok–Nusantara',
+    image: {
+      src: '/images/peta-angin-muson.jpg',
+      alt: 'Peta Siklus Angin Muson Timur Laut (Northeast Monsoon) dan Barat Daya (Southwest Monsoon)',
+      caption: 'Siklus angin muson timur laut (November–Maret) yang membawa kapal jung Tiongkok turun ke Nusantara, serta angin muson barat daya/tenggara (Mei–September) untuk pelayaran kembali—mendorong pedagang menetap dan membentuk Pecinan awal.',
+      archiveSource: 'Geografi Maritim Asia Tenggara · Anthony Reid (Age of Commerce, 1450–1680)',
+    },
+  },
+  {
     id: 'plate-maritim-kepeng',
-    shortLabel: 'Jalur Maritim & Kepeng',
+    shortLabel: 'Koin Kepeng',
     year: 'Abad V–XVII',
-    title: 'Pelayaran Jung Angin Muson & Monetisasi Koin Kepeng',
+    title: 'Revolusi Finansial Untaian Koin Tembaga Kepeng (Uang Picis)',
     image: heroData.image,
   },
   {
@@ -41,7 +53,12 @@ const curatorialPlates: CuratorialPlate[] = [
     shortLabel: 'Pecinan Banten',
     year: '1596–1726',
     title: 'Syahbandar Kiyai Ngabehi Cakradana & Masjid Pacinan Tinggi',
-    image: backgroundData.crises[0].image!,
+    image: {
+      src: '/images/kyai-ngabehi-cakradana.jpg',
+      alt: 'Potret Kiyai Ngabehi Cakradana dan Menara Masjid Pacinan Tinggi di Kesultanan Banten',
+      caption: 'Kiyai Ngabehi Cakradana (Tantseko), Syahbandar utama Kesultanan Banten abad ke-17 sekaligus arsitek benteng Istana Surosowan, dengan latar Menara Masjid Pacinan Tinggi di Banten Lama.',
+      archiveSource: 'Fauziah (2009) · Nayati (1985) · Fauziah & Rohman (2019)',
+    },
   },
 ];
 
