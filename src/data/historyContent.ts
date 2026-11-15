@@ -398,23 +398,24 @@ export interface FeaturedQuoteItem {
 }
 
 export const heroData = {
-  title: "Dinamika dan Peran Masyarakat Tionghoa dalam Perekonomian Nusantara serta Kedudukannya dalam Struktur Sosial Kolonial",
-  subtitle: "Dari Jaringan Niaga Jalur Sutra Maritim, Kemitraan VOC & Monopoli Pacht, hingga Segregasi Vreemde Oosterlingen dan Pergerakan Nasional",
+  title: "Jejak Langkah & Denyut Niaga: Masyarakat Tionghoa dalam Sejarah Nusantara",
+  subtitle: "Dari Pelayaran Angin Muson, Urat Nadi Pasar Kolonial, hingga Tembok Pecinan dan Fajar Pergerakan Kebangsaan",
+  period: "Jejak Lintas Zaman (Abad ke-15 – Awal Abad ke-20)",
   tagline: "Monograf Digital Sejarah Sosial Perekonomian · Program Studi Pendidikan Sejarah FKIP Universitas Sultan Ageng Tirtayasa",
   authors: [
     { name: "Dini Nurdiyah (2288250093)", role: "Kelompok 8 · Pendidikan Sejarah" },
     { name: "Gina Khairunisa Syihab (2288250054)", role: "Kelompok 8 · Pendidikan Sejarah" },
   ],
   lecturer: "Eko Ribawati, M.Pd.",
-  institution: "Program Studi Pendidikan Sejarah, FKIP Universitas Sultan Ageng Tirtayasa (2026)",
+  institution: "Program Studi Pendidikan Sejarah · FKIP Universitas Sultan Ageng Tirtayasa (2026)",
   course: "Mata Kuliah Sejarah Sosial Perekonomian · Dosen Pengampu: Eko Ribawati, M.Pd.",
   overview:
-    "Keterlibatan masyarakat Tionghoa dalam dinamika perekonomian Nusantara berakar jauh sebelum kedatangan bangsa Eropa melalui pelayaran angin muson Jalur Sutra Maritim, monetisasi koin tembaga (picis/kepeng), serta integrasi birokrasi pelabuhan sebagai Juru Cina dan Syahbandar. Memasuki era VOC (1619) dan Hindia Belanda, masyarakat Tionghoa diposisikan sebagai minoritas perantara (middlemen minority / tusschenpersoon), pengelola industri gula, pemegang monopoli sewa pajak (pachtstelsel), serta buruh tambang dan perkebunan di Luar Jawa—namun pada saat yang sama mengalami tragedi Geger Pecinan 1740, segregasi Wijkenstelsel & Passenstelsel, serta stratifikasi hukum kelas dua sebagai Timur Asing (Vreemde Oosterlingen).",
+    "Jauh sebelum meriam kapal-kapal Eropa menggema di perairan Nusantara, layar-layar jung dari pesisir Fujian dan Guangdong telah menyusuri hembusan angin muson menuju pelabuhan Tuban, Gresik, Malaka, Palembang, Banten, hingga Sunda Kelapa. Mereka membawa kain sutra, porselen, serta untaian koin tembaga berlubang persegi (uang picis atau kepeng) yang memicu revolusi pasar dari dermaga hingga pedalaman Majapahit, sembari melahirkan pejabat kepercayaan raja seperti Juru Cina dan Syahbandar Kiyai Ngabehi Cakradana di Banten. Namun, kedatangan VOC di Batavia (1619) dan berdirinya negara kolonial Hindia Belanda mengubah harmoni niaga itu menjadi sistem kapitalisme kolonial yang penuh paradoks: masyarakat Tionghoa dijadikan tulang punggung perantara ekonomi (tusschenpersoon), pemegang lelang pajak (pachtstelsel), penggerak pabrik gula, hingga kuli tambang dan perkebunan di Luar Jawa—sekaligus dikurung di balik tragedi Geger Pecinan 1740, sekat hukum Timur Asing (Vreemde Oosterlingen), aturan Pecinan (Wijkenstelsel), dan surat jalan (Passenstelsel).",
   highlights: [
-    { label: "Akar Niaga Maritim", value: "Abad V – XVII", note: "Jalur Sutra Maritim, Koin Kepeng & Syahbandar" },
+    { label: "Layar Muson & Kepeng", value: "Abad V – XVII", note: "Jalur Sutra Maritim, Koin Kepeng & Syahbandar" },
     { label: "Tragedi & Titik Balik", value: "Oktober 1740", note: "Geger Pecinan (>10.000 Korban) & Diaspora Pesisir" },
     { label: "Kontribusi Opiumpacht", value: "~18% APBN", note: "Pendapatan Hindia Belanda 1886–1895 (Diehl, 1993)" },
-    { label: "Stratifikasi Hukum", value: "Vreemde Oosterlingen", note: "Wijkenstelsel, Passenstelsel & Kebangkitan 1900" },
+    { label: "Sekat Hukum & Fajar", value: "Vreemde Oosterlingen", note: "Wijkenstelsel, Passenstelsel & Kebangkitan 1900" },
   ],
   image: {
     src: "/images/jung-maritim-kepeng.svg",
@@ -424,38 +425,38 @@ export const heroData = {
     archiveSource: "Kronik Faxian (Foguo Ji, Abad V) · Prasasti Kencana (860 M) · Anthony Reid (Age of Commerce, 1450–1680)"
   },
   quickSummary: {
-    badge: "Intisari Makalah",
-    readTime: "4 Babak Kajian",
-    title: "Peta Struktur Kajian: Masyarakat Tionghoa dalam Perekonomian & Struktur Sosial Kolonial",
+    badge: "Alur Kisah Utama",
+    readTime: "4 Babak Sejarah",
+    title: "Peta Perjalanan Sejarah: Masyarakat Tionghoa dalam Denyut Niaga & Struktur Sosial Nusantara",
     points: [
       {
         step: "01",
-        label: "Bab I · Pendahuluan",
-        text: "Membedah akar historis niaga maritim pra-Eropa, posisi perantara (tusschenpersoon) di era kolonial, serta paradoks antara ketergantungan ekonomi dan pembatasan sosial-politik.",
+        label: "Pelayaran Muson & Kemitraan Awal",
+        text: "Jejak Niaga Pra-Kolonial hingga Batavia 1619 — Mengikuti layar jung di Jalur Sutra Maritim, revolusi uang kepeng di Majapahit, kiprah Syahbandar Kiyai Ngabehi Cakradana di Kesultanan Banten, hingga pembangunan Batavia bersama Kapitein Souw Beng Kong.",
       },
       {
         step: "02",
-        label: "Bab 2.1 · Ekonomi Pra-Abad ke-19",
-        text: "Jaringan Jalur Sutra Maritim, revolusi koin kepeng di Majapahit, peran Juru Cina & Syahbandar Cakradana di Banten, kemitraan VOC di Batavia (1619), hingga tragedi Geger Pecinan 1740.",
+        label: "Urat Nadi Pasar & Pajak Kolonial",
+        text: "Perantara Desa, Sistem Pacht & Kuli Tambang — Menelusuri jaringan distribusi pedesaan Jawa, lelang sewa pajak candu (opiumpacht ~18% APBN kolonial), kongsi timah-emas di Bangka dan Kalimantan Barat, hingga jeratan Poenale Sanctie (1880) atas kuli kontrak di Deli.",
       },
       {
         step: "03",
-        label: "Bab 2.2 · Ekonomi Abad ke-19 s/d Akhir Kolonial",
-        text: "Dominasi lelang sewa pajak (pachtstelsel & opiumpacht), kontraktor gula & logistik di Jawa, kongsi timah-emas & kuli kontrak (poenale sanctie) di Luar Jawa, serta kebangkitan THHK (1900) dan pers Melayu-Tionghoa.",
+        label: "Tembok Pecinan & Harmoni Banten",
+        text: "Sekat Hukum 1854 vs Akulturasi Nusantara — Membandingkan dinginnya penggolongan hukum Timur Asing (Vreemde Oosterlingen), Wijkenstelsel, dan Passenstelsel dengan hangatnya akulturasi Masjid Pacinan Tinggi di Banten serta masyarakat Cina Benteng di Tangerang.",
       },
       {
         step: "04",
-        label: "Bab 2.3 & III · Kedudukan Sosial & Penutup",
-        text: "Stratifikasi hukum Timur Asing (Vreemde Oosterlingen), segregasi Wijkenstelsel & Passenstelsel, tata ruang Pecinan Banten & Masjid Pacinan Tinggi, akulturasi Cina Benteng, serta tiga haluan politik menuju Indonesia merdeka.",
+        label: "Tragedi 1740 & Fajar Kebangsaan",
+        text: "Dari Geger Pecinan hingga Sumpah Pemuda — Menyaksikan aliansi laskar Tionghoa–prajurit Jawa pasca-tragedi Oktober 1740, lahirnya sekolah modern Tiong Hoa Hwee Koan (1900), lantangnya pers Sin Po menyiarkan 'Indonesia Raya' (1928), hingga Partai Tionghoa Indonesia (1932).",
       },
     ],
   },
   quickShortcuts: [
-    { label: "Pendahuluan & Pra-Abad 19", targetId: "latar-belakang", icon: "book" },
-    { label: "Ekonomi Abad 19–20", targetId: "eksploitasi", icon: "leaf" },
-    { label: "Struktur Sosial & Hukum", targetId: "pelaksanaan", icon: "scale" },
+    { label: "1. Dinamika Sejarah", targetId: "latar-belakang", icon: "book" },
+    { label: "2. Peran Perekonomian", targetId: "eksploitasi", icon: "leaf" },
+    { label: "3. Kedudukan Sosial", targetId: "pelaksanaan", icon: "scale" },
     { label: "Garis Waktu (Abad V–1932)", targetId: "timeline-section", icon: "clock" },
-    { label: "Konflik, Politik & Penutup", targetId: "dampak", icon: "alert" },
+    { label: "Refleksi & Tokoh Kunci", targetId: "dampak", icon: "alert" },
     { label: "Lab Sejarah Interaktif", targetId: "interactive-lab", icon: "compass" },
     { label: "TTS & Kuis Sejarah", targetId: "permainan-sejarah", icon: "gamepad" },
     { label: "Daftar Pustaka", targetId: "pustaka", icon: "bookmark" },
@@ -484,16 +485,16 @@ export const featuredHistoricalQuotes: FeaturedQuoteItem[] = [
 ];
 
 export const backgroundData = {
-  sectionTitle: "Bab I & Bab II (2.1) · Pendahuluan & Aktivitas Ekonomi Sebelum Abad ke-19",
-  sectionSubtitle: "Dari Jalur Sutra Maritim Kuno, Monetisasi Koin Kepeng, dan Syahbandar Kesultanan hingga Kemitraan VOC & Tragedi Geger Pecinan 1740",
+  sectionTitle: "Bab I · Dinamika Lintas Zaman: Dari Angin Muson hingga Fajar Kebangsaan",
+  sectionSubtitle: "Perjalanan panjang komunitas Tionghoa melintasi lima abad perubahan kekuasaan di Kepulauan Nusantara",
   narrative:
-    "Keterlibatan masyarakat Tionghoa dalam dinamika perekonomian Nusantara telah berakar sejak awal Masehi melalui jaringan Jalur Sutra Maritim (tercatat dalam kronik Faxian Foguo Ji abad ke-5 hingga ekspedisi Laksamana Cheng Ho abad ke-15). Memanfaatkan siklus angin muson, kapal-kapal jung Tiongkok membawa sutra, porselen, keramik, perkakas besi, serta koin tembaga berlubang persegi (uang picis atau kepeng) yang ditukarkan dengan cengkih dan pala Maluku, lada Sumatra dan Banten, kayu cendana Nusa Tenggara, serta sarang burung walet dan teripang. Adopsi koin kepeng sebagai alat tukar resmi di era Kerajaan Majapahit melahirkan revolusi finansial pertama yang menggantikan sistem barter murni. Memasuki abad ke-17, ketika VOC mendirikan Batavia (1619), masyarakat Tionghoa diposisikan sebagai minoritas perantara (middlemen minority / tusschenpersoon), namun ketergantungan ekonomi kolonial itu berujung pada paradoks kecurigaan politik yang meledak dalam tragedi Geger Pecinan 1740.",
+    "Setiap akhir tahun, ketika angin muson timur laut mulai berhembus dari Laut Tiongkok Selatan, deretan kapal jung kayu berlayar membelah ombak menuju bandar-bandar Nusantara—sebuah tradisi pelayaran yang telah terekam sejak kronik peziarah Faxian (Foguo Ji, abad ke-5 M) hingga armada Laksamana Cheng Ho pada abad ke-15. Dari geladak kapal-kapal itulah kain sutra, porselen biru-putih, perkakas besi, dan untaian koin tembaga berlubang persegi (uang picis atau kepeng) diturunkan untuk ditukar dengan cengkih dan pala Maluku, lada Sumatra dan Banten, kayu cendana Nusa Tenggara, serta sarang burung walet dan teripang. Di tangan Kerajaan Majapahit hingga Kesultanan Banten, peredaran uang kepeng melahirkan revolusi finansial pertama yang menggantikan barter murni, sementara para saudagarnya tumbuh menjadi bagian organik kota pelabuhan. Namun, ketika VOC merebut Jayakarta dan mendirikan Batavia pada 1619, disusul tegaknya negara kolonial Hindia Belanda pada abad ke-19, posisi mereka berayun drastis: dari mitra kesultanan menjadi perantara ekonomi kolonial (tusschenpersoon), melewati tragedi berdarah Oktober 1740, hingga akhirnya bangkit merajut kesadaran kebangsaan Indonesia pada awal abad ke-20.",
   crises: [
     {
       id: "maritim-pra-eropa",
-      name: "2.1.1 Jaringan Maritim Pra-Eropa & Revolusi Koin Kepeng",
+      name: "Layar Jung & Angin Muson: Harmoni Niaga Pra-Kolonial",
       years: "Abad V – XVII",
-      impact: "Dalam era keemasan perdagangan (Age of Commerce, 1450–1680) menurut Anthony Reid, pedagang Tionghoa menggerakkan bandar Malaka, Banten, Tuban, Gresik, Palembang, dan Makassar. Masuknya koin tembaga berlubang persegi (picis/kepeng) yang diikat per 1.000 keping membebaskan Nusantara dari kelemahan barter murni dan memicu monetisasi pasar desa hingga pelabuhan. Di birokrasi kerajaan, Prasasti Kencana (860 M) mencatat jabatan Juru Cina (diperkuat di bawah Rakryan Kanuruhan era Majapahit), sementara di Kesultanan Banten abad ke-17 tokoh Tionghoa Muslim Tantseko (Kiyai Ngabehi Cakradana) diangkat menjadi Syahbandar utama sekaligus arsitek benteng pesisir, tembok Istana Surosowan, dan gudang lada.",
+      impact: "Dalam kurun niaga Asia Tenggara (Age of Commerce, 1450–1680) sebagaimana dipetakan sejarawan Anthony Reid, para pelaut dan saudagar Tionghoa menghidupkan bandar Malaka, Banten, Tuban, Gresik, Palembang, dan Makassar. Masuknya koin tembaga berlubang persegi (picis/kepeng) yang diikat per 1.000 keping membebaskan transaksi Nusantara dari kelemahan barter murni dan memicu monetisasi pasar desa hingga pelabuhan. Di lingkungan istana, Prasasti Kencana (860 M) mencatat jabatan resmi Juru Cina (yang diperkuat di bawah Rakryan Kanuruhan pada era Majapahit), sementara di Kesultanan Banten abad ke-17 saudagar Tionghoa Muslim Tantseko dipercaya menyandang gelar Kiyai Ngabehi Cakradana sebagai Syahbandar utama sekaligus arsitek benteng pesisir, tembok Istana Surosowan, dan gudang lada.",
       cost: "Monetisasi Koin Kepeng & Integrasi Syahbandar",
       image: {
         src: "/images/pecinan-banten-cakradana.svg",
@@ -504,9 +505,9 @@ export const backgroundData = {
     },
     {
       id: "kemitraan-voc-1619",
-      name: "2.1.2 Kemitraan Strategis & Ketergantungan Ekonomi VOC",
+      name: "Batavia 1619: Fondasi Kemitraan di Bawah Bayang-Bayang VOC",
       years: "1619 – Abad XVIII",
-      impact: "Saat Jan Pieterszoon Coen merebut Jayakarta dan membangun Batavia (1619), VOC kekurangan petani dan tukang bangunan sementara penduduk lokal memusuhi kompeni akibat konflik dengan Banten dan Mataram. Coen menarik warga Tionghoa dari Banten dan imigran Tiongkok Selatan, serta mengangkat saudagar lada Souw Beng Kong sebagai Kapitein der Chinezen pertama (berkembang menjadi institusi Mayor, Kapiten, dan Letnan). Para opsir ini memungut pajak kepala (hoofdgeld) 1,5 real/bulan bagi pria usia 16–60 tahun (bebas wajib militer/rodi benteng), mencatat imigran, dan mengadili perkara perdata adat, sementara pemborong Tionghoa membangun benteng, kanal, gereja, pabrik bata/kapur, serta penggilingan gula di Ommelanden.",
+      impact: "Ketika Jan Pieterszoon Coen merebut Jayakarta dan mendirikan Batavia pada 1619, VOC menghadapi krisis tenaga kerja dan permusuhan sengit dari Kesultanan Banten serta Mataram. Coen menarik saudagar dan pekerja Tionghoa dari Banten serta Tiongkok Selatan, lalu menunjuk saudagar lada terkemuka Souw Beng Kong sebagai Kapitein der Chinezen pertama (yang kemudian berkembang menjadi institusi Mayor, Kapiten, dan Letnan). Para opsir ini memungut pajak kepala (hoofdgeld) 1,5 real/bulan bagi pria usia 16–60 tahun sebagai kompensasi bebas wajib militer/rodi benteng, mendata imigran jung, dan mengadili perkara perdata adat, sementara pemborong Tionghoa membangun tembok benteng, kanal, ruko, pabrik bata/kapur, serta penggilingan gula di Ommelanden.",
       cost: "Pajak Kepala 1,5 Real/Bulan & Konstruksi Batavia",
       image: {
         src: "/images/batavia-souw-beng-kong.svg",
@@ -517,9 +518,9 @@ export const backgroundData = {
     },
     {
       id: "geger-pecinan-1740",
-      name: "2.1.3 Ketegangan Ekonomi & Tragedi Geger Pecinan",
+      name: "Oktober Berdarah 1740 & Bara Persekutuan Jawa–Tionghoa",
       years: "1740 – 1743",
-      impact: "Gelombang imigran baru (singkek) di tengah anjloknya harga gula dunia membuat puluhan pabrik gula di Ommelanden Batavia bangkrut dan memicu pengangguran massal. Kebijakan kejam VOC untuk mendeportasi warga Tionghoa tanpa surat izin ke Sri Lanka atau Banda disertai desas-desus penenggelaman di tengah laut memicu perlawanan. Pada Oktober 1740, di bawah Gubernur Jenderal Adriaan Valckenier, serdadu VOC membantai lebih dari 10.000 jiwa warga Tionghoa di Batavia dan memenjarakan Kapiten Nie Hoe Kong. Para penyintas di bawah pimpinan Sepanjang (Khe Panjang) dan Singseh (Tan Sin Ko) beraliansi dengan bangsawan Mataram dalam Perang Geger Pecinan (1740–1743), sempat menduduki keraton Kartasura, dan melahirkan diaspora Pecinan di sepanjang pesisir utara Jawa.",
+      impact: "Anjloknya harga gula dunia di paruh pertama abad ke-18 membuat puluhan pabrik penggilingan gula di Ommelanden Batavia bangkrut dan memicu pengangguran ribuan buruh imigran (singkek). Rencana sewenang-wenang VOC untuk mendeportasi warga Tionghoa tanpa surat izin ke Sri Lanka atau Banda—disertai desas-desus bahwa mereka akan ditenggelamkan di tengah laut—menyulut perlawanan. Pada Oktober 1740, di bawah perintah Gubernur Jenderal Adriaan Valckenier, serdadu VOC membantai lebih dari 10.000 jiwa warga Tionghoa di Batavia dan memenjarakan Kapiten Nie Hoe Kong. Para penyintas di bawah pimpinan Sepanjang (Khe Panjang) dan Singseh (Tan Sin Ko) bergerak ke timur dan bersekutu dengan prajurit Mataram dalam Perang Geger Pecinan (1740–1743), sempat menduduki keraton Kartasura, serta melahirkan diaspora Pecinan di sepanjang pesisir utara Jawa.",
       cost: "> 10.000 Jiwa Tewas & Perang Jawa 1740–1743",
       image: {
         src: "/images/geger-pecinan-1740.svg",
@@ -528,15 +529,28 @@ export const backgroundData = {
         archiveSource: "Daradjadi (2013), Geger Pacinan 1740–1743: Persekutuan Tionghoa-Jawa Melawan VOC"
       }
     },
+    {
+      id: "kebangkitan-pergerakan-1900",
+      name: "Abad ke-19 hingga Fajar Pergerakan: Dari Kontrak Paksa ke Kesadaran Bangsa",
+      years: "1800 – 1932",
+      impact: "Memasuki abad ke-19, pemerintah Hindia Belanda menjadikan jaringan saudagar Cabang Atas sebagai pemegang lelang pajak (pachtstelsel, dengan opiumpacht menyumbang ~18% APBN kolonial) dan penggerak logistik gula di Jawa, sembari menaklukkan federasi emas Kongsi Thaikong & Lanfang di Kalimantan Barat (1822–1885) serta mengikat ratusan ribu kuli kontrak (sinkeh) di tambang timah Bangka-Belitung dan kebun Deli dengan sanksi pidana Koelie Ordonnantie (1880). Tekanan segregasi Vreemde Oosterlingen (1854), Wijkenstelsel, dan Passenstelsel akhirnya melahirkan gelombang emansipasi modern: pendirian sekolah Tiong Hoa Hwee Koan (THHK, 17 Maret 1900) oleh Phoa Keng Hek & Lie Kim Hok, lantangnya pers Melayu-Tionghoa seperti Sin Po yang mencetak perdana lagu 'Indonesia Raya' (November 1928), hingga lahirnya Partai Tionghoa Indonesia (PTI, 1932) pimpinan Liem Koen Hian yang meneguhkan haluan Indonesierschap.",
+      cost: "THHK 1900, Pers Sin Po 1928 & PTI 1932",
+      image: {
+        src: "/images/pers-sinpo-pti.svg",
+        alt: "Ilustrasi Arsip Kebangkitan Pendidikan THHK 1900, Pers Sin Po 1928, dan Partai Tionghoa Indonesia 1932",
+        caption: "Transformasi masyarakat Tionghoa menuju kesadaran kebangsaan modern melalui sekolah Tiong Hoa Hwee Koan (1900), pers Melayu-Tionghoa (Sin Po mencetak 'Indonesia Raya' 1928), dan Partai Tionghoa Indonesia (1932).",
+        archiveSource: "Williams (1960) · Suryadinata (1981, 2020) · Adam (1995)"
+      }
+    },
   ] as WarCrisis[],
   vanDenBoschConcept: {
-    title: "Kerangka Akademik Makalah: Rumusan Masalah (1.2), Tujuan (1.3), & Manfaat (1.4)",
+    title: "Titik Balik Sejarah: Mengapa Posisi Komunitas Tionghoa Terus Berubah?",
     summary:
-      "Makalah ini mengkaji secara kronologis dan analitis posisi masyarakat Tionghoa dari era jaringan maritim kuno hingga berakhirnya kekuasaan kolonial Hindia Belanda melalui tiga rumusan masalah utama:",
+      "Menelusuri lima abad perjalanan masyarakat Tionghoa di kepulauan Nusantara membawa kita pada tiga pertanyaan besar yang menjadi benang merah seluruh kisah dalam monograf ini:",
     points: [
-      "Rumusan Masalah 1 (Subbab 2.1): Bagaimana bentuk dan dinamika aktivitas ekonomi masyarakat Cina di Nusantara sebelum abad ke-19? — Mendeskripsikan jaringan niaga maritim pra-Eropa, monetisasi koin kepeng, integrasi Syahbandar, kemitraan VOC di Batavia, hingga Geger Pecinan 1740.",
-      "Rumusan Masalah 2 (Subbab 2.2): Bagaimana perkembangan serta transformasi ekonomi masyarakat Cina sejak abad ke-19 hingga akhir masa kolonial? — Menganalisis sistem sewa pajak (pachtstelsel & opiumpacht), rantai logistik gula Tanam Paksa, kongsi tambang & kuli kontrak Luar Jawa, hingga kebangkitan THHK (1900) dan pers Melayu-Tionghoa.",
-      "Rumusan Masalah 3 (Subbab 2.3): Bagaimana kedudukan sosial masyarakat Cina dalam struktur masyarakat kolonial Hindia Belanda? — Menguraikan stratifikasi hukum Timur Asing (Vreemde Oosterlingen), kebijakan segregasi Wijkenstelsel & Passenstelsel, tata ruang Pecinan Banten, serta dinamika Peranakan vs Totok.",
+      "Dari Mitra Kesultanan ke Perantara Kolonial: Bagaimana jaringan pelayaran angin muson, revolusi uang kepeng di Majapahit, dan kehormatan jabatan Syahbandar di Kesultanan Banten bertransformasi menjadi ketergantungan ekonomi VOC di Batavia (1619) yang berujung pada tragedi berdarah Geger Pecinan 1740?",
+      "Mesin Penggerak di Dua Dunia Ekonomi: Bagaimana masyarakat Tionghoa sejak abad ke-19 menghidupi urat nadi pasar desa, logistik pabrik gula, dan sewa pajak negara (pachtstelsel & opiumpacht) di Jawa, sembari memeras keringat sebagai penambang parit kongsi dan kuli kontrak (poenale sanctie) di Luar Jawa hingga melahirkan kebangkitan pendidikan THHK (1900) serta pers pergerakan?",
+      "Antara Harmoni Budaya dan Sekat Hukum Kolonial: Mengapa pemerintah Hindia Belanda yang begitu bergantung pada modal dan tenaga masyarakat Tionghoa justru mengurung mereka dalam penggolongan hukum Timur Asing (Vreemde Oosterlingen), aturan Pecinan (Wijkenstelsel), dan surat jalan (Passenstelsel), serta bagaimana komunitas Peranakan, Totok, Pecinan Banten, dan Cina Benteng merajut identitasnya?",
     ],
   },
   historianInterpretations: [
@@ -579,7 +593,7 @@ export const backgroundData = {
       quote: "Sejak tahun 860 M pada era Jawa Kuno, Prasasti Kencana telah mencatat keberadaan jabatan khusus pengurus pedagang asing dengan sebutan Juru Cina, yang pada masa kejayaan Majapahit diperkuat di bawah pengawasan pejabat tinggi Rakryan Kanuruhan.",
       author: "Prasasti Kencana (860 M) & Birokrasi Majapahit",
       role: "Epigrafi Administrasi Lintas Budaya Nusantara",
-      work: "Prasasti Kencana (860 M) · Kajian Bab 2.1.1",
+      work: "Prasasti Kencana (860 M) · Epigrafi Jawa Kuno & Majapahit",
     },
     {
       id: "quote-fauziah-banten",
@@ -638,7 +652,7 @@ export const vanDenBoschControversyData: VanDenBoschControversyPoint[] = [
 
 export const everydayFarmerLifeData: EverydayFarmerLife = {
   title: "Ekosistem Permukiman Niaga Pecinan Awal & Siklus Angin Muson",
-  subtitle: "Bagaimana siklus alam pelayaran jung, tata ruang tepi sungai, dan perlindungan raja lokal melahirkan komunitas Peranakan di pesisir Nusantara (Subbab 2.1.1)",
+  subtitle: "Bagaimana siklus alam pelayaran jung, tata ruang ruko tepi sungai, dan perlindungan raja lokal melahirkan komunitas Peranakan di pesisir Nusantara",
   aspects: [
     {
       title: "Siklus Tunggu Angin Muson (November–Maret & Mei–September)",
@@ -658,13 +672,15 @@ export const everydayFarmerLifeData: EverydayFarmerLife = {
   ],
   quote: {
     text: "Tumbuhnya permukiman-permukiman Pecinan ini tidak akan berdiri jika tanpa izin, perlindungan, dan dukungan dari para penguasa lokal di tanah Nusantara yang memperoleh pemasukan besar dari bea cukai kapal, pajak pasar, dan upeti dagang.",
-    source: "Sintesis Subbab 2.1.1 Makalah Kelompok 8 (Dini Nurdiyah & Gina Khairunisa Syihab, 2026)"
+    source: "Rekonstruksi Sejarah Maritim Nusantara · Dini Nurdiyah & Gina Khairunisa Syihab (Pendidikan Sejarah FKIP UNTIRTA, 2026)"
   }
 };
 
 export const exploitationData = {
-  sectionTitle: "Bab II (2.2) · Perkembangan Ekonomi Sejak Abad ke-19 hingga Akhir Masa Kolonial",
-  sectionSubtitle: "Sistem Pacht (Monopoli Pajak), Rantai Logistik Tanam Paksa, Kuli Kontrak Luar Jawa (Koelie Ordonnantie 1880), serta Transformasi Pendidikan & Pers Abad ke-20",
+  sectionTitle: "Bab II · Peran dalam Perekonomian: Urat Nadi Pasar, Pajak, dan Keringat Kuli",
+  sectionSubtitle: "Bagaimana jaringan niaga perantara, sewa pajak kolonial, dan tenaga kerja tambang menggerakkan roda ekonomi Nusantara",
+  narrative:
+    "Roda perekonomian kepulauan Nusantara dari masa kerajaan hingga puncak kolonialisme tidak mungkin berputar tanpa mata rantai yang menghubungkan dermaga pelabuhan internasional dengan ribuan desa di pedalaman. Di Pulau Jawa, para saudagar Peranakan dan jaringan kongsi Cabang Atas menjadi urat nadi distribusi—menggerakkan penggilingan tebu, mengedarkan tekstil serta minyak tanah ke pelosok desa, hingga memenangkan lelang pajak negara (pachtstelsel) yang menopang kas Hindia Belanda. Namun, bila kita menyeberang ke Luar Jawa, wajah ekonomi itu berubah drastis menjadi kisah peluh dan darah: di lembah-lembah timah Bangka-Belitung, sungai emas Kalimantan Barat, serta perkebunan tembakau Deli, ratusan ribu buruh imigran (sinkeh) justru memeras keringat di bawah jerat utang dan ancaman cambuk pidana Koelie Ordonnantie (1880).",
   vocComparison: [
     {
       aspect: "Posisi dalam Birokrasi & Pemungutan Pajak",
@@ -844,7 +860,7 @@ export const exploitationData = {
         value: "Prasasti Kencana",
         label: "Catatan Epigrafi Jabatan Juru Cina",
         context: "Bukti tertulis era Jawa Kuno mengenai pejabat khusus pengurus pedagang asing (Juru Cina), yang pada masa Majapahit berada di bawah Rakryan Kanuruhan.",
-        citation: "Bab 2.1.1 Makalah",
+        citation: "Prasasti Kencana (860 M); Dahana (2000)",
       },
       {
         id: "stat-reid-commerce",
@@ -852,7 +868,7 @@ export const exploitationData = {
         value: "Age of Commerce",
         label: "Kurun Niaga Asia Tenggara",
         context: "Periode keemasan perdagangan maritim di mana bandar Malaka, Banten, dan Makassar tumbuh pesat dengan pedagang Tionghoa dan koin kepeng sebagai penggerak utama.",
-        citation: "Anthony Reid dalam Bab 2.1.1",
+        citation: "Anthony Reid (1988, 1993)",
       },
       {
         id: "stat-pajak-kepala-1619",
@@ -860,7 +876,7 @@ export const exploitationData = {
         value: "1,5 Real / Bulan",
         label: "Pajak Kepala Pria Tionghoa (Usia 16–60)",
         context: "Dipungut melalui Kapitein der Chinezen (Souw Beng Kong) sebagai kompensasi pembebasan wajib militer/rodi benteng; menjadi sumber tunai paling stabil kas VOC Batavia.",
-        citation: "Bab 2.1.2 Makalah; Blussé (1988)",
+        citation: "Blussé (1988); Lohanda (2007)",
       },
       {
         id: "stat-geger-pecinan-1740",
@@ -868,7 +884,7 @@ export const exploitationData = {
         value: "> 10.000 Jiwa",
         label: "Korban Pembantaian di Batavia",
         context: "Tewas dalam pembantaian di bawah perintah Gubernur Jenderal Adriaan Valckenier sebelum meletusnya Perang Geger Pecinan (1740–1743) di seluruh Jawa.",
-        citation: "Daradjadi (2013); Bab 2.1.3",
+        citation: "Daradjadi (2013)",
       },
       {
         id: "stat-opiumpacht-1886",
@@ -1248,7 +1264,7 @@ export const colonialGlossaryData: ColonialGlossaryTerm[] = [
     term: "Picis / Uang Kepeng",
     definition: "Koin logam berbahan tembaga asal Tiongkok berbentuk lingkaran dengan lubang persegi di tengahnya yang diikat tali serat per 1.000 keping.",
     modernEquivalent: "Alat Tukar Resmi Majapahit",
-    contextNote: "Melahirkan revolusi finansial pertama di Nusantara yang menggantikan sistem barter murni (Subbab 2.1.1)."
+    contextNote: "Melahirkan revolusi finansial pertama di Nusantara yang menggantikan sistem barter murni di pasar desa hingga pelabuhan."
   },
   {
     term: "Juru Cina & Syahbandar",
@@ -1260,7 +1276,7 @@ export const colonialGlossaryData: ColonialGlossaryTerm[] = [
     term: "Tusschenpersoon (Middlemen Minority)",
     definition: "Posisi struktural masyarakat Tionghoa sebagai kelas perantara ekonomi yang menjembatani elite kolonial Eropa di tingkat atas dengan masyarakat pribumi di tingkat bawah.",
     modernEquivalent: "Minoritas Perantara / Buffer Class",
-    contextNote: "Menguasai distribusi eceran, kredit pedesaan, dan pembelian hasil bumi (Bab 1.1 & 2.3.1)."
+    contextNote: "Menguasai distribusi eceran, kredit pedesaan, dan pembelian hasil bumi di antara firma Eropa dan petani lokal."
   },
   {
     term: "Kapitein der Chinezen",
@@ -1296,13 +1312,13 @@ export const colonialGlossaryData: ColonialGlossaryTerm[] = [
     term: "Vreemde Oosterlingen (Timur Asing)",
     definition: "Golongan penduduk kelas dua dalam stratifikasi hukum Regeeringsreglement (di bawah Europeanen dan di atas Inlanders) yang mencakup etnis Tionghoa, Arab, dan India.",
     modernEquivalent: "Stratifikasi Hukum Kelas Dua",
-    contextNote: "Menciptakan diskriminasi hukum dan administrasi meskipun memiliki jaringan ekonomi kuat (Subbab 2.3.1)."
+    contextNote: "Menciptakan diskriminasi hukum dan administrasi meskipun memiliki jaringan ekonomi yang menopang koloni (Fauziah, 2009)."
   },
   {
     term: "Wijkenstelsel & Passenstelsel",
     definition: "Kebijakan segregasi kolonial yang mewajibkan etnis Tionghoa tinggal di kawasan khusus (Pecinan) dan mengantongi surat izin jalan saat bepergian antar-daerah.",
     modernEquivalent: "Segregasi Ruang & Izin Mobilitas",
-    contextNote: "Berfungsi sebagai instrumen pengawasan militer-politik kolonial pasca-Geger Pecinan hingga awal abad ke-20 (Subbab 2.3.2)."
+    contextNote: "Berfungsi sebagai instrumen pengawasan militer-politik kolonial pasca-Geger Pecinan hingga awal abad ke-20 (Nayati, 1985; Rush, 1990)."
   }
 ];
 
@@ -1360,10 +1376,10 @@ export const bremanCritiqueData: BremanCritiquePoint[] = [
 ];
 
 export const implementationData = {
-  sectionTitle: "Bab II (2.3) · Kedudukan Sosial dalam Struktur Masyarakat Kolonial",
-  sectionSubtitle: "Stratifikasi Hukum Vreemde Oosterlingen, Segregasi Wijkenstelsel & Passenstelsel, Tata Ruang Pecinan Banten, serta Dinamika Peranakan vs Totok",
+  sectionTitle: "Bab III · Kedudukan Sosial: Antara Harmoni Kesultanan & Sekat Hukum Kolonial",
+  sectionSubtitle: "Membedah politik pecah belah Tiga Golongan, institusi Kapiten, keragaman Peranakan–Totok, hingga kehangatan akulturasi di Kesultanan Banten",
   intro:
-    "Ketika kekuasaan kolonial Belanda semakin menguat, kedudukan masyarakat Tionghoa diatur secara ketat melalui sistem penggolongan penduduk dan pembatasan ruang gerak. Meskipun jaringan perdagangan dan modal mereka menopang perekonomian koloni, secara hukum mereka ditempatkan pada posisi kelas dua sebagai kelompok perantara (buffer class) yang rentan terhadap prasangka sosial maupun kontrol aparat.",
+    "Bandingkan dua lanskap sosial yang bertolak belakang ini: di masa kejayaan Kesultanan Nusantara, seorang saudagar Tionghoa Muslim seperti Kiyai Ngabehi Cakradana dipercaya Sultan Banten menjadi Syahbandar pelabuhan dan perancang tembok Istana Surosowan, menara Masjid Pacinan Tinggi berdiri anggun di jantung pemukiman, dan masyarakat Cina Benteng di tepian Sungai Cisadane Tangerang menyatu hangat dengan budaya Sunda serta Betawi. Sebaliknya, ketika negara kolonial Hindia Belanda menegakkan Regeeringsreglement 1854, keakraban lintas budaya itu dikurung di balik tembok hukum: masyarakat Tionghoa dikelompokkan sebagai Timur Asing (Vreemde Oosterlingen), diwajibkan tinggal di kawasan Pecinan terawasi (Wijkenstelsel), dan harus mengantongi surat izin jalan (Passenstelsel) setiap kali melangkah keluar kota—menjadikan mereka kelas penyangga (buffer class) yang menopang ekonomi koloni namun rentan menjadi sasaran prasangka sosial.",
   laws: [
     {
       ruleNumber: 1,
@@ -1792,8 +1808,8 @@ export const vocExpansionData: VocExpansionMechanism[] = [
 ];
 
 export const impactData = {
-  sectionTitle: "Dinamika Konflik, Pergerakan Politik & Penutup (Bab II–III)",
-  sectionSubtitle: "Tragedi Kolonial, Perlawanan Kongsi, Tiga Haluan Politik Abad ke-20, Sintesis Historiografi, serta Kesimpulan & Saran Makalah",
+  sectionTitle: "Pergulatan Sejarah, Tokoh Penggerak & Refleksi Lintas Zaman",
+  sectionSubtitle: "Dari tragedi Geger Pecinan 1740 dan Perang Kongsi hingga kebangkitan THHK 1900, pers Sin Po 1928, PTI 1932, serta sintesis sejarah masyarakat Tionghoa di Nusantara",
   famineCases: [
     {
       region: "Batavia & Ommelanden (Chinezenmoord)",
@@ -1842,7 +1858,7 @@ export const impactData = {
   positiveImpacts: [
     {
       title: "Revolusi Finansial Koin Kepeng & Monetisasi Pasar Nusantara",
-      description: "Peredaran koin tembaga Tiongkok (uang picis/kepeng) yang diadopsi Majapahit membebaskan ekonomi Nusantara dari kerumitan barter murni dan menghubungkan pasar desa pedalaman dengan perdagangan maritim internasional (Subbab 2.1.1).",
+      description: "Peredaran koin tembaga Tiongkok (uang picis/kepeng) yang diadopsi Majapahit membebaskan ekonomi Nusantara dari kerumitan barter murni dan menghubungkan pasar desa pedalaman dengan perdagangan maritim internasional (Reid, 1993; Dahana, 2000).",
     },
     {
       title: "Pembangunan Infrastruktur Kota, Pelabuhan & Industri Gula",
@@ -1869,7 +1885,7 @@ export const impactData = {
       period: "Abad ke-17",
       category: "Perintis Awal",
       keyContribution: "Tokoh Tionghoa Muslim kepercayaan Sultan Banten yang mengatur perdagangan lada internasional, menentukan tarif pajak pelabuhan, memeriksa keaslian uang dan timbangan, serta mengawasi pembangunan benteng pertahanan pesisir, tembok dinding kompleks Istana Surosowan, dan gudang penampungan lada.",
-      workOrCitation: "Kajian Subbab 2.1.1 & 2.3 · Fauziah (2009) & Fauziah & Rohman (2019)",
+      workOrCitation: "Fauziah (2009) · Nayati (1985) · Fauziah & Rohman (2019)",
       impactNote: "Simbol integrasi harmonis masyarakat Tionghoa dalam birokrasi, pertahanan, dan kehidupan Islam Kesultanan Nusantara pra-kolonial.",
       image: {
         src: "/images/pecinan-banten-cakradana.svg",
@@ -1885,7 +1901,7 @@ export const impactData = {
       period: "1619 – Abad ke-17",
       category: "Pakar Ekonomi & Agraria",
       keyContribution: "Saudagar lada kaya raya dan berpengaruh di Banten yang dibujuk Jan Pieterszoon Coen pindah ke Batavia pada 1619 dan diangkat menjadi Kapitein der Chinezen pertama. Ia meletakkan dasar pemerintahan tidak langsung (indirect rule), pengelolaan pajak kepala 1,5 real/bulan, pencatatan imigran, dan peradilan perdata komunitas Tionghoa.",
-      workOrCitation: "Kajian Subbab 2.1.2 · Blussé (1988) & Lohanda (2007)",
+      workOrCitation: "Blussé (1988) · Lohanda (2007) · Arsip VOC Batavia (1619)",
       impactNote: "Menjadikan komunitas Tionghoa tulang punggung pembangunan fisik, logistik, dan fiskal kota Batavia sejak awal berdirinya.",
       image: {
         src: "/images/batavia-souw-beng-kong.svg",
@@ -1960,9 +1976,9 @@ export const impactData = {
     },
   ] as HistoricalCritic[],
   reformContext: {
-    title: "Sintesis Akhir Makalah: Dari Minoritas Perantara Menuju Bagian Integral Bangsa Indonesia",
+    title: "Refleksi Lintas Zaman: Dari Pelayar Muson & Perantara Kolonial Menuju Bagian Utuh Bangsa Indonesia",
     narrative:
-      "Perjalanan sejarah masyarakat Tionghoa di Nusantara memperlihatkan hubungan yang sangat kompleks antara peran ekonomi, kebijakan kolonial, dan kedudukan sosial. Sejak masa pra-kolonial, mereka telah memperkenalkan penggunaan koin tembaga (kepeng) sebagai alat tukar dan berperan aktif dalam perdagangan serta pemerintahan kerajaan Nusantara. Memasuki masa kolonial, meskipun pemerintah Hindia Belanda sangat bergantung pada modal, jaringan distribusi, pajak pacht, serta tenaga kerja mereka di sektor industri gula, pertambangan, dan perkebunan, ketergantungan tersebut tidak diikuti dengan kesetaraan sosial dan hukum akibat penerapan segregasi Wijkenstelsel, Passenstelsel, dan penggolongan Timur Asing (Vreemde Oosterlingen). Kendati menghadapi diskriminasi dan pembatasan, masyarakat Tionghoa terus memberikan kontribusi nyata dalam bidang ekonomi, pendidikan modern (THHK), pers Melayu-Tionghoa, akulturasi budaya, hingga perjuangan kemerdekaan yang menjadi bagian penting dari sejarah perkembangan masyarakat Indonesia (Bab III Kesimpulan Makalah, hlm. 20–21).",
+      "Menengok kembali lima abad perjalanan masyarakat Tionghoa di Nusantara memperlihatkan betapa eratnya jalinan antara denyut pasar, rekayasa kekuasaan kolonial, dan ketangguhan sosial. Jauh sebelum hadirnya kekuasaan Eropa, pelayaran jung muson dan adopsi koin tembaga (kepeng) telah merajut kemitraan erat di pelabuhan-pelabuhan kerajaan Nusantara. Memasuki masa kolonial, meskipun pemerintah Hindia Belanda sangat bergantung pada modal, jaringan distribusi pedesaan, pajak pacht, serta keringat pekerja Tionghoa di sektor gula, tambang, dan perkebunan, ketergantungan itu justru dibalas dengan tembok segregasi Wijkenstelsel, surat jalan Passenstelsel, dan penggolongan hukum kelas dua sebagai Timur Asing (Vreemde Oosterlingen). Namun sejarah membuktikan bahwa mereka tidak pernah pasif: lewat sekolah modern Tiong Hoa Hwee Koan (1900), pers Melayu-Tionghoa yang mematangkan Bahasa Indonesia dan menyiarkan 'Indonesia Raya' (1928), akulturasi budaya yang hangat di Banten maupun Tangerang, hingga haluan Indonesierschap Partai Tionghoa Indonesia (1932), masyarakat Tionghoa ikut menempuh jalan panjang menuju Indonesia merdeka.",
   },
 };
 
@@ -1973,7 +1989,7 @@ export const peasantResistanceData: PeasantResistancePoint[] = [
     title: "Angkat Senjata di Luar Tembok Kota Batavia",
     locationOrYear: "Batavia & Ommelanden · Oktober 1740",
     description: "Ketika VOC mengeluarkan kebijakan membuang warga Tionghoa tanpa surat izin resmi ke Sri Lanka atau Kepulauan Banda dan beredar desas-desus bahwa mereka akan ditenggelamkan di tengah laut, kelompok buruh Tionghoa di luar tembok kota mengangkat senjata melawan kompeni.",
-    historicalImpact: "Gubernur Jenderal Adriaan Valckenier yang panik mengeluarkan perintah militer yang berujung pada pembantaian >10.000 warga Tionghoa di dalam kota Batavia (Subbab 2.1.3)."
+    historicalImpact: "Gubernur Jenderal Adriaan Valckenier yang panik mengeluarkan perintah militer yang berujung pada pembantaian >10.000 warga Tionghoa di dalam kota Batavia (Daradjadi, 2013)."
   },
   {
     id: "res-kartasura-1743",
@@ -2089,54 +2105,54 @@ export const vanReesReportData: VanReesReportSection[] = [
   {
     id: "kesimpulan-1-prakolonial",
     sectionNumber: 1,
-    title: "Kesimpulan I: Akar Perdagangan Maritim & Peran Pemerintahan Pra-Kolonial",
-    badge: "Bab III · 3.1 Kesimpulan",
+    title: "Benang Merah I: Akar Perdagangan Maritim & Kemitraan Kerajaan Nusantara",
+    badge: "Warisan Pra-Kolonial",
     findings: [
       "Masyarakat Tionghoa memiliki peranan penting dalam perkembangan perekonomian Nusantara sejak masa pra-kolonial hingga akhir pemerintahan Hindia Belanda.",
       "Sebelum kedatangan bangsa-bangsa Eropa, masyarakat Tionghoa telah terlibat aktif dalam jaringan perdagangan maritim dengan memperkenalkan penggunaan koin tembaga (uang picis/kepeng) yang menjadi alat tukar sah.",
       "Mereka juga berperan langsung dalam kegiatan perdagangan dan birokrasi pemerintahan di kerajaan-kerajaan Nusantara (seperti Juru Cina dan Syahbandar).",
       "Hubungan harmonis ini menjadi faktor pendorong utama tumbuhnya pusat-pusat perdagangan dan permukiman Tionghoa (Pecinan awal) di berbagai bandar strategis Nusantara."
     ],
-    significance: "Merangkum jawaban atas Rumusan Masalah 1 mengenai fondasi ekonomi masyarakat Tionghoa sebelum abad ke-19 (Bab III Penutup, hlm. 20)."
+    significance: "Menegaskan bahwa jaringan niaga dan permukiman Tionghoa di Nusantara berakar dari kemitraan damai berabad-abad sebelum kedatangan kolonialisme Eropa."
   },
   {
     id: "kesimpulan-2-kolonial",
     sectionNumber: 2,
-    title: "Kesimpulan II: Ekspansi Ekonomi Kolonial vs Ketidaksetaraan Sosial-Hukum",
-    badge: "Bab III · 3.1 Kesimpulan",
+    title: "Benang Merah II: Paradoks Tulang Punggung Ekonomi vs Sekat Hukum Kolonial",
+    badge: "Paradoks Kolonial",
     findings: [
       "Memasuki masa kolonial, peran ekonomi masyarakat Tionghoa semakin berkembang luas mencakup bidang perdagangan perantara, perpajakan (sistem pacht), pertanian, industri gula, pertambangan (timah dan emas), hingga perkebunan besar.",
       "Pemerintahan kolonial sangat bergantung pada modal serta jaringan perdagangan masyarakat Tionghoa karena mampu menunjang kas dan roda perekonomian Hindia Belanda.",
       "Namun, ketergantungan ekonomi yang besar ini tidak diikuti dengan kesetaraan kehidupan sosial dan hukum.",
       "Masyarakat Tionghoa masih menghadapi berbagai pembatasan diskriminatif, seperti segregasi permukiman (Wijkenstelsel), pembatasan mobilitas (Passenstelsel), serta penggolongan hukum kelas dua sebagai kelompok Timur Asing (Vreemde Oosterlingen)."
     ],
-    significance: "Merangkum jawaban atas Rumusan Masalah 2 dan 3 mengenai paradoks kebijakan kolonial Hindia Belanda (Bab III Penutup, hlm. 20)."
+    significance: "Mengungkap kontradiksi mendasar kekuasaan Hindia Belanda yang memetik keuntungan fiskal dari jaringan Tionghoa sambil mengurung mereka secara hukum dan teritorial."
   },
   {
     id: "kesimpulan-3-kontribusi",
     sectionNumber: 3,
-    title: "Kesimpulan III: Ketangguhan Sosial, Pendidikan, Organisasi & Kebudayaan",
-    badge: "Bab III · 3.1 Kesimpulan",
+    title: "Benang Merah III: Ketangguhan Budaya, Pendidikan Modern & Fajar Kebangsaan",
+    badge: "Integrasi Bangsa",
     findings: [
       "Sejarah masyarakat Tionghoa di wilayah Nusantara menunjukkan hubungan yang kompleks antara peran ekonomi, kebijakan kolonial, serta kedudukan sosial.",
       "Meskipun menghadapi perlakuan diskriminasi, kekerasan (seperti Geger Pecinan 1740 dan rezim poenale sanctie), serta berbagai pembatasan ruang gerak, masyarakat Tionghoa tidak bersikap pasif.",
       "Mereka tetap berupaya mengembangkan aktivitas ekonomi, mempelopori pendidikan modern (THHK 1900), membangun organisasi dan pers Melayu-Tionghoa, serta memperkaya akulturasi kebudayaan.",
       "Seluruh dinamika tersebut menjadi bagian integral dan tak terpisahkan dari sejarah perkembangan masyarakat dan bangsa Indonesia."
     ],
-    significance: "Sintesis penutup Bab 3.1 Kesimpulan Makalah Kelompok 8 (hlm. 20)."
+    significance: "Menunjukkan transformasi masyarakat Tionghoa dari komunitas perantara yang tertekan menjadi kekuatan pembaru pendidikan, bahasa, dan perjuangan kemerdekaan Indonesia."
   },
   {
     id: "saran-makalah-4",
     sectionNumber: 4,
-    title: "Saran Penulisan (3.2): Perspektif Multidimensi & Keberagaman Sumber",
-    badge: "Bab III · 3.2 Saran",
+    title: "Refleksi Historiografis: Membaca Sejarah Secara Utuh & Melampaui Stereotip",
+    badge: "Refleksi Sejarah",
     findings: [
-      "Kajian mengenai sejarah masyarakat Tionghoa di Nusantara disarankan untuk terus dikembangkan, khususnya dalam melihat keterkaitan antara aktivitas perekonomian, kebijakan kolonial, dan kehidupan sosial masyarakat.",
-      "Pengetahuan serta pemahaman terhadap sejarah ini sangat penting agar masyarakat tidak lagi hanya memandang komunitas Tionghoa dari peran ekonominya semata.",
-      "Masyarakat diharapkan mampu memahami kontribusi luas komunitas Tionghoa dalam bidang sosial, pendidikan, bahasa, dan kebudayaan Nusantara.",
-      "Penggunaan sumber sejarah yang beragam dan terpercaya sangat diperlukan agar pembahasan mengenai masyarakat Tionghoa memberikan gambaran yang utuh serta menghindari pandangan berlebihan atau stereotip terhadap etnis tertentu."
+      "Penelusuran sejarah masyarakat Tionghoa di Nusantara perlu terus dihadirkan secara utuh dengan merangkai keterkaitan antara denyut perekonomian, kebijakan kolonial, dan kehidupan sosial sehari-hari.",
+      "Pemahaman sejarah yang mendalam penting agar kita tidak lagi mereduksi komunitas Tionghoa semata-mata dari peranan ekonominya.",
+      "Melalui perspektif yang berimbang, kita dapat mengapresiasi kontribusi luas komunitas Tionghoa dalam dunia pendidikan modern, pematangan Bahasa Indonesia, arsitektur, dan akulturasi budaya Nusantara.",
+      "Keberagaman sumber sejarah yang tepercaya membantu memupuskan prasangka dan stereotip warisan kolonial yang pernah membelah masyarakat Nusantara."
     ],
-    significance: "Rekomendasi reflektif Bab 3.2 Saran Makalah Kelompok 8 (hlm. 20–21)."
+    significance: "Mengajak pembaca menelusuri jejak masyarakat Tionghoa secara jernih, empatik, dan berbasis sumber sejarah yang kaya—melampaui sekat-sekat prasangka warisan kolonial."
   }
 ];
 
@@ -2413,7 +2429,7 @@ export const spatialMarkersData: SpatialMarker[] = [
       statistics: "Bagian utama jaringan Kurun Niaga Asia Tenggara (1450–1680) sebelum monopoli penuh VOC.",
       impactSummary: "Menghubungkan komoditas hutan dan laut Indonesia Timur langsung dengan pasar konsumen Kekaisaran Tiongkok.",
       vanDenBoschPolicyNote: "Komunitas Tionghoa melebur dalam ekosistem perkotaan pelabuhan Nusantara sebagai mitra dagang penguasa lokal.",
-      archivalReference: "Anthony Reid dalam Subbab 2.1.1 Makalah; Al Qurtuby & Kholiludin (2021)."
+      archivalReference: "Anthony Reid (Age of Commerce, 1450–1680); Al Qurtuby & Kholiludin (2021)."
     }
   }
 ];
@@ -2469,7 +2485,7 @@ export const currencyConversionBenchmarks: CurrencyBenchmark[] = [
     guldenAmount: 3.75,
     modernIdrEstimate: 656250,
     historicalRole: "Kewajiban pajak kepala bulanan setiap pria Tionghoa dewasa (usia 16–60 tahun) di Batavia sejak 1619 sebagai kompensasi bebas wajib militer/rodi benteng.",
-    disparityDescription: "Setara ~Rp 656.250 per bulan (atau ~18 real / 45 gulden per tahun); menjadi salah satu sumber pendapatan tunai paling stabil bagi kas VOC di Batavia (Subbab 2.1.2)."
+    disparityDescription: "Setara ~Rp 656.250 per bulan (atau ~18 real / 45 gulden per tahun); menjadi salah satu sumber pendapatan tunai paling stabil bagi kas VOC di Batavia (Blussé, 1988; Lohanda, 2007)."
   },
   {
     id: "kuli-deli-debt",
@@ -2505,7 +2521,7 @@ export const unitConversionData: UnitConversion[] = [
     metricEquivalent: "1.000 Keping Koin Tembaga Berlubang Persegi",
     baseMultiplier: 1000,
     unitCategory: "populasi",
-    historicalUsage: "Di era Kerajaan Majapahit dan bandar pesisir Nusantara, koin tembaga Tiongkok (picis/kepeng) diikat menggunakan tali serat tanaman per 1.000 keping untuk memudahkan transaksi jumlah besar, memicu revolusi finansial pertama pengganti barter (Subbab 2.1.1)."
+    historicalUsage: "Di era Kerajaan Majapahit dan bandar pesisir Nusantara, koin tembaga Tiongkok (picis/kepeng) diikat menggunakan tali serat tanaman per 1.000 keping untuk memudahkan transaksi jumlah besar, memicu revolusi finansial pertama pengganti barter (Reid, 1993; Dahana, 2000)."
   },
   {
     id: "unit-pikul",
@@ -2583,7 +2599,7 @@ export const historicalDilemmasData: HistoricalDilemmaScenario[] = [
     historicalEpilogue: {
       whatActuallyHappened: "Dalam sejarah nyata Oktober 1740, warga di dalam tembok kota Batavia menjadi korban pembantaian (>10.000 jiwa tewas) dan Kapiten Nie Hoe Kong ditangkap meskipun pro-kolonial. Sementara itu, para penyintas di bawah Khe Panjang dan Tan Sin Ko mengobarkan Perang Geger Pecinan (1740–1743) bersama pasukan Mataram, dan gelombang pelarian lainnya menumbuhkan pusat-pusat Peranakan di Cirebon, Brebes, Tegal, Pekalongan, Semarang, Lasem, hingga Tuban.",
       historicalOutcome: "VOC mengubah total kebijakan pengawasannya dengan mewajibkan warga Tionghoa tinggal terisolasi di kawasan Pecinan di luar benteng kota (cikal bakal Wijkenstelsel).",
-      archivalSource: "Daradjadi (2013), Geger Pacinan 1740–1743: Persekutuan Tionghoa-Jawa Melawan VOC · Subbab 2.1.3 Makalah."
+      archivalSource: "Daradjadi (2013), Geger Pacinan 1740–1743: Persekutuan Tionghoa-Jawa Melawan VOC."
     }
   },
   {
@@ -2632,7 +2648,7 @@ export const historicalDilemmasData: HistoricalDilemmaScenario[] = [
     historicalEpilogue: {
       whatActuallyHappened: "Di Kalimantan Barat, Kongsi Lanfang di Mandor baru dapat ditundukkan Belanda lewat perang Oktober 1884 hingga Februari 1885, dan setelah itu banyak warga Tionghoa beralih menjadi petani lada, karet, serta pedagang pedalaman (Yuan, 2000; Heidhues, 2003). Sementara itu di Deli, ratusan ribu kuli sinkeh yang direkrut via khehtau mengalami eksploitasi berat di bawah poenale sanctie (Breman, 1989; Stoler, 1985).",
       historicalOutcome: "Memperlihatkan kontras tajam antara kemandirian ekonomi pekebun/pedagang dengan penderitaan buruh kontrak perkebunan kolonial di Luar Jawa.",
-      archivalSource: "Yuan (2000); Heidhues (1992, 2003); Breman (1989); Stoler (1985) · Subbab 2.2.2 Makalah."
+      archivalSource: "Yuan (2000); Heidhues (1992, 2003); Breman (1989); Stoler (1985)."
     }
   },
   {
@@ -2681,7 +2697,7 @@ export const historicalDilemmasData: HistoricalDilemmaScenario[] = [
     historicalEpilogue: {
       whatActuallyHappened: "Ketiga aliran ini hidup berdampingan dan mewarnai ruang publik pers Melayu-Tionghoa pada dekade 1910–1930-an. Harian Sin Po berjasa mencetak perdana naskah lagu 'Indonesia Raya' (November 1928) dan mematangkan bahasa Melayu Pasar menjadi Bahasa Indonesia, sementara haluan Indonesierschap Partai Tionghoa Indonesia (Liem Koen Hian, 1932) menjadi fondasi integrasi kewarganegaraan Tionghoa di Republik Indonesia.",
       historicalOutcome: "Membuktikan kontribusi besar pers, pendidikan, dan gerakan politik Tionghoa dalam pembentukan identitas kebangsaan Indonesia modern.",
-      archivalSource: "Leo Suryadinata (1981, 2020) & Ahmat Adam (1995) · Subbab 2.2.3 Makalah."
+      archivalSource: "Leo Suryadinata (1981, 2020) & Ahmat Adam (1995)."
     }
   }
 ];
@@ -2840,7 +2856,7 @@ export const bibliographyData: BibliographyItem[] = [
     authors: "Rush, J. R.",
     year: "1990",
     title: "Opium to Java: Revenue farming and Chinese enterprise in colonial Indonesia, 1860–1910",
-    publisher: "Cornell University Press (Rujukan Subbab 2.2.1 & 2.2.2)",
+    publisher: "Cornell University Press",
     type: "Buku",
     fullCitation: "Rush, J. R. (1990). Opium to Java: Revenue farming and Chinese enterprise in colonial Indonesia, 1860–1910. Cornell University Press."
   },
@@ -2849,7 +2865,7 @@ export const bibliographyData: BibliographyItem[] = [
     authors: "Diehl, F. W.",
     year: "1993",
     title: "Revenue farming and colonial finances in the Netherlands East Indies, 1816–1925",
-    publisher: "Dalam J. Butcher & H. Dick (Ed.), The Rise and Fall of Revenue Farming (Rujukan Subbab 2.2.1)",
+    publisher: "Dalam J. Butcher & H. Dick (Ed.), The Rise and Fall of Revenue Farming",
     type: "Buku",
     fullCitation: "Diehl, F. W. (1993). Revenue farming and colonial finances in the Netherlands East Indies, 1816–1925. Dalam J. Butcher & H. Dick (Ed.), The Rise and Fall of Revenue Farming."
   },
@@ -2858,7 +2874,7 @@ export const bibliographyData: BibliographyItem[] = [
     authors: "Heidhues, M. S.",
     year: "1992 & 2003",
     title: "Bangka tin and Mentok pepper (1992) & Golddiggers, farmers, and traders in the 'Chinese Districts' of West Kalimantan (2003)",
-    publisher: "ISEAS & Cornell SEAP (Rujukan Subbab 2.2.2)",
+    publisher: "ISEAS & Cornell SEAP",
     type: "Buku",
     fullCitation: "Heidhues, M. S. (1992). Bangka tin and Mentok pepper: Chinese settlement on an Indonesian island. ISEAS; Heidhues, M. S. (2003). Golddiggers, farmers, and traders in the 'Chinese Districts' of West Kalimantan, Indonesia. Cornell SEAP."
   },
@@ -2867,7 +2883,7 @@ export const bibliographyData: BibliographyItem[] = [
     authors: "Suryadinata, L.",
     year: "1981 & 2020",
     title: "Peranakan Chinese politics in Java, 1917–1942 & Kajian Sosiokultural Tionghoa Indonesia",
-    publisher: "Singapore University Press (Rujukan Subbab 2.2.3)",
+    publisher: "Singapore University Press",
     type: "Buku",
     fullCitation: "Suryadinata, L. (1981). Peranakan Chinese politics in Java, 1917–1942. Singapore University Press."
   },
@@ -2876,7 +2892,7 @@ export const bibliographyData: BibliographyItem[] = [
     authors: "Adam, A.",
     year: "1995",
     title: "The vernacular press and the emergence of modern Indonesian consciousness (1855–1913)",
-    publisher: "Cornell Southeast Asia Program (Rujukan Subbab 2.2.3)",
+    publisher: "Cornell Southeast Asia Program",
     type: "Buku",
     fullCitation: "Adam, A. (1995). The vernacular press and the emergence of modern Indonesian consciousness (1855–1913). Cornell University Press."
   },
@@ -2885,7 +2901,7 @@ export const bibliographyData: BibliographyItem[] = [
     authors: "Breman, J. (1989) & Stoler, A. L. (1985)",
     year: "1985 & 1989",
     title: "Taming the Coolie Beast (Breman, 1989) & Capitalism and Confrontation in Sumatra's Plantation Belt (Stoler, 1985)",
-    publisher: "Oxford University Press & Yale University Press (Rujukan Subbab 2.2.2)",
+    publisher: "Oxford University Press & Yale University Press",
     type: "Buku",
     fullCitation: "Breman, J. (1989). Taming the coolie beast: Plantation society and the colonial order in Southeast Asia. Oxford University Press; Stoler, A. L. (1985). Capitalism and confrontation in Sumatra's plantation belt. Yale University Press."
   },

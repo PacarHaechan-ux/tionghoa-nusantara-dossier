@@ -25,6 +25,7 @@ dist-ssr
 
 # Agent directory
 .agent/
+.superpowers/
 
 # Impeccable runtime & ephemeral artifacts (keep design.json & surfaces/)
 .impeccable/*
