@@ -762,10 +762,10 @@ export const exploitationData = {
       burdenLevel: "Sangat Berat",
       fact: "Tiga Perang Kongsi di Kalimantan Barat (1822–1885) menandai perlawanan terpanjang federasi otonom penambang Tionghoa terhadap ekspansi militer kolonial Belanda.",
       image: {
-        src: "/images/kongsi-timah-deli.svg",
-        alt: "Ilustrasi Arsip Pertambangan Timah Bangka-Belitung dan Perang Kongsi Kalimantan Barat",
-        caption: "Organisasi parit/kongsi tambang timah Hakka di Bangka-Belitung serta federasi otonom penambang emas Kongsi Thaikong dan Lanfang di Kalimantan Barat.",
-        archiveSource: "Heidhues (1992, 2003) · Mollema (1922) · Kamp (1960) · Yuan (2000)"
+        src: "/images/tugu-mandor.jpg",
+        alt: "Foto Arsip Tugu Peringatan Pertempuran Mandor (Perang Kongsi Lanfang 1884–1885) di Kalimantan Barat",
+        caption: "Tugu peringatan Pertempuran Mandor (Oktober 1884 – Februari 1885) di Kalimantan Barat—saksi bisu perlawanan sengit federasi otonom Kongsi Lanfang dan Kongsi Thaikong terhadap ekspansi militer kolonial Belanda.",
+        archiveSource: "Koleksi KITLV / Tropenmuseum · Heidhues (2003) · Yuan (2000)"
       }
     },
     {
@@ -1564,10 +1564,10 @@ export const implementationData = {
       ],
       historicalFigures: ["John Loudon", "Jacob Nienhuys", "Kongsi Thaikong (Monterado)", "Kongsi Lanfang (Mandor)"],
       image: {
-        src: "/images/kongsi-timah-deli.svg",
-        alt: "Kongsi Tambang dan Kuli Kontrak Deli",
-        caption: "Tiga Perang Kongsi Kalimantan Barat, tambang timah Bangka-Belitung, dan kuli kontrak Deli.",
-        archiveSource: "Heidhues (1992, 2003) · Yuan (2000) · Breman (1989)"
+        src: "/images/tugu-mandor.jpg",
+        alt: "Foto Arsip Tugu Pertempuran Mandor (Perang Kongsi Kalimantan Barat 1884–1885)",
+        caption: "Tugu peringatan Pertempuran Mandor (1884–1885) yang menandai berakhirnya perlawanan bersenjata Kongsi Lanfang di Kalimantan Barat melawan kolonial Belanda.",
+        archiveSource: "KITLV · Heidhues (1992, 2003) · Yuan (2000)"
       }
     },
     {
