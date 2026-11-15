@@ -523,9 +523,9 @@ export const backgroundData = {
       impact: "Anjloknya harga gula dunia di paruh pertama abad ke-18 membuat puluhan pabrik penggilingan gula di Ommelanden Batavia bangkrut dan memicu pengangguran ribuan buruh imigran (singkek). Rencana sewenang-wenang VOC untuk mendeportasi warga Tionghoa tanpa surat izin ke Sri Lanka atau Banda—disertai desas-desus bahwa mereka akan ditenggelamkan di tengah laut—menyulut perlawanan. Pada Oktober 1740, di bawah perintah Gubernur Jenderal Adriaan Valckenier, serdadu VOC membantai lebih dari 10.000 jiwa warga Tionghoa di Batavia dan memenjarakan Kapiten Nie Hoe Kong. Para penyintas di bawah pimpinan Sepanjang (Khe Panjang) dan Singseh (Tan Sin Ko) bergerak ke timur dan bersekutu dengan prajurit Mataram dalam Perang Geger Pecinan (1740–1743), sempat menduduki keraton Kartasura, serta melahirkan diaspora Pecinan di sepanjang pesisir utara Jawa.",
       cost: "> 10.000 Jiwa Tewas & Perang Jawa 1740–1743",
       image: {
-        src: "/images/geger-pecinan-1740.svg",
-        alt: "Ilustrasi Arsip Tragedi Pembantaian Batavia Oktober 1740 dan Perang Geger Pecinan 1740–1743",
-        caption: "Tragedi Oktober 1740 di Batavia yang menewaskan lebih dari 10.000 jiwa etnis Tionghoa, disusul aliansi militer Tionghoa-Jawa (Khe Panjang & Tan Sin Ko) melawan VOC serta lahirnya jaringan Pecinan Pantura.",
+        src: "/images/khe-panjang.jpg",
+        alt: "Monumen Patung Sepanjang (Khe Panjang), Panglima Perang Geger Pecinan 1740–1743",
+        caption: "Sepanjang (Khe Panjang / Oei Panko), pemimpin laskar Tionghoa yang selamat dari pembantaian Batavia Oktober 1740 dan menjalin aliansi militer bersama prajurit Jawa melawan VOC (1740–1743).",
         archiveSource: "Daradjadi (2013), Geger Pacinan 1740–1743: Persekutuan Tionghoa-Jawa Melawan VOC"
       }
     },
@@ -1518,9 +1518,9 @@ export const implementationData = {
       ],
       historicalFigures: ["Adriaan Valckenier", "Kapiten Nie Hoe Kong", "Sepanjang (Khe Panjang)", "Singseh (Tan Sin Ko)"],
       image: {
-        src: "/images/geger-pecinan-1740.svg",
-        alt: "Geger Pecinan 1740–1743",
-        caption: "Pembantaian Oktober 1740 di Batavia dan Perang Geger Pecinan (1740–1743) di Jawa.",
+        src: "/images/khe-panjang.jpg",
+        alt: "Monumen Patung Sepanjang (Khe Panjang) dalam Perang Geger Pecinan 1740–1743",
+        caption: "Sepanjang (Khe Panjang), panglima laskar Tionghoa dalam aliansi Perang Geger Pecinan (1740–1743) di Jawa.",
         archiveSource: "Daradjadi (2013)"
       }
     },
@@ -1920,9 +1920,9 @@ export const impactData = {
       workOrCitation: "Daradjadi (2013), Geger Pacinan 1740–1743: Persekutuan Tionghoa-Jawa Melawan VOC",
       impactNote: "Perang gerilya lintas-etnis terbesar abad ke-18 yang membuat VOC nyaris bangkrut dan melahirkan diaspora Pecinan di sepanjang pesisir utara Jawa.",
       image: {
-        src: "/images/geger-pecinan-1740.svg",
-        alt: "Ilustrasi Arsip Perang Geger Pecinan Khe Panjang dan Tan Sin Ko",
-        caption: "Perjuangan bersenjata Khe Panjang (Sepanjang) dan Tan Sin Ko (Singseh) bersama pasukan Mataram melawan VOC (1740–1743).",
+        src: "/images/khe-panjang.jpg",
+        alt: "Potret Patung Sepanjang (Khe Panjang), Panglima Perang Geger Pecinan 1740–1743",
+        caption: "Sepanjang (Khe Panjang / Oei Panko), panglima laskar Tionghoa dalam aliansi militer Tionghoa-Jawa melawan VOC (1740–1743).",
         archiveSource: "Daradjadi (2013)"
       }
     },
