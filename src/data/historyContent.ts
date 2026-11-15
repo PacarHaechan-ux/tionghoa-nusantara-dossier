@@ -497,10 +497,10 @@ export const backgroundData = {
       impact: "Dalam kurun niaga Asia Tenggara (Age of Commerce, 1450–1680) sebagaimana dipetakan sejarawan Anthony Reid, para pelaut dan saudagar Tionghoa menghidupkan bandar Malaka, Banten, Tuban, Gresik, Palembang, dan Makassar. Masuknya koin tembaga berlubang persegi (picis/kepeng) yang diikat per 1.000 keping membebaskan transaksi Nusantara dari kelemahan barter murni dan memicu monetisasi pasar desa hingga pelabuhan. Di lingkungan istana, Prasasti Kencana (860 M) mencatat jabatan resmi Juru Cina (yang diperkuat di bawah Rakryan Kanuruhan pada era Majapahit), sementara di Kesultanan Banten abad ke-17 saudagar Tionghoa Muslim Tantseko dipercaya menyandang gelar Kiyai Ngabehi Cakradana sebagai Syahbandar utama sekaligus arsitek benteng pesisir, tembok Istana Surosowan, dan gudang lada.",
       cost: "Monetisasi Koin Kepeng & Integrasi Syahbandar",
       image: {
-        src: "/images/peta-angin-muson.jpg",
-        alt: "Peta Siklus Angin Muson Timur Laut dan Barat Daya dalam Pelayaran Jung Tiongkok–Nusantara",
-        caption: "Peta arah hembusan angin muson timur laut (November–Maret, membawa jung dari Tiongkok Selatan ke Nusantara) dan muson barat daya/tenggara (Mei–September, membawa jung kembali ke utara) yang melahirkan masa tunggu dan permukiman Pecinan awal.",
-        archiveSource: "Kronik Faxian (Abad V) · Anthony Reid (Age of Commerce, 1450–1680)"
+        src: "/images/kapal-jung.jpg",
+        alt: "Litografi Arsip Kapal Jung Dagang Tiongkok di Jalur Sutra Maritim Nusantara",
+        caption: "Kapal jung dagang Tiongkok yang berlayar mengikuti siklus angin muson menuju pelabuhan Banten, Malaka, Tuban, Gresik, dan Palembang dengan membawa sutra, porselen, serta untaian koin tembaga kepeng.",
+        archiveSource: "Kronik Faxian (Abad V) · Prasasti Kencana (860 M) · Anthony Reid (Age of Commerce, 1450–1680)"
       }
     },
     {

@@ -23,8 +23,20 @@ interface CuratorialPlate {
 
 const curatorialPlates: CuratorialPlate[] = [
   {
+    id: 'plate-kapal-jung',
+    shortLabel: 'Kapal Jung',
+    year: 'Abad V–XVII',
+    title: 'Pelayaran Kapal Jung Tiongkok di Jalur Sutra Maritim Nusantara',
+    image: {
+      src: '/images/kapal-jung.jpg',
+      alt: 'Litografi Bersejarah Kapal Jung Dagang Tiongkok (The Chinese Junk)',
+      caption: 'Kapal jung berlayar tiga tiang dari pesisir Fujian dan Guangdong yang mengarungi Laut Tiongkok Selatan menuju bandar Tuban, Gresik, Malaka, Palembang, dan Banten dengan membawa sutra, porselen, serta untaian uang kepeng.',
+      archiveSource: 'Litografi Maritim Abad ke-19 · Kronik Faxian (Abad V) · Anthony Reid (Age of Commerce, 1450–1680)',
+    },
+  },
+  {
     id: 'plate-angin-muson',
-    shortLabel: 'Siklus Angin Muson',
+    shortLabel: 'Angin Muson',
     year: 'Nov–Mar & Mei–Sep',
     title: 'Peta Siklus Angin Muson Pelayaran Jung Tiongkok–Nusantara',
     image: {
@@ -37,7 +49,7 @@ const curatorialPlates: CuratorialPlate[] = [
   {
     id: 'plate-maritim-kepeng',
     shortLabel: 'Koin Kepeng',
-    year: 'Abad V–XVII',
+    year: 'Majapahit–Banten',
     title: 'Revolusi Finansial Untaian Koin Tembaga Kepeng (Uang Picis)',
     image: heroData.image,
   },
