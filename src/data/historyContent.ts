@@ -520,7 +520,7 @@ export const backgroundData = {
       id: "geger-pecinan-1740",
       name: "Oktober Berdarah 1740 & Bara Persekutuan Jawa–Tionghoa",
       years: "1740 – 1743",
-      impact: "Anjloknya harga gula dunia di paruh pertama abad ke-18 membuat puluhan pabrik penggilingan gula di Ommelanden Batavia bangkrut dan memicu pengangguran ribuan buruh imigran (singkek). Rencana sewenang-wenang VOC untuk mendeportasi warga Tionghoa tanpa surat izin ke Sri Lanka atau Banda—disertai desas-desus bahwa mereka akan ditenggelamkan di tengah laut—menyulut perlawanan. Pada Oktober 1740, di bawah perintah Gubernur Jenderal Adriaan Valckenier, serdadu VOC membantai lebih dari 10.000 jiwa warga Tionghoa di Batavia dan memenjarakan Kapiten Nie Hoe Kong. Para penyintas di bawah pimpinan Sepanjang (Khe Panjang) dan Singseh (Tan Sin Ko) bergerak ke timur dan bersekutu dengan prajurit Mataram dalam Perang Geger Pecinan (1740–1743), sempat menduduki keraton Kartasura, serta melahirkan diaspora Pecinan di sepanjang pesisir utara Jawa.",
+      impact: "Anjloknya harga gula dunia di paruh pertama abad ke-18 membuat puluhan pabrik penggilingan gula di Ommelanden Batavia bangkrut dan memicu pengangguran ribuan buruh imigran (singkek). Rencana sewenang-wenang VOC untuk mendeportasi warga Tionghoa tanpa surat izin ke Sri Lanka atau Banda—disertai desas-desus bahwa mereka akan ditenggelamkan di tengah laut—menyulut perlawanan. Pada Oktober 1740, di bawah perintah Gubernur Jenderal Adriaan Valckenier, serdadu VOC membantai lebih dari 10.000 jiwa warga Tionghoa di Batavia dan memenjarakan Kapiten Nie Hoe Kong. Para penyintas di bawah pimpinan Sepanjang (Khe Panjang) dan Singseh (Tan Sin Ko, sahabat seperjuangan Raden Mas Said yang bertempur di Demak, Grobogan, Welahan, Kudus, Pati, Juwana, hingga gugur dipenggal di Lasem pada Oktober 1742) bergerak ke timur dan bersekutu dengan prajurit Mataram dalam Perang Geger Pecinan (1740–1743), sempat menduduki keraton Kartasura, serta melahirkan diaspora Pecinan di sepanjang pesisir utara Jawa.",
       cost: "> 10.000 Jiwa Tewas & Perang Jawa 1740–1743",
       image: {
         src: "/images/khe-panjang.jpg",
@@ -1510,18 +1510,18 @@ export const implementationData = {
       fullDesc: [
         "Jatuhnya harga gula dunia membuat puluhan pabrik gula di Ommelanden bangkrut dan ribuan buruh imigran (singkek) menganggur. Rencana VOC membuang warga Tionghoa tanpa izin ke Sri Lanka/Banda memicu desas-desus penenggelaman di laut.",
         "Pada Oktober 1740, atas perintah Gubernur Jenderal Adriaan Valckenier, serdadu VOC membantai lebih dari 10.000 warga Tionghoa di Batavia, membakar rumah mereka, dan memenjarakan Kapiten Nie Hoe Kong.",
-        "Penyintas yang dipimpin Sepanjang (Khe Panjang) dan Singseh (Tan Sin Ko) beraliansi dengan bangsawan Mataram dalam Perang Geger Pecinan (1740–1743), merebut benteng VOC, dan menduduki keraton Kartasura."
+        "Penyintas yang dipimpin Sepanjang (Khe Panjang) dan Singseh (Tan Sin Ko, sahabat Raden Mas Said yang berperang di Demak, Grobogan, Welahan, Kudus, Pati, Juwana, dan gugur dipenggal di Lasem tahun 1742) beraliansi dengan bangsawan Mataram dalam Perang Geger Pecinan (1740–1743), merebut benteng VOC, dan menduduki keraton Kartasura."
       ],
       impactPoints: [
         "Lahirnya aturan segregasi Pecinan di luar benteng kota agar mudah diawasi militer Belanda.",
         "Diaspora pelarian Tionghoa menumbuhkan pusat ekonomi dan budaya Peranakan di Cirebon, Brebes, Tegal, Pekalongan, Semarang, Lasem, hingga Tuban."
       ],
-      historicalFigures: ["Adriaan Valckenier", "Kapiten Nie Hoe Kong", "Sepanjang (Khe Panjang)", "Singseh (Tan Sin Ko)"],
+      historicalFigures: ["Adriaan Valckenier", "Kapiten Nie Hoe Kong", "Sepanjang (Khe Panjang)", "Singseh (Tan Sin Ko)", "Raden Mas Said"],
       image: {
-        src: "/images/khe-panjang.jpg",
-        alt: "Monumen Patung Sepanjang (Khe Panjang) dalam Perang Geger Pecinan 1740–1743",
-        caption: "Sepanjang (Khe Panjang), panglima laskar Tionghoa dalam aliansi Perang Geger Pecinan (1740–1743) di Jawa.",
-        archiveSource: "Daradjadi (2013)"
+        src: "/images/makam-tan-sin-ko.jpg",
+        alt: "Monumen Makam Panglima Tan Sin Ko alias Singseh di Lasem (Gugur Oktober 1742)",
+        caption: "Monumen Makam Panglima Tan Sin Ko alias Singseh di Lasem yang gugur pada Oktober 1742 dalam Perang Geger Pecinan (1740–1743) melawan VOC.",
+        archiveSource: "Situs Sejarah Lasem · Daradjadi (2013)"
       }
     },
     {
@@ -1912,8 +1912,8 @@ export const impactData = {
     },
     {
       id: "tokoh-khe-panjang",
-      name: "Sepanjang (Khe Panjang) & Singseh (Tan Sin Ko)",
-      role: "Panglima Perang Geger Pecinan & Aliansi Tionghoa-Jawa",
+      name: "Sepanjang (Khe Panjang / Oei Panko)",
+      role: "Panglima Laskar Tionghoa dalam Perang Geger Pecinan",
       period: "1740 – 1743",
       category: "Investigasi Lapangan",
       keyContribution: "Memimpin para pejuang Tionghoa yang selamat dari pembantaian Oktober 1740 di Batavia bergerak ke timur Pulau Jawa dan menjalin aliansi militer strategis dengan para bangsawan Kerajaan Mataram. Pasukan gabungan Tionghoa-Jawa ini merebut benteng-benteng VOC di pesisir utara dan sempat menduduki istana kerajaan di Kartasura.",
@@ -1924,6 +1924,22 @@ export const impactData = {
         alt: "Potret Patung Sepanjang (Khe Panjang), Panglima Perang Geger Pecinan 1740–1743",
         caption: "Sepanjang (Khe Panjang / Oei Panko), panglima laskar Tionghoa dalam aliansi militer Tionghoa-Jawa melawan VOC (1740–1743).",
         archiveSource: "Daradjadi (2013)"
+      }
+    },
+    {
+      id: "tokoh-tan-sin-ko",
+      name: "Tan Sin Ko (Singseh)",
+      role: "Panglima Laskar Tionghoa-Jawa & Pahlawan Perang Kuning Lasem",
+      period: "1740 – Gugur Oktober 1742",
+      category: "Investigasi Lapangan",
+      keyContribution: "Panglima perang laskar Tionghoa-Jawa sekaligus sahabat seperjuangan Raden Mas Said (Pangeran Sambernyawa) dalam Perang Geger Pecinan / Perang Kuning (1740–1743) melawan VOC. Ia memimpin pertempuran sengit di Demak, Grobogan, Welahan, Kudus, Pati, Juwana, hingga Lasem sebelum gugur dipenggal di Lasem pada Oktober 1742.",
+      workOrCitation: "Daradjadi (2013) · Monumen Makam Tan Sin Ko alias Singseh di Lasem",
+      impactNote: "Simbol pengorbanan tertinggi dan persaudaraan darah prajurit Tionghoa dan Jawa dalam melawan penjajahan VOC di pesisir utara Jawa.",
+      image: {
+        src: "/images/makam-tan-sin-ko.jpg",
+        alt: "Monumen Makam Tan Sin Ko alias Singseh di Lasem (Gugur Oktober 1742)",
+        caption: "Monumen Makam Tan Sin Ko alias Singseh di Lasem—Panglima Laskar Tionghoa/Jawa dan sahabat Raden Mas Said yang bertempur di Demak, Grobogan, Welahan, Kudus, Pati, Juwana, hingga gugur di Lasem pada Oktober 1742.",
+        archiveSource: "Situs Sejarah Lasem · Daradjadi (2013)"
       }
     },
     {
