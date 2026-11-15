@@ -536,10 +536,10 @@ export const backgroundData = {
       impact: "Memasuki abad ke-19, pemerintah Hindia Belanda menjadikan jaringan saudagar Cabang Atas sebagai pemegang lelang pajak (pachtstelsel, dengan opiumpacht menyumbang ~18% APBN kolonial) dan penggerak logistik gula di Jawa, sembari menaklukkan federasi emas Kongsi Thaikong & Lanfang di Kalimantan Barat (1822–1885) serta mengikat ratusan ribu kuli kontrak (sinkeh) di tambang timah Bangka-Belitung dan kebun Deli dengan sanksi pidana Koelie Ordonnantie (1880). Tekanan segregasi Vreemde Oosterlingen (1854), Wijkenstelsel, dan Passenstelsel akhirnya melahirkan gelombang emansipasi modern: pendirian sekolah Tiong Hoa Hwee Koan (THHK, 17 Maret 1900) oleh Phoa Keng Hek & Lie Kim Hok, lantangnya pers Melayu-Tionghoa seperti Sin Po yang mencetak perdana lagu 'Indonesia Raya' (November 1928), hingga lahirnya Partai Tionghoa Indonesia (PTI, 1932) pimpinan Liem Koen Hian yang meneguhkan haluan Indonesierschap.",
       cost: "THHK 1900, Pers Sin Po 1928 & PTI 1932",
       image: {
-        src: "/images/phoa-keng-hek.jpg",
-        alt: "Potret Arsip Phoa Keng Hek, Presiden Pertama Tiong Hoa Hwee Koan (THHK 1900)",
-        caption: "Phoa Keng Hek (1857–1937), Presiden pertama Tiong Hoa Hwee Koan (THHK, 1900) yang mengawali kebangkitan pendidikan modern, pers Melayu-Tionghoa, dan kesadaran politik awal abad ke-20.",
-        archiveSource: "Nio Joe Lan (1940) · Williams (1960) · Suryadinata (1981, 2020)"
+        src: "/images/koran-sin-po.jpg",
+        alt: "Sampul Arsip Sin Po Wekelijksche-Editie (Batavia, 9 Juni 1923)",
+        caption: "Sampul asli terbitan Sin Po Wekelijksche-Editie (Batavia, Sabtu 9 Juni 1923)—surat kabar Melayu-Tionghoa pelopor kesadaran antikolonial yang pada November 1928 pertama kali mencetak naskah lagu kebangsaan 'Indonesia Raya' karya W.R. Supratman.",
+        archiveSource: "Koleksi Arsip Sin Po Batavia (1923) · Adam (1995) · Suryadinata (1981, 2020)"
       }
     },
   ] as WarCrisis[],
@@ -1610,10 +1610,10 @@ export const implementationData = {
       ],
       historicalFigures: ["Liem Koen Hian (Ketua PTI)", "Kan Hok Hoei (Ketua CHH)", "W.R. Supratman", "Leo Suryadinata"],
       image: {
-        src: "/images/liem-koen-hian.jpg",
-        alt: "Potret Arsip Liem Koen Hian dan Partai Tionghoa Indonesia (PTI 1932)",
-        caption: "Liem Koen Hian (1897–1952), pendiri Partai Tionghoa Indonesia (PTI, 1932) yang meneguhkan haluan Indonesierschap bersama pergerakan nasional Indonesia.",
-        archiveSource: "Adam (1995) · Suryadinata (1981, 2020)"
+        src: "/images/koran-sin-po.jpg",
+        alt: "Sampul Arsip Surat Kabar Sin Po Batavia (9 Juni 1923)",
+        caption: "Terbitan Sin Po Wekelijksche-Editie (Batavia, 9 Juni 1923)—pelopor pers Melayu-Tionghoa yang mematangkan Bahasa Indonesia dan menyiarkan perdana lagu 'Indonesia Raya' (November 1928).",
+        archiveSource: "Arsip Sin Po Batavia · Adam (1995) · Suryadinata (1981, 2020)"
       }
     },
   ] as TimelineEvent[],
