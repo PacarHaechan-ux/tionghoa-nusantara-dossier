@@ -41,7 +41,7 @@ const curatorialPlates: CuratorialPlate[] = [
     shortLabel: 'Pecinan Banten',
     year: '1596–1726',
     title: 'Syahbandar Kiyai Ngabehi Cakradana & Masjid Pacinan Tinggi',
-    image: backgroundData.crises[2].image!,
+    image: backgroundData.crises[0].image!,
   },
 ];
 

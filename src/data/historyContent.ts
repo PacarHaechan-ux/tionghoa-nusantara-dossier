@@ -497,9 +497,9 @@ export const backgroundData = {
       impact: "Dalam kurun niaga Asia Tenggara (Age of Commerce, 1450–1680) sebagaimana dipetakan sejarawan Anthony Reid, para pelaut dan saudagar Tionghoa menghidupkan bandar Malaka, Banten, Tuban, Gresik, Palembang, dan Makassar. Masuknya koin tembaga berlubang persegi (picis/kepeng) yang diikat per 1.000 keping membebaskan transaksi Nusantara dari kelemahan barter murni dan memicu monetisasi pasar desa hingga pelabuhan. Di lingkungan istana, Prasasti Kencana (860 M) mencatat jabatan resmi Juru Cina (yang diperkuat di bawah Rakryan Kanuruhan pada era Majapahit), sementara di Kesultanan Banten abad ke-17 saudagar Tionghoa Muslim Tantseko dipercaya menyandang gelar Kiyai Ngabehi Cakradana sebagai Syahbandar utama sekaligus arsitek benteng pesisir, tembok Istana Surosowan, dan gudang lada.",
       cost: "Monetisasi Koin Kepeng & Integrasi Syahbandar",
       image: {
-        src: "/images/pecinan-banten-cakradana.svg",
-        alt: "Ilustrasi Arsip Syahbandar Kiyai Ngabehi Cakradana dan Pecinan Kesultanan Banten",
-        caption: "Rekonstruksi kuratorial peran Kiyai Ngabehi Cakradana (Tantseko) sebagai Syahbandar utama Kesultanan Banten abad ke-17, menara Masjid Pacinan Tinggi, dan kawasan Pecinan barat kota Banten.",
+        src: "/images/kyai-ngabehi-cakradana.jpg",
+        alt: "Potret Kiyai Ngabehi Cakradana dan Menara Masjid Pacinan Tinggi di Kesultanan Banten",
+        caption: "Kiyai Ngabehi Cakradana (Tantseko), Syahbandar utama Kesultanan Banten abad ke-17 sekaligus arsitek benteng Istana Surosowan, dengan latar Menara Masjid Pacinan Tinggi di Banten Lama.",
         archiveSource: "Fauziah (2009) · Nayati (1985) · Fauziah & Rohman (2019)"
       }
     },
@@ -1472,9 +1472,9 @@ export const implementationData = {
       ],
       historicalFigures: ["Rakryan Kanuruhan (Majapahit)", "Laksamana Cheng Ho", "Kiyai Ngabehi Cakradana (Tantseko)"],
       image: {
-        src: "/images/pecinan-banten-cakradana.svg",
-        alt: "Syahbandar Kiyai Ngabehi Cakradana dan Pecinan Banten",
-        caption: "Peran Syahbandar Kiyai Ngabehi Cakradana dan tata ruang Pecinan di Kesultanan Banten.",
+        src: "/images/kyai-ngabehi-cakradana.jpg",
+        alt: "Syahbandar Kiyai Ngabehi Cakradana dan Menara Masjid Pacinan Tinggi Banten",
+        caption: "Kiyai Ngabehi Cakradana (Tantseko), Syahbandar Kesultanan Banten, dengan latar Menara Masjid Pacinan Tinggi.",
         archiveSource: "Anthony Reid · Nayati (1985) · Fauziah (2009)"
       }
     },
@@ -1888,10 +1888,10 @@ export const impactData = {
       workOrCitation: "Fauziah (2009) · Nayati (1985) · Fauziah & Rohman (2019)",
       impactNote: "Simbol integrasi harmonis masyarakat Tionghoa dalam birokrasi, pertahanan, dan kehidupan Islam Kesultanan Nusantara pra-kolonial.",
       image: {
-        src: "/images/pecinan-banten-cakradana.svg",
-        alt: "Ilustrasi Arsip Kiyai Ngabehi Cakradana dan Kesultanan Banten",
+        src: "/images/kyai-ngabehi-cakradana.jpg",
+        alt: "Potret Kiyai Ngabehi Cakradana dan Menara Masjid Pacinan Tinggi Kesultanan Banten",
         caption: "Kiyai Ngabehi Cakradana (Tantseko), Syahbandar utama dan arsitek benteng Istana Surosowan di Kesultanan Banten abad ke-17.",
-        archiveSource: "Fauziah (2009) · Nayati (1985)"
+        archiveSource: "Fauziah (2009) · Nayati (1985) · Fauziah & Rohman (2019)"
       }
     },
     {
