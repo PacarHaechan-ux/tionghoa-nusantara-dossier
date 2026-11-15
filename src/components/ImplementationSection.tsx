@@ -17,7 +17,6 @@ import {
   CheckCircle,
   XCircle,
   AlertTriangle,
-  Compass,
   Coffee,
   Scale,
   TrendingDown,
@@ -30,24 +29,45 @@ import {
 } from 'lucide-react';
 import './ImplementationSection.css';
 
+type ImplementationTabId = 'staatsblad' | 'bupati' | 'three-residencies';
+
 export const ImplementationSection: React.FC = () => {
-  const [activeTab, setActiveTab] = useState<'staatsblad' | 'three-residencies' | 'outer-java' | 'bupati'>('three-residencies');
+  const [activeTab, setActiveTab] = useState<ImplementationTabId>('staatsblad');
 
   useEffect(() => {
+    const applyTabFromId = (rawTabId?: string) => {
+      if (!rawTabId) return;
+      if (rawTabId === 'staatsblad') {
+        setActiveTab('staatsblad');
+      } else if (rawTabId === 'bupati' || rawTabId === 'preanger') {
+        setActiveTab('bupati');
+      } else if (
+        rawTabId === 'three-residencies' ||
+        rawTabId === 'voc-comparison' ||
+        rawTabId === 'outer-java'
+      ) {
+        setActiveTab('three-residencies');
+      }
+    };
+
     const handleNavigate = (e: Event) => {
       const detail = (e as CustomEvent<MonographNavigationTarget>).detail;
       if (detail?.sectionId !== 'pelaksanaan') return;
-      if (
-        detail.tabId === 'three-residencies' ||
-        detail.tabId === 'staatsblad' ||
-        detail.tabId === 'outer-java' ||
-        detail.tabId === 'bupati'
-      ) {
-        setActiveTab(detail.tabId);
-      }
+      applyTabFromId(detail.tabId);
     };
+
+    const handleCustomTabSelect = (e: Event) => {
+      const detail = (e as CustomEvent<{ sectionId?: string; tabId?: string }>).detail;
+      if (detail?.sectionId && detail.sectionId !== 'pelaksanaan') return;
+      applyTabFromId(detail?.tabId);
+    };
+
     window.addEventListener(MONOGRAPH_NAVIGATE_EVENT, handleNavigate);
-    return () => window.removeEventListener(MONOGRAPH_NAVIGATE_EVENT, handleNavigate);
+    window.addEventListener('customTabSelect', handleCustomTabSelect);
+    return () => {
+      window.removeEventListener(MONOGRAPH_NAVIGATE_EVENT, handleNavigate);
+      window.removeEventListener('customTabSelect', handleCustomTabSelect);
+    };
   }, []);
 
   return (
@@ -55,26 +75,16 @@ export const ImplementationSection: React.FC = () => {
       <div className="container">
         {/* Monograph 2-Column Section Header */}
         <div className="section-header">
-          <h2 className="section-title">Bab II (2.3) · Kedudukan Sosial dalam Struktur Masyarakat Kolonial</h2>
-          <p className="section-subtitle">
-            Stratifikasi hukum tiga golongan (Vreemde Oosterlingen), kebijakan Wijkenstelsel &amp; Passenstelsel, diferensiasi Peranakan–Totok, serta jejak Pecinan di Banten
-          </p>
+          <div>
+            <span className="badge badge-crimson chapter-kicker-badge">Bab III · Kedudukan dalam Struktur Sosial</span>
+            <h2 className="section-title">{implementationData.sectionTitle}</h2>
+          </div>
+          <p className="section-subtitle">{implementationData.sectionSubtitle}</p>
         </div>
 
-        {/* Tab Switcher */}
+        {/* Tab Switcher (3 Focused Storytelling Tabs) */}
         <div className="dossier-tabs-nav-wrapper">
-          <div className="dossier-tabs-nav" role="tablist" aria-label="Sub-bagian Struktur Sosial Kolonial">
-            <button
-              type="button"
-              role="tab"
-              aria-selected={activeTab === 'three-residencies'}
-              className={`dossier-tab-btn ${activeTab === 'three-residencies' ? 'active' : ''}`}
-              onClick={() => setActiveTab('three-residencies')}
-            >
-              <Scale size={16} strokeWidth={1.5} />
-              <span>Komparasi 3 Komunitas: Banten, Pantura Jawa &amp; Luar Jawa</span>
-            </button>
-
+          <div className="dossier-tabs-nav" role="tablist" aria-label="Tiga Babak Kedudukan Sosial Masyarakat Tionghoa">
             <button
               type="button"
               role="tab"
@@ -83,18 +93,7 @@ export const ImplementationSection: React.FC = () => {
               onClick={() => setActiveTab('staatsblad')}
             >
               <FileText size={16} strokeWidth={1.5} />
-              <span>7 Regulasi Kolonial vs Realitas Sosial</span>
-            </button>
-
-            <button
-              type="button"
-              role="tab"
-              aria-selected={activeTab === 'outer-java'}
-              className={`dossier-tab-btn ${activeTab === 'outer-java' ? 'active' : ''}`}
-              onClick={() => setActiveTab('outer-java')}
-            >
-              <Compass size={16} strokeWidth={1.5} />
-              <span>Persebaran Spasial: Banten, Jawa &amp; Luar Jawa</span>
+              <span>Piramida Tiga Golongan &amp; Tembok Pecinan</span>
             </button>
 
             <button
@@ -105,23 +104,230 @@ export const ImplementationSection: React.FC = () => {
               onClick={() => setActiveTab('bupati')}
             >
               <Crown size={16} strokeWidth={1.5} />
-              <span>Peranakan vs Totok, Opsir &amp; Akulturasi Banten</span>
+              <span>Wajah Komunitas: Peranakan, Totok &amp; Para Kapiten</span>
+            </button>
+
+            <button
+              type="button"
+              role="tab"
+              aria-selected={activeTab === 'three-residencies'}
+              className={`dossier-tab-btn ${activeTab === 'three-residencies' ? 'active' : ''}`}
+              onClick={() => setActiveTab('three-residencies')}
+            >
+              <Scale size={16} strokeWidth={1.5} />
+              <span>Harmoni Kesultanan Banten &amp; Cina Benteng Tangerang</span>
             </button>
           </div>
         </div>
 
-        {/* TAB 1: KOMPARASI 3 KOMUNITAS */}
+        {/* TAB 1: PIRAMIDA TIGA GOLONGAN & TEMBOK PECINAN */}
+        {activeTab === 'staatsblad' && (
+          <div className="dossier-tab-content tab-fade-in">
+            <div className="tab-lead-open">
+              <div className="tab-lead-title-row">
+                <h3 className="residency-lead-title">
+                  Piramida Tiga Golongan, Tembok Pecinan &amp; Jerat Regulasi Kolonial
+                </h3>
+                <span className="badge badge-crimson">Regeeringsreglement 1854 · Wijkenstelsel · Passenstelsel</span>
+              </div>
+              <p className="residency-lead-desc">{implementationData.intro}</p>
+            </div>
+
+            {/* Workload Summary Ledger (Zero Icon Tile Circles) */}
+            <div className="workload-summary-grid">
+              <article className="workload-stat-card parchment-card">
+                <h4 className="workload-label">Stratifikasi Hukum 3 Golongan</h4>
+                <div className="workload-values tabular-nums">
+                  <span className="val-rule">Dalih: <strong>Tertib Administrasi</strong></span>
+                  <span className="val-divider">vs</span>
+                  <span className="val-reality">Realitas: <strong>Politik Devide et Impera</strong></span>
+                </div>
+                <p className="workload-note">Eropa di puncak, Vreemde Oosterlingen sebagai penyangga, dan Inlander di lapisan terbawah.</p>
+              </article>
+
+              <article className="workload-stat-card parchment-card">
+                <h4 className="workload-label">Segregasi Wijkenstelsel &amp; Passenstelsel</h4>
+                <div className="workload-values tabular-nums">
+                  <span className="val-rule">Dalih: <strong>Keamanan Kota</strong></span>
+                  <span className="val-divider">vs</span>
+                  <span className="val-reality">Realitas: <strong>Karantina Teritorial &amp; Pas Jalan</strong></span>
+                </div>
+                <p className="workload-note">Warga Tionghoa wajib tinggal di Pecinan dan mengurus surat jalan berbayar untuk ke luar kota.</p>
+              </article>
+
+              <article className="workload-stat-card parchment-card">
+                <h4 className="workload-label">Koelie Ordonnantie 1880 (Poenale Sanctie)</h4>
+                <div className="workload-values">
+                  <span className="val-rule">Dalih: <strong>Kontrak Kerja Sah</strong></span>
+                  <span className="val-divider">vs</span>
+                  <span className="val-reality">Realitas: <strong>Perbudakan Kuli Kontrak</strong></span>
+                </div>
+                <p className="workload-note">Buruh sinkeh di Deli dan Bangka dijerat sanksi pidana kerja paksa dan lilitan utang meza/barak.</p>
+              </article>
+            </div>
+
+            {/* 7 Law Rules Grid — Flat 2-Column Ledger inside Each Sheet (Zero Nested Boxes) */}
+            <div className="law-rules-grid">
+              {implementationData.laws.map((law, index) => (
+                <article key={index} className="parchment-card law-card" id={`law-card-${index}`}>
+                  <div className="law-card-top">
+                    <div className="law-header-left">
+                      <h4 className="law-article-name">
+                        <span className="law-number-inline tabular-nums">Regulasi 0{law.ruleNumber} ·</span> {law.article}
+                      </h4>
+                    </div>
+                    <span className={`badge ${law.severity === 'Kritis' ? 'badge-crimson' : 'badge-gold'}`}>
+                      <AlertTriangle size={13} strokeWidth={1.5} />
+                      <span>Dampak {law.severity}</span>
+                    </span>
+                  </div>
+
+                  <div className="law-duo-ledger">
+                    <div className="law-col official-col">
+                      <div className="side-title">
+                        <CheckCircle size={15} strokeWidth={1.5} className="side-icon green" />
+                        <span>Ketentuan &amp; dalih resmi kolonial</span>
+                      </div>
+                      <p>{law.officialRule}</p>
+                    </div>
+
+                    <div className="law-col reality-col">
+                      <div className="side-title">
+                        <XCircle size={15} strokeWidth={1.5} className="side-icon red" />
+                        <span>Realitas sosial &amp; dampak struktural</span>
+                      </div>
+                      <p>{law.fieldReality}</p>
+                    </div>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* TAB 2: WAJAH KOMUNITAS: PERANAKAN, TOTOK & PARA KAPITEN */}
+        {activeTab === 'bupati' && (
+          <div className="dossier-tab-content tab-fade-in">
+            <div className="tab-lead-open">
+              <div className="tab-lead-title-row">
+                <h3 className="residency-lead-title">
+                  Wajah Komunitas dari Dalam: Peranakan, Totok (Sinkeh) &amp; Dilema Para Kapiten
+                </h3>
+                <span className="badge badge-gold">Struktur internal &amp; kepemimpinan</span>
+              </div>
+              <p className="residency-lead-desc">
+                Di balik label tunggal <em>Vreemde Oosterlingen</em> yang ditempelkan penguasa kolonial, masyarakat Tionghoa di Nusantara memiliki dinamika internal yang kaya: pertemuan antara keluarga <strong>Peranakan</strong> yang telah berakar lintas generasi dan imigran baru <strong>Totok (Sinkeh)</strong>, serta posisi dilematis para <strong>Opsir Tionghoa (Mayor, Kapiten, Letnan)</strong> di antara kepentingan warga dan tuntutan pemerintah Belanda.
+              </p>
+            </div>
+
+            <h4 className="subsection-heading">Lima Dimensi Kehidupan Komunitas, Kepemimpinan &amp; Akulturasi</h4>
+            <div className="staatsblad-cards-grid">
+              {bupatiRolesData.map((role) => (
+                <article key={role.id} className="staatsblad-card parchment-card" id={role.id}>
+                  <div className="staatsblad-card-header">
+                    <span className="rule-number-badge">Dimensi {String(role.roleNumber).padStart(2, '0')}</span>
+                    <span className={`badge ${role.roleNumber <= 2 || role.roleNumber === 4 ? 'badge-red' : 'badge-amber'}`}>
+                      {role.badge}
+                    </span>
+                  </div>
+                  <h4 className="staatsblad-rule-title">{role.title}</h4>
+                  <p className="staatsblad-official-text">{role.summary}</p>
+                  <div className="staatsblad-reality-block">
+                    <ul className="staatsblad-reality-list">
+                      {role.details.map((d, i) => (
+                        <li key={i}>{d}</li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div className="source-citation-box">
+                    <span className="source-label">Sumber:</span> {role.historicalSource}
+                  </div>
+                </article>
+              ))}
+            </div>
+
+            {/* Transformasi Kedudukan Table */}
+            <div className="preanger-blueprint-open" id="preanger-blueprint-section">
+              <div className="preanger-blueprint-header">
+                <GitBranch size={19} strokeWidth={1.5} className="preanger-blueprint-icon" />
+                <h4>Pergeseran Kedudukan Lintas Zaman: Dari Mitra Kesultanan menuju Segregasi Kolonial</h4>
+              </div>
+              <p className="preanger-blueprint-lead">
+                Perbandingan antara kedudukan masyarakat Tionghoa pada era kerajaan maritim Nusantara (seperti Kesultanan Banten) dengan era kolonial VOC dan Hindia Belanda melalui empat elemen struktural berikut:
+              </p>
+              <div className="comparison-table-wrapper">
+                <table className="residency-data-table adaptive-table">
+                  <thead>
+                    <tr>
+                      <th>No.</th>
+                      <th>Elemen Struktural</th>
+                      <th>Era Kesultanan Nusantara (Pra-Kolonial)</th>
+                      <th>Rekayasa Kolonial (VOC &amp; Hindia Belanda)</th>
+                      <th>Signifikansi Sejarah</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {preangerBlueprintData.map((el) => (
+                      <tr key={el.id}>
+                        <td data-label="No. Elemen" className="tabular-nums"><strong>0{el.elementNumber}</strong></td>
+                        <td data-label="Elemen Struktural"><strong>{el.title}</strong></td>
+                        <td data-label="Era Kesultanan Nusantara">{el.preangerstelselOrigin}</td>
+                        <td data-label="Rekayasa Kolonial">{el.cultuurstelselAdoption}</td>
+                        <td data-label="Signifikansi Sejarah">{el.significance}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* TAB 3: HARMONI KESULTANAN BANTEN & CINA BENTENG TANGERANG (+ KOMPARASI WILAYAH) */}
         {activeTab === 'three-residencies' && (
           <div className="dossier-tab-content tab-fade-in">
             <div className="tab-lead-open">
               <div className="tab-lead-title-row">
                 <h3 className="residency-lead-title">
-                  Tiga Corak Komunitas Tionghoa: Kesultanan Banten, Pantura Jawa, dan Enklave Luar Jawa
+                  Harmoni Kesultanan Banten, Cina Benteng Tangerang &amp; Peta Komunitas Nusantara
+                </h3>
+                <span className="badge badge-gold">Syahbandar Cakradana · Pecinan Banten · Cina Benteng</span>
+              </div>
+              <p className="residency-lead-desc">
+                Jauh sebelum tembok segregasi kolonial didirikan, Kesultanan Banten dan kawasan tepian Sungai Cisadane di Tangerang telah menjadi ruang perjumpaan kosmopolitan yang hangat. Di sini, saudagar dan pakar Tionghoa dipercaya menjadi Syahbandar kesultanan, mendirikan <strong>Masjid Pacinan Tinggi</strong>, serta melahirkan komunitas <strong>Cina Benteng</strong> yang menyatu erat dengan budaya lokal.
+              </p>
+            </div>
+
+            {/* Lima Jejak Historis Banten & Tangerang */}
+            <h4 className="subsection-heading">Lima Jejak Historis Komunitas Tionghoa di Banten &amp; Tangerang</h4>
+            <div className="outer-regions-grid">
+              {vocExpansionData.map((mech) => (
+                <article key={mech.id} className="region-card parchment-card" id={mech.id}>
+                  <div className="region-card-top">
+                    <h4 className="region-name">{mech.title}</h4>
+                    <span className="badge badge-amber">{mech.badge}</span>
+                  </div>
+                  <p className="region-desc">{mech.description}</p>
+                  <div className="staatsblad-reality-block voc-impact-callout">
+                    <div className="voc-impact-row">
+                      <ArrowRight size={14} strokeWidth={1.5} className="voc-impact-arrow" />
+                      <span><strong>Warisan jangka panjang:</strong> {mech.longTermImpact}</span>
+                    </div>
+                  </div>
+                </article>
+              ))}
+            </div>
+
+            {/* Komparasi 3 Corak Komunitas */}
+            <div className="tab-lead-open bupati-sub-top">
+              <div className="tab-lead-title-row">
+                <h3 className="residency-lead-title">
+                  Tiga Corak Komunitas: Banten &amp; Tangerang, Pantura Jawa, dan Enklave Luar Jawa
                 </h3>
                 <span className="badge badge-gold">Komparasi ruang sosial-ekonomi</span>
               </div>
               <p className="residency-lead-desc">
-                Kedudukan sosial dan ekonomi masyarakat Tionghoa sangat dipengaruhi oleh struktur kekuasaan lokal di setiap wilayah. Perbandingan antara <strong>Banten &amp; Tangerang</strong>, <strong>Pesisir Utara Jawa (Batavia–Semarang–Surabaya)</strong>, dan <strong>Luar Jawa (Bangka, Kalbar, Deli)</strong> memperlihatkan kontras tajam antara akulturasi kultural, fungsi penyangga perantara (<em>buffer group</em>), serta eksploitasi buruh tambang dan perkebunan.
+                Perbandingan antara <strong>Banten &amp; Tangerang</strong>, <strong>Pesisir Utara Jawa (Batavia–Semarang–Surabaya)</strong>, dan <strong>Luar Jawa (Bangka, Kalbar, Deli)</strong> memperlihatkan kontras tajam antara akulturasi kultural, fungsi penyangga perantara (<em>buffer group</em>), serta eksploitasi buruh tambang dan perkebunan.
               </p>
             </div>
 
@@ -220,111 +426,24 @@ export const ImplementationSection: React.FC = () => {
 
                   <div className="res-crops-row">
                     <Coffee size={15} strokeWidth={1.5} />
-                    <span>Komoditas: <strong>{item.dominantCrops}</strong></span>
+                    <span>Komoditas &amp; Aktivitas: <strong>{item.dominantCrops}</strong></span>
                   </div>
 
                   <div className="res-mechanism-box">
-                    <span className="res-box-label">Mekanisme penindasan &amp; sirkulasi</span>
+                    <span className="res-box-label">Dinamika struktur sosial &amp; ruang</span>
                     <p className="res-box-desc">{item.keyMechanism}</p>
                   </div>
 
                   <div className="res-historiography-box">
-                    <span className="res-box-label">Relevansi debat historiografi</span>
+                    <span className="res-box-label">Tinjauan sejarawan</span>
                     <p className="res-box-desc">{item.historiographicalRelevance}</p>
                   </div>
                 </article>
               ))}
             </div>
-          </div>
-        )}
 
-        {/* TAB 2: 7 REGULASI KOLONIAL VS REALITAS SOSIAL */}
-        {activeTab === 'staatsblad' && (
-          <div className="dossier-tab-content tab-fade-in">
-            <div className="tab-lead-open">
-              <div className="tab-lead-title-row">
-                <h3 className="residency-lead-title">Tujuh Instrumen Hukum &amp; Segregasi Kolonial vs Realitas Sosial (Bab 2.3)</h3>
-                <span className="badge badge-crimson">Regeeringsreglement 1854 &amp; Staatsblad</span>
-              </div>
-              <p className="residency-lead-desc">{implementationData.intro}</p>
-            </div>
-
-            {/* Workload Summary Ledger (Zero Icon Tile Circles) */}
-            <div className="workload-summary-grid">
-              <article className="workload-stat-card parchment-card">
-                <h4 className="workload-label">Stratifikasi Hukum 3 Golongan</h4>
-                <div className="workload-values tabular-nums">
-                  <span className="val-rule">Dalih: <strong>Tertib Administrasi</strong></span>
-                  <span className="val-divider">vs</span>
-                  <span className="val-reality">Realitas: <strong>Politik Devide et Impera</strong></span>
-                </div>
-                <p className="workload-note">Eropa di puncak, Vreemde Oosterlingen sebagai penyangga, dan Inlander di lapisan terbawah.</p>
-              </article>
-
-              <article className="workload-stat-card parchment-card">
-                <h4 className="workload-label">Segregasi Wijkenstelsel &amp; Passenstelsel</h4>
-                <div className="workload-values tabular-nums">
-                  <span className="val-rule">Dalih: <strong>Keamanan Kota</strong></span>
-                  <span className="val-divider">vs</span>
-                  <span className="val-reality">Realitas: <strong>Karantina Teritorial &amp; Pas Jalan</strong></span>
-                </div>
-                <p className="workload-note">Warga Tionghoa wajib tinggal di Pecinan dan mengurus surat jalan berbayar untuk ke luar kota.</p>
-              </article>
-
-              <article className="workload-stat-card parchment-card">
-                <h4 className="workload-label">Koelie Ordonnantie 1880 (Poenale Sanctie)</h4>
-                <div className="workload-values">
-                  <span className="val-rule">Dalih: <strong>Kontrak Kerja Sah</strong></span>
-                  <span className="val-divider">vs</span>
-                  <span className="val-reality">Realitas: <strong>Perbudakan Kuli Kontrak</strong></span>
-                </div>
-                <p className="workload-note">Buruh sinkeh di Deli dan Bangka dijerat sanksi pidana kerja paksa dan lilitan utang meza/barak.</p>
-              </article>
-            </div>
-
-            {/* 7 Law Rules Grid — Flat 2-Column Ledger inside Each Sheet (Zero Nested Boxes) */}
-            <div className="law-rules-grid">
-              {implementationData.laws.map((law, index) => (
-                <article key={index} className="parchment-card law-card" id={`law-card-${index}`}>
-                  <div className="law-card-top">
-                    <div className="law-header-left">
-                      <h4 className="law-article-name">
-                        <span className="law-number-inline tabular-nums">Regulasi 0{law.ruleNumber} ·</span> {law.article}
-                      </h4>
-                    </div>
-                    <span className={`badge ${law.severity === 'Kritis' ? 'badge-crimson' : 'badge-gold'}`}>
-                      <AlertTriangle size={13} strokeWidth={1.5} />
-                      <span>Dampak {law.severity}</span>
-                    </span>
-                  </div>
-
-                  <div className="law-duo-ledger">
-                    <div className="law-col official-col">
-                      <div className="side-title">
-                        <CheckCircle size={15} strokeWidth={1.5} className="side-icon green" />
-                        <span>Ketentuan &amp; dalih resmi kolonial</span>
-                      </div>
-                      <p>{law.officialRule}</p>
-                    </div>
-
-                    <div className="law-col reality-col">
-                      <div className="side-title">
-                        <XCircle size={15} strokeWidth={1.5} className="side-icon red" />
-                        <span>Realitas sosial &amp; dampak struktural</span>
-                      </div>
-                      <p>{law.fieldReality}</p>
-                    </div>
-                  </div>
-                </article>
-              ))}
-            </div>
-          </div>
-        )}
-
-        {/* TAB 3: PERSEBARAN SPASIAL BANTEN, JAWA & LUAR JAWA */}
-        {activeTab === 'outer-java' && (
-          <div className="dossier-tab-content tab-fade-in">
-            <div className="tab-lead-open">
+            {/* Persebaran Spasial 5 Kawasan Nusantara */}
+            <div className="tab-lead-open bupati-sub-top">
               <div className="tab-lead-title-row">
                 <h3 className="residency-lead-title">
                   {exploitationData.outerJavaExpansion.title}
@@ -372,114 +491,16 @@ export const ImplementationSection: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
-        )}
 
-        {/* TAB 4: PERANAKAN VS TOTOK, OPSIR & AKULTURASI BANTEN */}
-        {activeTab === 'bupati' && (
-          <div className="dossier-tab-content tab-fade-in">
-            <div className="tab-lead-open">
-              <div className="tab-lead-title-row">
-                <h3 className="residency-lead-title">
-                  Diferensiasi Internal (Peranakan vs Totok), Lembaga Opsir &amp; Akulturasi di Banten
-                </h3>
-                <span className="badge badge-gold">Bab 2.3 · Struktur internal &amp; lokalitas</span>
-              </div>
-              <p className="residency-lead-desc">
-                Masyarakat Tionghoa di Nusantara bukanlah kelompok yang homogen. Di dalamnya terdapat diferensiasi budaya antara <strong>Peranakan</strong> dan <strong>Totok (Sinkeh)</strong>, hierarki <strong>Opsir Tionghoa (Chineesche Officieren)</strong> bentukan Belanda, serta sejarah panjang akulturasi harmonis di <strong>Kesultanan Banten dan Tangerang (Cina Benteng)</strong>.
-              </p>
-            </div>
-
-            <h4 className="subsection-heading">Lima Dimensi Struktur Internal, Kepemimpinan &amp; Akulturasi</h4>
-            <div className="staatsblad-cards-grid">
-              {bupatiRolesData.map((role) => (
-                <article key={role.id} className="staatsblad-card parchment-card" id={role.id}>
-                  <div className="staatsblad-card-header">
-                    <span className="rule-number-badge">Dimensi {String(role.roleNumber).padStart(2, '0')}</span>
-                    <span className={`badge ${role.roleNumber <= 2 || role.roleNumber === 4 ? 'badge-red' : 'badge-amber'}`}>
-                      {role.badge}
-                    </span>
-                  </div>
-                  <h4 className="staatsblad-rule-title">{role.title}</h4>
-                  <p className="staatsblad-official-text">{role.summary}</p>
-                  <div className="staatsblad-reality-block">
-                    <ul className="staatsblad-reality-list">
-                      {role.details.map((d, i) => (
-                        <li key={i}>{d}</li>
-                      ))}
-                    </ul>
-                  </div>
-                  <div className="source-citation-box">
-                    <span className="source-label">Sumber:</span> {role.historicalSource}
-                  </div>
-                </article>
-              ))}
-            </div>
-
-            {/* Transformasi Kedudukan Table */}
-            <div className="preanger-blueprint-open" id="preanger-blueprint-section">
-              <div className="preanger-blueprint-header">
-                <GitBranch size={19} strokeWidth={1.5} className="preanger-blueprint-icon" />
-                <h4>Pergeseran Kedudukan: Dari Kemitraan Kesultanan menuju Segregasi Kolonial</h4>
-              </div>
-              <p className="preanger-blueprint-lead">
-                Perbandingan antara kedudukan masyarakat Tionghoa pada era kerajaan maritim Nusantara (seperti Kesultanan Banten) dengan era kolonial VOC dan Hindia Belanda melalui empat elemen struktural berikut:
-              </p>
-              <div className="comparison-table-wrapper">
-                <table className="residency-data-table adaptive-table">
-                  <thead>
-                    <tr>
-                      <th>No.</th>
-                      <th>Elemen Struktural</th>
-                      <th>Era Kesultanan Nusantara (Pra-Kolonial)</th>
-                      <th>Rekayasa Kolonial (VOC &amp; Hindia Belanda)</th>
-                      <th>Signifikansi Sejarah</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {preangerBlueprintData.map((el) => (
-                      <tr key={el.id}>
-                        <td data-label="No. Elemen" className="tabular-nums"><strong>0{el.elementNumber}</strong></td>
-                        <td data-label="Elemen Struktural"><strong>{el.title}</strong></td>
-                        <td data-label="Era Kesultanan Nusantara">{el.preangerstelselOrigin}</td>
-                        <td data-label="Rekayasa Kolonial">{el.cultuurstelselAdoption}</td>
-                        <td data-label="Signifikansi Sejarah">{el.significance}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            </div>
-
-            {/* Jejak Historis Banten & Tangerang */}
-            <h4 className="subsection-heading bupati-sub-top">Lima Jejak Historis Komunitas Tionghoa di Banten &amp; Tangerang</h4>
-            <div className="outer-regions-grid">
-              {vocExpansionData.map((mech) => (
-                <article key={mech.id} className="region-card parchment-card" id={mech.id}>
-                  <div className="region-card-top">
-                    <h4 className="region-name">{mech.title}</h4>
-                    <span className="badge badge-amber">{mech.badge}</span>
-                  </div>
-                  <p className="region-desc">{mech.description}</p>
-                  <div className="staatsblad-reality-block voc-impact-callout">
-                    <div className="voc-impact-row">
-                      <ArrowRight size={14} strokeWidth={1.5} className="voc-impact-arrow" />
-                      <span><strong>Warisan jangka panjang:</strong> {mech.longTermImpact}</span>
-                    </div>
-                  </div>
-                </article>
-              ))}
-            </div>
-
-            {/* Rujukan Silang Kuratorial ke Bab III Kesimpulan & 4 Fase Periodisasi */}
+            {/* Rujukan Silang Kuratorial kembali ke Bab I Benang Merah Sejarah */}
             <div className="monetization-open-section monetization-crossref-bar">
               <div className="crossref-info">
                 <div className="preanger-blueprint-header">
                   <Coins size={19} strokeWidth={1.5} className="preanger-blueprint-icon" />
-                  <h4>Sintesis Akhir: Empat Fase Evolusi Sejarah &amp; Kesimpulan Makalah (Bab III)</h4>
+                  <h4>Refleksi Lintas Zaman: Empat Babak Sejarah &amp; Galeri Tokoh Kunci</h4>
                 </div>
                 <p className="preanger-blueprint-lead crossref-desc">
-                  Bagaimana perjalanan panjang dari pelayaran maritim, tragedi kolonial, hingga kebangkitan THHK, <em>Sin Po</em>, dan PTI 1932 dirangkum dalam kesimpulan dan saran akademik Kelompok 8? Telaah sintesis lengkap Bab III pada bagian berikutnya.
+                  Bagaimana perjalanan panjang dari pelayaran maritim, tragedi kolonial, hingga kebangkitan THHK, <em>Sin Po</em>, dan PTI 1932 merajut benang merah sejarah Indonesia? Telaah kembali potret tokoh dan refleksi sejarawan pada Bab I.
                 </p>
               </div>
               <button
@@ -487,13 +508,12 @@ export const ImplementationSection: React.FC = () => {
                 className="btn btn-outline crossref-jump-btn"
                 onClick={() =>
                   navigateToMonographTarget({
-                    sectionId: 'dampak',
-                    tabId: 'van-rees',
+                    sectionId: 'latar-belakang',
                     elementId: 'van-rees-monetization-section',
                   })
                 }
               >
-                <span>Buka Bab III Kesimpulan &amp; 4 Fase Sejarah</span>
+                <span>Lihat Benang Merah Sejarah (Bab I)</span>
                 <ArrowRight size={16} strokeWidth={1.5} />
               </button>
             </div>

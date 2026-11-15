@@ -264,7 +264,7 @@
     right: 0;
     z-index: 995;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(7, 1fr);
     background-color: rgba(244, 244, 242, 0.96);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);

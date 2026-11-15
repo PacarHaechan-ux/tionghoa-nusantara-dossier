@@ -2,6 +2,10 @@
   background-color: var(--bg-parchment);
 }
 
+.chapter-kicker-badge {
+  margin-bottom: 0.625rem;
+}
+
 /* Shared Sub-Opener inside Monograph Chapter (Zero Kicker Pills) */
 .monograph-sub-opener {
   display: grid;
@@ -46,10 +50,10 @@
   color: var(--accent-crimson);
 }
 
-/* Three Crises Grid */
+/* Four Chronological Acts Grid */
 .crisis-cards-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.25rem;
   margin-bottom: clamp(2.75rem, 5vw, 4rem);
 }
@@ -477,6 +481,47 @@
   font-size: 0.8125rem;
   color: var(--ink-muted);
   margin-top: 0.125rem;
+}
+
+/* Historical Figures Category Filter & Spotlight inside Bab I */
+.critic-filter-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.critic-filter-btn {
+  font-family: var(--font-sans-ui);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--ink-secondary);
+  background-color: var(--bg-parchment-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 0.45rem 0.875rem;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.critic-filter-btn:hover {
+  border-color: var(--border-strong);
+  color: var(--ink-primary);
+}
+
+.critic-filter-btn.active {
+  background-color: var(--accent-crimson);
+  border-color: var(--accent-crimson);
+  color: #f4f4f2;
+}
+
+.critic-spotlight-banner {
+  margin-bottom: 1.5rem;
+  border-left: 3px solid var(--accent-crimson);
+}
+
+.critic-card.is-selected-critic {
+  border-color: var(--accent-crimson);
 }
 
 @media (max-width: 1024px) {

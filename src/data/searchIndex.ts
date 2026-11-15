@@ -56,13 +56,13 @@ export const QUICK_SEARCH_PRESETS: QuickTopicPreset[] = [
 function buildSearchCatalog(): MonographSearchEntry[] {
   const entries: MonographSearchEntry[] = [];
 
-  // 1. Bab I & Bab 2.1: Aktivitas Ekonomi Sebelum Abad ke-19
+  // 1. Bab I · Dinamika Lintas Zaman (Abad ke-5 – 1932)
   backgroundData.crises.forEach((crisis) => {
     entries.push({
       id: `search-crisis-${crisis.id}`,
       title: `${crisis.name} (${crisis.years})`,
-      category: 'Jejak Maritim & Pra-Abad ke-19',
-      sectionLabel: 'Bab I & 2.1 · Pra-Abad ke-19',
+      category: 'Empat Babak Lintas Zaman',
+      sectionLabel: 'Bab I · Dinamika Lintas Zaman',
       badge: crisis.years,
       snippet: `${crisis.impact} Skala: ${crisis.cost}.`,
       keywords: `${crisis.name} ${crisis.years} ${crisis.impact} ${crisis.cost} maritim kepeng syahbandar VOC`,
@@ -73,13 +73,12 @@ function buildSearchCatalog(): MonographSearchEntry[] {
     });
   });
 
-  // Sintesis Bab 2.1
   entries.push({
     id: 'search-vandenbosch-concept',
     title: backgroundData.vanDenBoschConcept.title,
-    category: 'Sintesis Pra-Abad ke-19',
-    sectionLabel: 'Bab I & 2.1 · Pra-Abad ke-19',
-    badge: 'Abad V–XVIII',
+    category: 'Benang Merah Narasi',
+    sectionLabel: 'Bab I · Dinamika Lintas Zaman',
+    badge: 'Abad V–1932',
     snippet: backgroundData.vanDenBoschConcept.summary,
     keywords: `Jalur Sutra Maritim Koin Kepeng Syahbandar Cakradana VOC Souw Beng Kong Geger Pecinan ${backgroundData.vanDenBoschConcept.points.join(' ')}`,
     target: {
@@ -92,8 +91,8 @@ function buildSearchCatalog(): MonographSearchEntry[] {
     entries.push({
       id: `search-controversy-${c.id}`,
       title: c.title,
-      category: 'Kajian Pra-Abad ke-19',
-      sectionLabel: 'Bab 2.1 · Era Maritim, VOC & Banten',
+      category: 'Jejak Maritim, VOC & Banten',
+      sectionLabel: 'Bab I · Dinamika Lintas Zaman',
       badge: c.badge,
       snippet: `${c.description} ${c.historicalDetail}`,
       keywords: `${c.title} ${c.badge} ${c.description} ${c.historicalDetail} kepeng syahbandar VOC Batavia Banten`,
@@ -108,7 +107,7 @@ function buildSearchCatalog(): MonographSearchEntry[] {
     id: 'search-farmer-bivak',
     title: everydayFarmerLifeData.title,
     category: 'Banten & Pesisir Jawa',
-    sectionLabel: 'Bab 2.1.3 · Kesultanan Banten & Pantura',
+    sectionLabel: 'Bab I · Dinamika Lintas Zaman',
     badge: 'Banten 1596–1726',
     snippet: everydayFarmerLifeData.subtitle,
     keywords: `${everydayFarmerLifeData.title} Banten Cakradana Masjid Pacinan Tinggi Lasem Semarang Tuban ${everydayFarmerLifeData.aspects.map((a) => a.title + ' ' + a.description).join(' ')}`,
@@ -118,12 +117,141 @@ function buildSearchCatalog(): MonographSearchEntry[] {
     },
   });
 
+  // Klimaks Bab I: Bara Perlawanan, Tragedi Kolonial & Fajar Kebangsaan (1740–1932)
+  impactData.famineCases.forEach((fam, idx) => {
+    entries.push({
+      id: `search-famine-${idx}`,
+      title: `Tragedi Kolonial: ${fam.region} (${fam.years})`,
+      category: 'Tragedi & Eksploitasi Kolonial',
+      sectionLabel: 'Bab I · Bara Perlawanan & Fajar Kebangsaan',
+      badge: fam.years,
+      snippet: `${fam.cause} Skala Korban: ${fam.victimCount}.`,
+      keywords: `Geger Pecinan Perang Kongsi Koelie Ordonnantie ${fam.region} ${fam.years} ${fam.cause} ${fam.victimCount} ${fam.description}`,
+      target: {
+        sectionId: 'latar-belakang',
+        elementId: `famine-case-${idx}`,
+      },
+    });
+  });
+
+  impactData.positiveImpacts.forEach((pos, idx) => {
+    entries.push({
+      id: `search-pos-impact-${idx}`,
+      title: `Kontribusi Historis: ${pos.title}`,
+      category: 'Warisan Sosial-Ekonomi',
+      sectionLabel: 'Bab I · Bara Perlawanan & Fajar Kebangsaan',
+      badge: 'Kontribusi Historis',
+      snippet: pos.description,
+      keywords: `kontribusi positif monetisasi akulturasi pers nasionalisme ${pos.title} ${pos.description}`,
+      target: {
+        sectionId: 'latar-belakang',
+        elementId: 'tab-impact-positive',
+      },
+    });
+  });
+
+  peasantResistanceData.forEach((res) => {
+    entries.push({
+      id: `search-res-${res.id}`,
+      title: `Perlawanan & Agensi: ${res.title}`,
+      category: res.category,
+      sectionLabel: 'Bab I · Bara Perlawanan & Fajar Kebangsaan',
+      badge: res.locationOrYear,
+      snippet: `${res.description} Dampak: ${res.historicalImpact}`,
+      keywords: `perlawanan Geger Pecinan Perang Kongsi THHK Sin Po PTI ${res.category} ${res.title} ${res.locationOrYear} ${res.description} ${res.historicalImpact}`,
+      target: {
+        sectionId: 'latar-belakang',
+        elementId: res.id,
+      },
+    });
+  });
+
+  parliamentaryPoliticsData.forEach((pol) => {
+    entries.push({
+      id: `search-pol-${pol.id}`,
+      title: `Dinamika Politik (${pol.periodOrEvent}): ${pol.title}`,
+      category: 'Kebangkitan & Haluan Politik',
+      sectionLabel: 'Bab I · Bara Perlawanan & Fajar Kebangsaan',
+      badge: pol.periodOrEvent,
+      snippet: `${pol.coreDebate} Hasil: ${pol.outcomeAndImpact}`,
+      keywords: `THHK HCS Kekawulaan Belanda Sin Po CHH PTI Liem Koen Hian ${pol.periodOrEvent} ${pol.title} ${pol.factions} ${pol.coreDebate} ${pol.outcomeAndImpact}`,
+      target: {
+        sectionId: 'latar-belakang',
+        elementId: pol.id,
+      },
+    });
+  });
+
+  prianganMonetizationData.forEach((pm) => {
+    entries.push({
+      id: `search-monetization-${pm.id}`,
+      title: `Periodisasi Sejarah (${pm.phase}): ${pm.title}`,
+      category: 'Evolusi Empat Babak',
+      sectionLabel: 'Bab I · Dinamika Lintas Zaman',
+      badge: pm.periodLabel,
+      snippet: `${pm.characteristics.join(' ')} ${pm.keyFact}`,
+      keywords: `periodisasi fase maritim VOC kolonial kebangkitan ${pm.phase} ${pm.periodLabel} ${pm.title} ${pm.characteristics.join(' ')} ${pm.keyFact}`,
+      target: {
+        sectionId: 'latar-belakang',
+        elementId: pm.id,
+      },
+    });
+  });
+
+  impactData.historicalCritics.forEach((critic) => {
+    entries.push({
+      id: `search-critic-${critic.id}`,
+      title: `${critic.name} — ${critic.role}`,
+      category: `Tokoh Sejarah (${critic.category})`,
+      sectionLabel: 'Bab I · Galeri Tokoh Kunci Sejarah',
+      badge: critic.period,
+      snippet: `${critic.keyContribution} Sumber: ${critic.workOrCitation}.`,
+      keywords: `${critic.name} ${critic.role} ${critic.period} ${critic.category} ${critic.workOrCitation} ${critic.keyContribution} ${critic.impactNote}`,
+      target: {
+        sectionId: 'latar-belakang',
+        elementId: critic.id,
+      },
+    });
+  });
+
+  vanReesReportData.forEach((vr) => {
+    entries.push({
+      id: `search-vanrees-${vr.id}`,
+      title: `Benang Merah Sejarah: ${vr.title}`,
+      category: 'Refleksi Lintas Zaman',
+      sectionLabel: 'Bab I · Tiga Benang Merah Sejarah',
+      badge: vr.badge,
+      snippet: `${vr.findings.join(' ')} Signifikansi: ${vr.significance}`,
+      keywords: `benang merah refleksi sintesis sejarah ${vr.title} ${vr.findings.join(' ')} ${vr.significance}`,
+      target: {
+        sectionId: 'latar-belakang',
+        elementId: vr.id,
+      },
+    });
+  });
+
+  historiographicalSynthesisData.forEach((hist, idx) => {
+    entries.push({
+      id: `search-hist-lens-${idx}`,
+      title: `Lensa Historiografi: ${hist.historian}`,
+      category: hist.schoolName,
+      sectionLabel: 'Bab I · Perspektif Sejarawan',
+      badge: hist.framework,
+      snippet: `${hist.economicAssessment} Karya: ${hist.keyWork}.`,
+      keywords: `${hist.historian} ${hist.schoolName} ${hist.framework} ${hist.primaryPerspective} ${hist.economicAssessment} ${hist.collapseExplanation} ${hist.keyWork}`,
+      target: {
+        sectionId: 'latar-belakang',
+        elementId: `hist-lens-card-${idx}`,
+      },
+    });
+  });
+
   backgroundData.historianInterpretations.forEach((h) => {
     entries.push({
       id: `search-interp-${h.id}`,
       title: `Perspektif Sejarawan: ${h.scholar}`,
       category: 'Historiografi',
-      sectionLabel: 'Bab I & 2.1 · Landasan Historiografis',
+      sectionLabel: 'Bab I · Perspektif Sejarawan',
       snippet: h.interpretation,
       keywords: `${h.scholar} ${h.interpretation} sejarawan Tionghoa Nusantara`,
       target: {
@@ -133,12 +261,12 @@ function buildSearchCatalog(): MonographSearchEntry[] {
     });
   });
 
-  // 2. Bab 2.2: Perkembangan Ekonomi Abad ke-19 hingga Akhir Masa Kolonial
+  // 2. Bab II · Peran dalam Perekonomian (#eksploitasi — 3 Tabs: 'financial' | 'batig-slot' | 'ecology')
   entries.push({
     id: 'search-voc-comparison',
-    title: 'Transformasi Struktur Ekonomi: Pra-Abad ke-19 vs Abad ke-19–20',
+    title: 'Transformasi Struktur Ekonomi: Era Maritim & VOC vs Negara Kolonial',
     category: 'Komparasi Historis',
-    sectionLabel: 'Bab 2.2 · Ekonomi Abad ke-19–20',
+    sectionLabel: 'Bab II · Peran Ekonomi',
     badge: 'Abad V–XX',
     snippet: 'Pergeseran dari kemitraan maritim bebas & syahbandar menuju sistem Pachtstelsel, perantara distribusi desa, dan korporasi modern.',
     keywords: `komparasi VOC Hindia Belanda Pachtstelsel perantara ${exploitationData.vocComparison.map((v) => `${v.aspect} ${v.voc} ${v.cultuurstelsel}`).join(' ')}`,
@@ -148,13 +276,13 @@ function buildSearchCatalog(): MonographSearchEntry[] {
     },
   });
 
-  // Tab 1 Bab 2.2: 5 Sektor Ekonomi Utama & Finansial
+  // Tab 1 Bab II ('financial'): Koin Kepeng, Gula & Jaringan Pasar Desa
   exploitationData.commodities.forEach((c) => {
     entries.push({
       id: `search-commodity-${c.id}`,
       title: `${c.name} (${c.latinName})`,
-      category: 'Sektor Ekonomi Kolonial',
-      sectionLabel: 'Bab 2.2 · Tab 1 Sistem Pacht & Distribusi',
+      category: 'Sektor Ekonomi Nusantara',
+      sectionLabel: 'Bab II · Tab 1 Koin Kepeng, Gula & Pasar Desa',
       badge: `Intensitas ${c.burdenLevel}`,
       snippet: `${c.description} Wilayah: ${c.regions.join(', ')}.`,
       keywords: `${c.name} ${c.latinName} ${c.category} ${c.regions.join(' ')} ${c.description} ${c.fact}`,
@@ -170,9 +298,9 @@ function buildSearchCatalog(): MonographSearchEntry[] {
   commodityFinancialData.forEach((fin, idx) => {
     entries.push({
       id: `search-fin-${idx}`,
-      title: `Struktur Fiskal & Ekonomi: ${fin.commodity}`,
-      category: 'Kinerja Sektor Abad 19–20',
-      sectionLabel: 'Bab 2.2 · Tab 1 Sistem Pacht & Distribusi',
+      title: `Jejak Ekonomi & Fiskal: ${fin.commodity}`,
+      category: 'Transformasi Sektor Ekonomi',
+      sectionLabel: 'Bab II · Tab 1 Koin Kepeng, Gula & Pasar Desa',
       badge: fin.totalSurplusShare,
       snippet: `Abad ke-19: ${fin.profit1840_1849} · Akhir Kolonial: ${fin.status1850_1860}.`,
       keywords: `${fin.commodity} fiskal pacht gula timah kuli bank ${fin.keyDetails.join(' ')}`,
@@ -184,34 +312,16 @@ function buildSearchCatalog(): MonographSearchEntry[] {
     });
   });
 
-  // Tab 2 Bab 2.2: Tipologi Ruang Jawa vs Luar Jawa
-  ecologicalZoningData.forEach((z, idx) => {
-    entries.push({
-      id: `search-eco-${idx}`,
-      title: `${z.type} (${z.cropCategory})`,
-      category: 'Tipologi Ruang Ekonomi',
-      sectionLabel: 'Bab 2.2 · Tab 2 Jawa vs Luar Jawa',
-      badge: z.crops.join(', '),
-      snippet: `${z.landCharacteristics} ${z.ecologicalRationale}`,
-      keywords: `${z.type} ${z.cropCategory} ${z.crops.join(' ')} ${z.landCharacteristics} ${z.ecologicalRationale} ${z.regions.join(' ')} Jawa Luar Jawa Bangka Deli Kalbar`,
-      target: {
-        sectionId: 'eksploitasi',
-        tabId: 'ecology',
-        elementId: `eco-zone-${idx}`,
-      },
-    });
-  });
-
-  // Tab 3 Bab 2.2: Transformasi Pasca-1870, THHK, Pers, & Politik
+  // Tab 2 Bab II ('batig-slot'): Mesin Pajak Kolonial: Sistem Pacht & Opiumpacht
   batigSlotAllocationData.forEach((b) => {
     entries.push({
       id: `search-batig-${b.id}`,
-      title: `Transformasi Modern: ${b.title}`,
-      category: 'Kebangkitan Abad ke-20',
-      sectionLabel: 'Bab 2.2 · Tab 3 Transformasi Pasca-1870 & Pers',
+      title: `Peralihan Modal & Institusi: ${b.title}`,
+      category: 'Sistem Pacht & Kemandirian Modern',
+      sectionLabel: 'Bab II · Tab 2 Mesin Pajak Kolonial & Pacht',
       badge: b.amountOrScale,
       snippet: `${b.description} Tokoh/Institusi: ${b.destination}.`,
-      keywords: `THHK Siang Hwee Sin Po PTI CHH Oei Tiong Ham ${b.title} ${b.amountOrScale} ${b.destination} ${b.description} ${b.historicalSignificance}`,
+      keywords: `Pacht Opiumpacht THHK Siang Hwee Sin Po PTI CHH Oei Tiong Ham ${b.title} ${b.amountOrScale} ${b.destination} ${b.description} ${b.historicalSignificance}`,
       target: {
         sectionId: 'eksploitasi',
         tabId: 'batig-slot',
@@ -225,7 +335,7 @@ function buildSearchCatalog(): MonographSearchEntry[] {
       id: `search-mech-${key}`,
       title: mech.term,
       category: 'Institusi Ekonomi Kolonial',
-      sectionLabel: 'Bab 2.2 · Tab 3 Mekanisme Kelembagaan',
+      sectionLabel: 'Bab II · Tab 2 Mesin Pajak Kolonial & Pacht',
       snippet: `${mech.summary} ${mech.detail}`,
       keywords: `${mech.term} ${mech.summary} ${mech.detail}`,
       target: {
@@ -236,37 +346,37 @@ function buildSearchCatalog(): MonographSearchEntry[] {
     });
   });
 
-  // Tab 4 Bab 2.2: Statistik, Glosarium, & Analisis Kritis
+  // Tab 3 Bab II ('ecology'): Kontras Dua Dunia: Saudagar Jawa vs Kongsi & Kuli Deli (+ Glosarium)
+  ecologicalZoningData.forEach((z, idx) => {
+    entries.push({
+      id: `search-eco-${idx}`,
+      title: `${z.type} (${z.cropCategory})`,
+      category: 'Kontras Jawa vs Luar Jawa',
+      sectionLabel: 'Bab II · Tab 3 Saudagar Jawa vs Kongsi & Kuli Deli',
+      badge: z.crops.join(', '),
+      snippet: `${z.landCharacteristics} ${z.ecologicalRationale}`,
+      keywords: `${z.type} ${z.cropCategory} ${z.crops.join(' ')} ${z.landCharacteristics} ${z.ecologicalRationale} ${z.regions.join(' ')} Jawa Luar Jawa Bangka Deli Kalbar`,
+      target: {
+        sectionId: 'eksploitasi',
+        tabId: 'ecology',
+        elementId: `eco-zone-${idx}`,
+      },
+    });
+  });
+
   exploitationData.laborStatistics.items.forEach((stat) => {
     entries.push({
       id: `search-labor-${stat.id}`,
       title: `${stat.label}: ${stat.value} (${stat.period})`,
       category: 'Indikator Kuantitatif',
-      sectionLabel: 'Bab 2.2 · Tab 4 Data Kronologis & Glosarium',
+      sectionLabel: 'Bab II · Tab 3 Saudagar Jawa vs Kongsi & Kuli Deli',
       badge: stat.period,
       snippet: `${stat.context} (${stat.citation}).`,
       keywords: `${stat.label} ${stat.value} ${stat.period} ${stat.context} ${stat.citation} statistik kuantitatif`,
       target: {
         sectionId: 'eksploitasi',
-        tabId: 'macro-stats',
+        tabId: 'ecology',
         elementId: stat.id,
-      },
-    });
-  });
-
-  colonialGlossaryData.forEach((g, idx) => {
-    entries.push({
-      id: `search-glossary-${idx}`,
-      title: `Glosarium Sejarah: ${g.term}`,
-      category: 'Istilah & Regulasi',
-      sectionLabel: 'Bab 2.2 · Tab 4 Data Kronologis & Glosarium',
-      badge: g.modernEquivalent,
-      snippet: `${g.definition} ${g.contextNote}`,
-      keywords: `${g.term} ${g.modernEquivalent} ${g.definition} ${g.contextNote} glosarium istilah`,
-      target: {
-        sectionId: 'eksploitasi',
-        tabId: 'macro-stats',
-        elementId: `glossary-term-${idx}`,
       },
     });
   });
@@ -276,19 +386,139 @@ function buildSearchCatalog(): MonographSearchEntry[] {
       id: `search-breman-${bc.id}`,
       title: `Bedah Paradoks Kolonial: ${bc.title}`,
       category: 'Analisis Kritis Struktural',
-      sectionLabel: 'Bab 2.2 · Tab 4 Data Kronologis & Glosarium',
-      badge: 'Mitos vs Realitas',
+      sectionLabel: 'Bab II · Tab 3 Saudagar Jawa vs Kongsi & Kuli Deli',
+      badge: 'Stereotip vs Realitas',
       snippet: `Narasi Kolonial: ${bc.mythVsFact.officialClaim} Realitas: ${bc.mythVsFact.groundReality}`,
       keywords: `${bc.title} ${bc.mythVsFact.officialClaim} ${bc.mythVsFact.groundReality} ${bc.evidence} paradoks kolonial`,
       target: {
         sectionId: 'eksploitasi',
-        tabId: 'macro-stats',
+        tabId: 'ecology',
         elementId: bc.id,
       },
     });
   });
 
-  // 3. Garis Waktu (Abad V – 1932)
+  colonialGlossaryData.forEach((g, idx) => {
+    entries.push({
+      id: `search-glossary-${idx}`,
+      title: `Glosarium Sejarah: ${g.term}`,
+      category: 'Istilah & Regulasi',
+      sectionLabel: 'Bab II · Tab 3 Glosarium Ekonomi & Kolonial',
+      badge: g.modernEquivalent,
+      snippet: `${g.definition} ${g.contextNote}`,
+      keywords: `${g.term} ${g.modernEquivalent} ${g.definition} ${g.contextNote} glosarium istilah`,
+      target: {
+        sectionId: 'eksploitasi',
+        tabId: 'ecology',
+        elementId: `glossary-term-${idx}`,
+      },
+    });
+  });
+
+  // 3. Bab III · Kedudukan dalam Struktur Sosial (#pelaksanaan — 3 Tabs: 'staatsblad' | 'bupati' | 'three-residencies')
+  implementationData.laws.forEach((law, idx) => {
+    entries.push({
+      id: `search-law-${law.ruleNumber}`,
+      title: `Regulasi Kolonial 0${law.ruleNumber}: ${law.article}`,
+      category: 'Hukum & Segregasi Kolonial',
+      sectionLabel: 'Bab III · Tab 1 Piramida Tiga Golongan & Tembok Pecinan',
+      badge: `Dampak ${law.severity}`,
+      snippet: `Regulasi: ${law.officialRule} Realitas: ${law.fieldReality}`,
+      keywords: `Regeeringsreglement Vreemde Oosterlingen Wijkenstelsel Passenstelsel Koelie Ordonnantie ${law.ruleNumber} ${law.article} ${law.officialRule} ${law.fieldReality}`,
+      target: {
+        sectionId: 'pelaksanaan',
+        tabId: 'staatsblad',
+        elementId: `law-card-${idx}`,
+      },
+    });
+  });
+
+  bupatiRolesData.forEach((role) => {
+    entries.push({
+      id: `search-bupati-${role.id}`,
+      title: `Wajah Komunitas 0${role.roleNumber}: ${role.title}`,
+      category: 'Peranakan, Totok & Para Kapiten',
+      sectionLabel: 'Bab III · Tab 2 Wajah Komunitas & Para Kapiten',
+      badge: role.badge,
+      snippet: role.summary,
+      keywords: `peranakan totok sinkeh kapitein majoor luitenant Cina Benteng akulturasi ${role.title} ${role.summary} ${role.details.join(' ')}`,
+      target: {
+        sectionId: 'pelaksanaan',
+        tabId: 'bupati',
+        elementId: role.id,
+      },
+    });
+  });
+
+  preangerBlueprintData.forEach((bp) => {
+    entries.push({
+      id: `search-blueprint-${bp.id}`,
+      title: `Transformasi Kedudukan: ${bp.title}`,
+      category: 'Pra-Kolonial vs Kolonial',
+      sectionLabel: 'Bab III · Tab 2 Wajah Komunitas & Para Kapiten',
+      badge: `Dimensi 0${bp.elementNumber}`,
+      snippet: `${bp.preangerstelselOrigin} -> ${bp.cultuurstelselAdoption}`,
+      keywords: `Syahbandar Kapitein Pecinan Banten ${bp.title} ${bp.preangerstelselOrigin} ${bp.cultuurstelselAdoption} ${bp.significance}`,
+      target: {
+        sectionId: 'pelaksanaan',
+        tabId: 'bupati',
+        elementId: 'preanger-blueprint-section',
+      },
+    });
+  });
+
+  vocExpansionData.forEach((ve) => {
+    entries.push({
+      id: `search-vocexp-${ve.id}`,
+      title: `Jejak Historis Banten & Tangerang: ${ve.title}`,
+      category: 'Kesultanan Banten & Cina Benteng',
+      sectionLabel: 'Bab III · Tab 3 Harmoni Banten & Cina Benteng',
+      badge: ve.badge,
+      snippet: `${ve.description} Warisan: ${ve.longTermImpact}`,
+      keywords: `Banten Karangantu Pacinan Tinggi Kelenteng Avalokitesvara Cina Benteng ${ve.title} ${ve.badge} ${ve.description} ${ve.longTermImpact}`,
+      target: {
+        sectionId: 'pelaksanaan',
+        tabId: 'three-residencies',
+        elementId: ve.id,
+      },
+    });
+  });
+
+  residencyComparisonData.forEach((res, idx) => {
+    entries.push({
+      id: `search-residency-${idx}`,
+      title: `Komparasi Sosial-Spasial: ${res.residency}`,
+      category: 'Komparasi 3 Wilayah',
+      sectionLabel: 'Bab III · Tab 3 Harmoni Banten & Cina Benteng',
+      badge: res.farmerWelfareStatus,
+      snippet: `Sektor: ${res.dominantCrops}. ${res.keyMechanism}`,
+      keywords: `${res.residency} ${res.islandArea} ${res.dominantCrops} ${res.farmerWelfareStatus} ${res.keyMechanism} ${res.historiographicalRelevance}`,
+      target: {
+        sectionId: 'pelaksanaan',
+        tabId: 'three-residencies',
+        elementId: `residency-card-${idx}`,
+      },
+    });
+  });
+
+  exploitationData.outerJavaExpansion.regions.forEach((reg) => {
+    entries.push({
+      id: `search-outer-${reg.id}`,
+      title: `Jaringan Komunitas: ${reg.region}`,
+      category: 'Persebaran Spasial Nusantara',
+      sectionLabel: 'Bab III · Tab 3 Harmoni Banten & Cina Benteng',
+      badge: reg.island,
+      snippet: `Fokus: ${reg.primaryCommodity}. ${reg.description}`,
+      keywords: `${reg.region} ${reg.island} ${reg.primaryCommodity} ${reg.description} ${reg.targetMarket} Banten Tangerang Lasem Bangka Kalbar Deli`,
+      target: {
+        sectionId: 'pelaksanaan',
+        tabId: 'three-residencies',
+        elementId: `region-card-${reg.id}`,
+      },
+    });
+  });
+
+  // 4. Garis Waktu (Abad V – 1932)
   implementationData.timeline.forEach((ev) => {
     entries.push({
       id: `search-timeline-${ev.id}`,
@@ -306,247 +536,7 @@ function buildSearchCatalog(): MonographSearchEntry[] {
     });
   });
 
-  // 4. Bab 2.3: Kedudukan Sosial Masyarakat Tionghoa dalam Struktur Kolonial
-  residencyComparisonData.forEach((res, idx) => {
-    entries.push({
-      id: `search-residency-${idx}`,
-      title: `Komparasi Sosial-Spasial: ${res.residency}`,
-      category: 'Komparasi 3 Wilayah',
-      sectionLabel: 'Bab 2.3 · Tab 1 Banten vs Pantura Jawa vs Luar Jawa',
-      badge: res.farmerWelfareStatus,
-      snippet: `Sektor: ${res.dominantCrops}. ${res.keyMechanism}`,
-      keywords: `${res.residency} ${res.islandArea} ${res.dominantCrops} ${res.farmerWelfareStatus} ${res.keyMechanism} ${res.historiographicalRelevance}`,
-      target: {
-        sectionId: 'pelaksanaan',
-        tabId: 'three-residencies',
-        elementId: `residency-card-${idx}`,
-      },
-    });
-  });
-
-  implementationData.laws.forEach((law, idx) => {
-    entries.push({
-      id: `search-law-${law.ruleNumber}`,
-      title: `Regulasi Kolonial 0${law.ruleNumber}: ${law.article}`,
-      category: 'Hukum & Segregasi Kolonial',
-      sectionLabel: 'Bab 2.3 · Tab 2 Regulasi vs Realitas Sosial',
-      badge: `Dampak ${law.severity}`,
-      snippet: `Regulasi: ${law.officialRule} Realitas: ${law.fieldReality}`,
-      keywords: `Regeeringsreglement Vreemde Oosterlingen Wijkenstelsel Passenstelsel Koelie Ordonnantie ${law.ruleNumber} ${law.article} ${law.officialRule} ${law.fieldReality}`,
-      target: {
-        sectionId: 'pelaksanaan',
-        tabId: 'staatsblad',
-        elementId: `law-card-${idx}`,
-      },
-    });
-  });
-
-  exploitationData.outerJavaExpansion.regions.forEach((reg) => {
-    entries.push({
-      id: `search-outer-${reg.id}`,
-      title: `Jaringan Komunitas: ${reg.region}`,
-      category: 'Persebaran Spasial Nusantara',
-      sectionLabel: 'Bab 2.3 · Tab 3 Persebaran Banten, Jawa & Luar Jawa',
-      badge: reg.island,
-      snippet: `Fokus: ${reg.primaryCommodity}. ${reg.description}`,
-      keywords: `${reg.region} ${reg.island} ${reg.primaryCommodity} ${reg.description} ${reg.targetMarket} Banten Tangerang Lasem Bangka Kalbar Deli`,
-      target: {
-        sectionId: 'pelaksanaan',
-        tabId: 'outer-java',
-        elementId: `region-card-${reg.id}`,
-      },
-    });
-  });
-
-  bupatiRolesData.forEach((role) => {
-    entries.push({
-      id: `search-bupati-${role.id}`,
-      title: `Struktur Sosial 0${role.roleNumber}: ${role.title}`,
-      category: 'Diferensiasi Internal & Opsir',
-      sectionLabel: 'Bab 2.3 · Tab 4 Peranakan, Totok & Akulturasi Banten',
-      badge: role.badge,
-      snippet: role.summary,
-      keywords: `peranakan totok sinkeh kapitein majoor luitenant Cina Benteng akulturasi ${role.title} ${role.summary} ${role.details.join(' ')}`,
-      target: {
-        sectionId: 'pelaksanaan',
-        tabId: 'bupati',
-        elementId: role.id,
-      },
-    });
-  });
-
-  preangerBlueprintData.forEach((bp) => {
-    entries.push({
-      id: `search-blueprint-${bp.id}`,
-      title: `Transformasi Kedudukan: ${bp.title}`,
-      category: 'Pra-Kolonial vs Kolonial',
-      sectionLabel: 'Bab 2.3 · Tab 4 Peranakan, Totok & Akulturasi Banten',
-      badge: `Dimensi 0${bp.elementNumber}`,
-      snippet: `${bp.preangerstelselOrigin} -> ${bp.cultuurstelselAdoption}`,
-      keywords: `Syahbandar Kapitein Pecinan Banten ${bp.title} ${bp.preangerstelselOrigin} ${bp.cultuurstelselAdoption} ${bp.significance}`,
-      target: {
-        sectionId: 'pelaksanaan',
-        tabId: 'bupati',
-        elementId: 'preanger-blueprint-section',
-      },
-    });
-  });
-
-  vocExpansionData.forEach((ve) => {
-    entries.push({
-      id: `search-vocexp-${ve.id}`,
-      title: `Jejak Historis Banten & Tangerang: ${ve.title}`,
-      category: 'Sejarah Sosial Banten',
-      sectionLabel: 'Bab 2.3 · Tab 4 Peranakan, Totok & Akulturasi Banten',
-      badge: ve.badge,
-      snippet: `${ve.description} Warisan: ${ve.longTermImpact}`,
-      keywords: `Banten Karangantu Pacinan Tinggi Kelenteng Avalokitesvara Cina Benteng ${ve.title} ${ve.badge} ${ve.description} ${ve.longTermImpact}`,
-      target: {
-        sectionId: 'pelaksanaan',
-        tabId: 'bupati',
-        elementId: ve.id,
-      },
-    });
-  });
-
-  // 5. Konflik, Pergerakan Kebangsaan & Bab III Penutup
-  impactData.famineCases.forEach((fam, idx) => {
-    entries.push({
-      id: `search-famine-${idx}`,
-      title: `Tragedi Kolonial: ${fam.region} (${fam.years})`,
-      category: 'Tragedi & Eksploitasi Kolonial',
-      sectionLabel: 'Konflik & Penutup · Tab 1 Tragedi & Dampak',
-      badge: fam.years,
-      snippet: `${fam.cause} Skala Korban: ${fam.victimCount}.`,
-      keywords: `Geger Pecinan Perang Kongsi Koelie Ordonnantie ${fam.region} ${fam.years} ${fam.cause} ${fam.victimCount} ${fam.description}`,
-      target: {
-        sectionId: 'dampak',
-        tabId: 'famines-impact',
-        elementId: `famine-case-${idx}`,
-      },
-    });
-  });
-
-  impactData.positiveImpacts.forEach((pos, idx) => {
-    entries.push({
-      id: `search-pos-impact-${idx}`,
-      title: `Kontribusi Historis: ${pos.title}`,
-      category: 'Warisan Sosial-Ekonomi',
-      sectionLabel: 'Konflik & Penutup · Tab 1 Tragedi & Dampak',
-      badge: 'Kontribusi Positif',
-      snippet: pos.description,
-      keywords: `kontribusi positif monetisasi akulturasi pers nasionalisme ${pos.title} ${pos.description}`,
-      target: {
-        sectionId: 'dampak',
-        tabId: 'famines-impact',
-        subTabId: 'positive',
-        elementId: 'tab-impact-positive',
-      },
-    });
-  });
-
-  peasantResistanceData.forEach((res) => {
-    entries.push({
-      id: `search-res-${res.id}`,
-      title: `Perlawanan & Agensi: ${res.title}`,
-      category: res.category,
-      sectionLabel: 'Konflik & Penutup · Tab 2 Perlawanan & Emansipasi',
-      badge: res.locationOrYear,
-      snippet: `${res.description} Dampak: ${res.historicalImpact}`,
-      keywords: `perlawanan Geger Pecinan Perang Kongsi THHK Sin Po PTI ${res.category} ${res.title} ${res.locationOrYear} ${res.description} ${res.historicalImpact}`,
-      target: {
-        sectionId: 'dampak',
-        tabId: 'resistance',
-        elementId: res.id,
-      },
-    });
-  });
-
-  parliamentaryPoliticsData.forEach((pol) => {
-    entries.push({
-      id: `search-pol-${pol.id}`,
-      title: `Dinamika Politik (${pol.periodOrEvent}): ${pol.title}`,
-      category: 'Kebangkitan & Haluan Politik',
-      sectionLabel: 'Konflik & Penutup · Tab 3 Pendidikan, Pers & Politik',
-      badge: pol.periodOrEvent,
-      snippet: `${pol.coreDebate} Hasil: ${pol.outcomeAndImpact}`,
-      keywords: `THHK HCS Kekawulaan Belanda Sin Po CHH PTI Liem Koen Hian ${pol.periodOrEvent} ${pol.title} ${pol.factions} ${pol.coreDebate} ${pol.outcomeAndImpact}`,
-      target: {
-        sectionId: 'dampak',
-        tabId: 'politics',
-        elementId: pol.id,
-      },
-    });
-  });
-
-  historiographicalSynthesisData.forEach((hist, idx) => {
-    entries.push({
-      id: `search-hist-lens-${idx}`,
-      title: `Lensa Historiografi: ${hist.historian}`,
-      category: hist.schoolName,
-      sectionLabel: 'Konflik & Penutup · Tab 4 Sintesis Tiga Lensa Sejarawan',
-      badge: hist.framework,
-      snippet: `${hist.economicAssessment} Karya: ${hist.keyWork}.`,
-      keywords: `${hist.historian} ${hist.schoolName} ${hist.framework} ${hist.primaryPerspective} ${hist.economicAssessment} ${hist.collapseExplanation} ${hist.keyWork}`,
-      target: {
-        sectionId: 'dampak',
-        tabId: 'historiography',
-        elementId: `hist-lens-card-${idx}`,
-      },
-    });
-  });
-
-  vanReesReportData.forEach((vr) => {
-    entries.push({
-      id: `search-vanrees-${vr.id}`,
-      title: `Bab III Penutup: ${vr.title}`,
-      category: 'Kesimpulan & Saran Makalah',
-      sectionLabel: 'Bab III · Tab 5 Kesimpulan & Saran',
-      badge: vr.badge,
-      snippet: `${vr.findings.join(' ')} Signifikansi: ${vr.significance}`,
-      keywords: `kesimpulan saran Bab III penutup ${vr.title} ${vr.findings.join(' ')} ${vr.significance}`,
-      target: {
-        sectionId: 'dampak',
-        tabId: 'van-rees',
-        elementId: vr.id,
-      },
-    });
-  });
-
-  prianganMonetizationData.forEach((pm) => {
-    entries.push({
-      id: `search-monetization-${pm.id}`,
-      title: `Periodisasi Sejarah (${pm.phase}): ${pm.title}`,
-      category: 'Evolusi Empat Fase',
-      sectionLabel: 'Bab III · Tab 5 Kesimpulan & Saran',
-      badge: pm.periodLabel,
-      snippet: `${pm.characteristics.join(' ')} ${pm.keyFact}`,
-      keywords: `periodisasi fase maritim VOC kolonial kebangkitan ${pm.phase} ${pm.periodLabel} ${pm.title} ${pm.characteristics.join(' ')} ${pm.keyFact}`,
-      target: {
-        sectionId: 'dampak',
-        tabId: 'van-rees',
-        elementId: pm.id,
-      },
-    });
-  });
-
-  impactData.historicalCritics.forEach((critic) => {
-    entries.push({
-      id: `search-critic-${critic.id}`,
-      title: `${critic.name} — ${critic.role}`,
-      category: `Tokoh Sejarah (${critic.category})`,
-      sectionLabel: 'Galeri Tokoh Kunci Sejarah Tionghoa Nusantara',
-      badge: critic.period,
-      snippet: `${critic.keyContribution} Sumber: ${critic.workOrCitation}.`,
-      keywords: `${critic.name} ${critic.role} ${critic.period} ${critic.category} ${critic.workOrCitation} ${critic.keyContribution} ${critic.impactNote}`,
-      target: {
-        sectionId: 'dampak',
-        elementId: critic.id,
-      },
-    });
-  });
-
-  // 6. Laboratorium Sejarah: Peta Spasial, Kalkulator, & Simulasi Dilema
+  // 5. Laboratorium Sejarah: Peta Spasial, Kalkulator, & Simulasi Dilema
   spatialMarkersData.forEach((m) => {
     entries.push({
       id: `search-map-${m.id}`,
@@ -598,12 +588,12 @@ function buildSearchCatalog(): MonographSearchEntry[] {
     });
   });
 
-  // 7. Permainan Sejarah (TTS & Kuis)
+  // 6. Permainan Sejarah (TTS & Kuis)
   entries.push({
     id: 'search-game-tts',
     title: 'Teka-Teki Silang Nusantara (11×12) — Suplemen Harian Sin Po',
     category: 'Permainan Edukasi',
-    sectionLabel: 'Permainan Sejarah · Tab 1 TTS Nusantara',
+    sectionLabel: 'TTS & Kuis · Tab 1 TTS Nusantara',
     badge: '10 Kata',
     snippet: 'Asah ketajaman istilah sejarah ekonomi & sosial masyarakat Tionghoa di Nusantara dengan papan TTS 11×12 interaktif.',
     keywords: 'TTS teka-teki silang permainan game Sin Po Kepeng Pecinan Banten Batavia Kongsi THHK',
@@ -617,9 +607,9 @@ function buildSearchCatalog(): MonographSearchEntry[] {
     id: 'search-game-quiz',
     title: 'Kuis Evaluasi Sejarah Sosial-Ekonomi & Piagam Kehormatan',
     category: 'Evaluasi Interaktif',
-    sectionLabel: 'Permainan Sejarah · Tab 2 Kuis Sejarah',
+    sectionLabel: 'TTS & Kuis · Tab 2 Kuis Sejarah',
     badge: '8 Soal',
-    snippet: 'Uji pemahaman kritis atas Bab I–III melalui 8 soal pilihan ganda & uji klaim mitos/fakta historis untuk meraih Piagam Kehormatan.',
+    snippet: 'Uji pemahaman kritis atas tiga bab utama melalui 8 soal pilihan ganda & uji klaim mitos/fakta historis untuk meraih Piagam Kehormatan.',
     keywords: 'kuis quiz evaluasi soal ujian sejarah sosial ekonomi piagam skor',
     target: {
       sectionId: 'permainan-sejarah',
@@ -627,7 +617,7 @@ function buildSearchCatalog(): MonographSearchEntry[] {
     },
   });
 
-  // 8. Kutipan & Daftar Pustaka
+  // 7. Kutipan & Daftar Pustaka
   featuredHistoricalQuotes.forEach((fq) => {
     entries.push({
       id: `search-fquote-${fq.id}`,

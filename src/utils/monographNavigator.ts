@@ -7,6 +7,19 @@ export interface MonographNavigationTarget {
 
 export const MONOGRAPH_NAVIGATE_EVENT = 'monograph:navigate';
 
+const SECTION_ID_ALIASES: Record<string, string> = {
+  hero: 'beranda',
+  linimasa: 'timeline-section',
+  'lab-interaktif': 'interactive-lab',
+  'arena-kuis': 'permainan-sejarah',
+  bibliografi: 'pustaka',
+  dampak: 'latar-belakang',
+};
+
+export function resolveSectionElementId(sectionId: string): string {
+  return SECTION_ID_ALIASES[sectionId] ?? sectionId;
+}
+
 /**
  * Menyusun string hash URL yang dapat dibagikan (deep-link) ke bab, tab, dan kartu tertentu.
  */
@@ -53,7 +66,11 @@ function scrollToAndHighlight(
     return false;
   }
 
-  const targetEl = exactEl ?? document.getElementById(sectionId);
+  const resolvedSectionId = resolveSectionElementId(sectionId);
+  const targetEl =
+    exactEl ??
+    document.getElementById(sectionId) ??
+    document.getElementById(resolvedSectionId);
   if (!targetEl) return false;
 
   const navHeight = window.innerWidth <= 1160 ? 64 : 74;
@@ -82,29 +99,34 @@ export function navigateToMonographTarget(
   target: MonographNavigationTarget,
   options?: { updateHash?: boolean }
 ): void {
+  const normalizedTarget: MonographNavigationTarget = {
+    ...target,
+    sectionId: resolveSectionElementId(target.sectionId),
+  };
+
   const shouldUpdateHash = options?.updateHash ?? true;
   if (shouldUpdateHash && typeof window !== 'undefined') {
-    const nextHash = buildMonographHash(target);
+    const nextHash = buildMonographHash(normalizedTarget);
     window.history.replaceState(null, '', nextHash);
   }
 
   window.dispatchEvent(
     new CustomEvent<MonographNavigationTarget>(MONOGRAPH_NAVIGATE_EVENT, {
-      detail: target,
+      detail: normalizedTarget,
     })
   );
 
   // Percobaan 1 (60ms): tunggu render sinkron state tab React
   window.setTimeout(() => {
-    const foundFirst = scrollToAndHighlight(target.sectionId, target.elementId, false);
+    const foundFirst = scrollToAndHighlight(normalizedTarget.sectionId, normalizedTarget.elementId, false);
     if (!foundFirst) {
       // Percobaan 2 (180ms): tunggu bila komponen berada di dalam React.lazy Suspense
       window.setTimeout(() => {
-        const foundSecond = scrollToAndHighlight(target.sectionId, target.elementId, false);
+        const foundSecond = scrollToAndHighlight(normalizedTarget.sectionId, normalizedTarget.elementId, false);
         if (!foundSecond) {
           // Percobaan 3 (380ms): fallback ke induk sectionId bila elemen spesifik masih belum siap
           window.setTimeout(() => {
-            scrollToAndHighlight(target.sectionId, target.elementId, true);
+            scrollToAndHighlight(normalizedTarget.sectionId, normalizedTarget.elementId, true);
           }, 200);
         }
       }, 120);

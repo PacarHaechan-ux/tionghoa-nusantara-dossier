@@ -3,9 +3,8 @@ import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { BackgroundSection } from './components/BackgroundSection';
 import { ExploitationSection } from './components/ExploitationSection';
-import { TimelineSection } from './components/TimelineSection';
 import { ImplementationSection } from './components/ImplementationSection';
-import { ImpactSection } from './components/ImpactSection';
+import { TimelineSection } from './components/TimelineSection';
 import { BibliographySection } from './components/BibliographySection';
 import { Footer } from './components/Footer';
 import { ImageLightboxModal } from './components/ImageLightboxModal';
@@ -72,9 +71,8 @@ export const App: React.FC = () => {
         <Hero onOpenImage={handleOpenImage} />
         <BackgroundSection onOpenImage={handleOpenImage} />
         <ExploitationSection onOpenImage={handleOpenImage} />
-        <TimelineSection />
         <ImplementationSection />
-        <ImpactSection onOpenImage={handleOpenImage} />
+        <TimelineSection />
 
         <Suspense
           fallback={

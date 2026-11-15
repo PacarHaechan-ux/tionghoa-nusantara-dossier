@@ -3,13 +3,19 @@ import {
   Menu,
   X,
   Search,
-  History,
+  Landmark,
+  ScrollText,
   Coins,
-  Flame,
-  Compass,
-  Gamepad2
+  Network,
+  Clock,
+  Sliders,
+  Gamepad2,
+  BookOpen
 } from 'lucide-react';
-import { navigateToMonographTarget } from '../utils/monographNavigator';
+import {
+  navigateToMonographTarget,
+  resolveSectionElementId,
+} from '../utils/monographNavigator';
 import './Navbar.css';
 
 interface NavbarProps {
@@ -19,30 +25,31 @@ interface NavbarProps {
 interface NavItem {
   id: string;
   label: string;
+  icon: React.ComponentType<{ size?: number; strokeWidth?: number; className?: string }>;
 }
 
 const navItems: NavItem[] = [
-  { id: 'beranda', label: 'Beranda' },
-  { id: 'latar-belakang', label: 'Pra-Abad 19' },
-  { id: 'eksploitasi', label: 'Ekonomi Abad 19–20' },
-  { id: 'timeline-section', label: 'Garis Waktu' },
-  { id: 'pelaksanaan', label: 'Struktur Sosial' },
-  { id: 'dampak', label: 'Konflik & Politik' },
-  { id: 'interactive-lab', label: 'Lab Sejarah' },
-  { id: 'permainan-sejarah', label: 'TTS & Kuis' },
-  { id: 'pustaka', label: 'Pustaka' },
+  { id: 'hero', label: 'Beranda', icon: Landmark },
+  { id: 'latar-belakang', label: '1. Dinamika Sejarah', icon: ScrollText },
+  { id: 'eksploitasi', label: '2. Peran Ekonomi', icon: Coins },
+  { id: 'pelaksanaan', label: '3. Kedudukan Sosial', icon: Network },
+  { id: 'linimasa', label: 'Garis Waktu', icon: Clock },
+  { id: 'lab-interaktif', label: 'Lab Sejarah', icon: Sliders },
+  { id: 'arena-kuis', label: 'TTS & Kuis', icon: Gamepad2 },
+  { id: 'bibliografi', label: 'Pustaka', icon: BookOpen },
 ];
 
 const quickDockItems = [
-  { id: 'latar-belakang', shortLabel: 'Pra-19', icon: History },
+  { id: 'hero', shortLabel: 'Beranda', icon: Landmark },
+  { id: 'latar-belakang', shortLabel: 'Sejarah', icon: ScrollText },
   { id: 'eksploitasi', shortLabel: 'Ekonomi', icon: Coins },
-  { id: 'dampak', shortLabel: 'Sosial', icon: Flame },
-  { id: 'interactive-lab', shortLabel: 'Lab', icon: Compass },
-  { id: 'permainan-sejarah', shortLabel: 'Kuis', icon: Gamepad2 },
+  { id: 'pelaksanaan', shortLabel: 'Sosial', icon: Network },
+  { id: 'lab-interaktif', shortLabel: 'Lab', icon: Sliders },
+  { id: 'arena-kuis', shortLabel: 'Kuis', icon: Gamepad2 },
 ];
 
 export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch }) => {
-  const [activeSection, setActiveSection] = useState<string>('beranda');
+  const [activeSection, setActiveSection] = useState<string>('hero');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
   const [scrollProgress, setScrollProgress] = useState<number>(0);
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
@@ -58,7 +65,9 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch }) => {
       const scrollPosition = winScroll + 220;
       for (let i = navItems.length - 1; i >= 0; i--) {
         const item = navItems[i];
-        const el = document.getElementById(item.id);
+        const el =
+          document.getElementById(item.id) ??
+          document.getElementById(resolveSectionElementId(item.id));
         if (el && el.offsetTop <= scrollPosition) {
           setActiveSection(item.id);
           break;
@@ -157,20 +166,24 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch }) => {
         {isMobileMenuOpen && (
           <div className="mobile-drawer" id="mobile-navigation-drawer">
             <div className="container mobile-drawer-content">
-              {navItems.map((item, idx) => (
-                <a
-                  key={item.id}
-                  href={`#${item.id}`}
-                  id={`mobile-nav-${item.id}`}
-                  className={`mobile-nav-link ${activeSection === item.id ? 'active' : ''}`}
-                  onClick={(e) => scrollToSection(e, item.id)}
-                >
-                  <span className="mobile-nav-index tabular-nums">
-                    {String(idx + 1).padStart(2, '0')}
-                  </span>
-                  <span>{item.label}</span>
-                </a>
-              ))}
+              {navItems.map((item, idx) => {
+                const NavIcon = item.icon;
+                return (
+                  <a
+                    key={item.id}
+                    href={`#${item.id}`}
+                    id={`mobile-nav-${item.id}`}
+                    className={`mobile-nav-link ${activeSection === item.id ? 'active' : ''}`}
+                    onClick={(e) => scrollToSection(e, item.id)}
+                  >
+                    <span className="mobile-nav-index tabular-nums">
+                      {String(idx + 1).padStart(2, '0')}
+                    </span>
+                    <NavIcon size={15} strokeWidth={1.5} className="mobile-nav-icon" />
+                    <span>{item.label}</span>
+                  </a>
+                );
+              })}
             </div>
           </div>
         )}
