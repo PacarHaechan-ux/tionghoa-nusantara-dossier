@@ -46,16 +46,16 @@ export const BibliographySection: React.FC = () => {
         <div className="section-header">
           <h2 className="section-title">Kutipan Kunci &amp; Daftar Pustaka</h2>
           <p className="section-subtitle">
-            Katalog literatur primer, telaah sejarah kritis, dan karya sastra monumental era Tanam Paksa
+            Katalog referensi akademik, buku, jurnal ilmiah, dan sumber sejarah dinamika masyarakat Tionghoa di Nusantara
           </p>
         </div>
 
-        {/* Featured Primary Source Extracts (Multatuli & Baron van Hoëvell) */}
+        {/* Featured Primary Source Extracts */}
         <div className="featured-quotes-container">
           <div className="biblio-sub-opener">
-            <h3 className="featured-quotes-title">Kutipan Bersejarah yang Mengguncang Kerajaan Belanda</h3>
+            <h3 className="featured-quotes-title">Kutipan Kunci Historiografi &amp; Pergerakan Nasional</h3>
             <p className="featured-quotes-subtitle">
-              Dari halaman <em>Max Havelaar</em> hingga mimbar parlemen Tweede Kamer di Den Haag
+              Dari analisis jaringan candu kolonial James R. Rush hingga maklumat kebangsaan Partai Tionghoa Indonesia (1932)
             </p>
           </div>
 

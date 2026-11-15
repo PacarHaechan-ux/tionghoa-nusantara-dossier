@@ -563,11 +563,11 @@ export const HistoricalGamesSection: React.FC = () => {
 
   const handleCopyCertificate = () => {
     const shareText = [
-      '=== PIAGAM SIDANG KOMISI HINDIA (CULTUURSTELSEL 1830-1870) ===',
+      '=== PIAGAM EVALUASI SEJARAH TIONGHOA NUSANTARA (KELOMPOK 8 UNTIRTA) ===',
       `Pangkat: ${earnedRank.rankTitle}`,
       `Skor Akhir: ${quizScore} Poin (${correctCount}/${quizQuestionsData.length} Benar - ${accuracyPct}%)`,
       `Rekor Beruntun Terpanjang: ${maxStreak}x Jawaban Tepat`,
-      `Catatan Komisi: "${earnedRank.satiricalNote}"`,
+      `Catatan Sejarawan: "${earnedRank.satiricalNote}"`,
     ].join('\n');
 
     navigator.clipboard.writeText(shareText);
@@ -584,19 +584,19 @@ export const HistoricalGamesSection: React.FC = () => {
       <div className="container">
         {/* Section Header */}
         <div className="section-header">
-          <h2 className="section-title">Suplemen Evaluasi Akhir Pekan Javasche Courant</h2>
+          <h2 className="section-title">Suplemen Evaluasi Akhir Pekan Harian Sin Po &amp; Perniagaan</h2>
           <p className="section-subtitle">
-            Rehat sejenak dari angka pajak kolonial. Uji ketajaman pemahaman sejarah kritis Anda lewat Teka-Teki Silang Batavia (11×12) dan Kuis Sidang Komisi Hindia 1860.
+            Uji ketajaman pemahaman sejarah kritis Anda atas dinamika ekonomi dan kedudukan sosial masyarakat Tionghoa di Nusantara melalui Teka-Teki Silang (11×12) dan Kuis Evaluasi.
           </p>
         </div>
 
         <div className="gazette-masthead-strip">
-          <span className="gazette-edition">EDISI KHUSUS • BATAVIA, 1860</span>
+          <span className="gazette-edition">EDISI KHUSUS • BATAVIA &amp; BANTEN, 1928</span>
           <span className="gazette-motto">
             <Newspaper size={14} />
-            <span>"Bebas Kerja Rodi & Bebas Pungutan Cultuurprocenten"</span>
+            <span>"Menjembatani Perniagaan Maritim, Akulturasi Budaya &amp; Kesadaran Kebangsaan"</span>
           </span>
-          <span className="gazette-price">HARGA: 0 GULDEN</span>
+          <span className="gazette-price">HARGA: 1 KEPENG</span>
         </div>
 
         {/* Dual-Tab Switcher */}
@@ -610,7 +610,7 @@ export const HistoricalGamesSection: React.FC = () => {
             id="tab-btn-tts"
           >
             <Gamepad2 size={17} />
-            <span>1. Teka-Teki Silang Batavia</span>
+            <span>1. Teka-Teki Silang Nusantara</span>
             <span className="games-tab-pill">{solvedWordIds.size}/{crosswordWordsData.length}</span>
           </button>
           <button
@@ -622,7 +622,7 @@ export const HistoricalGamesSection: React.FC = () => {
             id="tab-btn-quiz"
           >
             <ScrollText size={17} />
-            <span>2. Kuis Sidang Komisi Hindia</span>
+            <span>2. Kuis Evaluasi Sejarah</span>
             <span className="games-tab-pill">{quizQuestionsData.length} Soal</span>
           </button>
         </div>
@@ -696,16 +696,16 @@ export const HistoricalGamesSection: React.FC = () => {
                   <Award size={20} />
                   <span>TAJUK UTAMA: 10/10 KATA TERPECAHKAN!</span>
                 </div>
-                <h3>Selamat, Kepala Redaksi Kehormatan Batavia!</h3>
+                <h3>Selamat, Kepala Redaksi Kehormatan Sin Po!</h3>
                 <p>
-                  Seluruh sandi sejarah Cultuurstelsel berhasil kamu pecahkan tanpa satu pun sensor pemerintah kolonial. Siap diuji di kursi panas Sidang Komisi Hindia?
+                  Seluruh istilah kunci sejarah ekonomi dan sosial masyarakat Tionghoa di Nusantara berhasil kamu pecahkan! Siap menguji analisis historiografimu di Kuis Evaluasi?
                 </p>
                 <button
                   type="button"
                   className="btn btn-primary"
                   onClick={() => setActiveTab('quiz')}
                 >
-                  <span>Lanjut ke Kuis Komisi Hindia</span>
+                  <span>Lanjut ke Kuis Evaluasi Sejarah</span>
                   <ChevronRight size={16} />
                 </button>
               </div>

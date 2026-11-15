@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <rect width="800" height="600" fill="#1c1514"/>
+  <rect x="24" y="24" width="752" height="552" fill="none" stroke="#8a1c14" stroke-width="2" opacity="0.8"/>
+  <rect x="32" y="32" width="736" height="536" fill="none" stroke="#c8963e" stroke-width="0.7" opacity="0.4"/>
+  <text x="56" y="72" fill="#e06c64" font-family="JetBrains Mono, monospace" font-size="13" letter-spacing="2">PELAT ARSIP 03 · TRAGEDI OKTOBER 1740 &amp; PERANG GEGER PECINAN (1740–1743)</text>
+  <text x="56" y="106" fill="#f4f4f2" font-family="Spectral, Georgia, serif" font-size="25" font-weight="600">Chinezenmoord Batavia, Aliansi Tionghoa-Jawa &amp; Diaspora Pesisir</text>
+  <!-- Timeline / Progression Diagram of 1740-1743 -->
+  <g transform="translate(56, 140)">
+    <rect x="0" y="0" width="212" height="275" fill="#281c1a" stroke="#8a1c14" stroke-width="1.5"/>
+    <text x="18" y="32" fill="#e06c64" font-family="JetBrains Mono, monospace" font-size="12">FASE I · PRA-1740</text>
+    <text x="18" y="58" fill="#f4f4f2" font-family="Spectral, Georgia, serif" font-size="17" font-weight="600">Krisis Gula Ommelanden</text>
+    <text x="18" y="88" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="13.5">• Anjloknya harga gula dunia</text>
+    <text x="18" y="112" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="13.5">• Puluhan pabrik gula bangkrut</text>
+    <text x="18" y="136" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="13.5">• Pengangguran buruh Singkek</text>
+    <text x="18" y="160" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="13.5">• Desas-desus deportasi paksa</text>
+    <text x="18" y="184" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="13.5">  ke Sri Lanka &amp; Banda</text>
+
+    <rect x="238" y="0" width="212" height="275" fill="#331a18" stroke="#c8963e" stroke-width="1.8"/>
+    <text x="256" y="32" fill="#e5b869" font-family="JetBrains Mono, monospace" font-size="12">FASE II · OKTOBER 1740</text>
+    <text x="256" y="58" fill="#f4f4f2" font-family="Spectral, Georgia, serif" font-size="17" font-weight="600">Pembantaian di Batavia</text>
+    <text x="256" y="92" fill="#ff9e96" font-family="JetBrains Mono, monospace" font-size="22" font-weight="600">&gt; 10.000 JIWA</text>
+    <text x="256" y="118" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="13.5">• Perintah GG Adriaan Valckenier</text>
+    <text x="256" y="142" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="13.5">• Pembakaran rumah &amp; toko</text>
+    <text x="256" y="166" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="13.5">• Penangkapan Kapiten</text>
+    <text x="256" y="188" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="13.5">  Nie Hoe Kong</text>
+
+    <rect x="476" y="0" width="212" height="275" fill="#24201a" stroke="#c8963e" stroke-width="1.5"/>
+    <text x="494" y="32" fill="#c8963e" font-family="JetBrains Mono, monospace" font-size="12">FASE III · 1740–1743</text>
+    <text x="494" y="58" fill="#f4f4f2" font-family="Spectral, Georgia, serif" font-size="17" font-weight="600">Perang Jawa &amp; Diaspora</text>
+    <text x="494" y="88" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="13.5">• Khe Panjang (Sepanjang)</text>
+    <text x="494" y="112" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="13.5">  &amp; Tan Sin Ko (Singseh)</text>
+    <text x="494" y="136" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="13.5">• Aliansi Tionghoa–Mataram</text>
+    <text x="494" y="160" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="13.5">• Pendudukan Keraton Kartasura</text>
+    <text x="494" y="184" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="13.5">• Lahirnya Pecinan Pantura</text>
+  </g>
+  <line x1="56" y1="450" x2="744" y2="450" stroke="#c8963e" stroke-width="0.8" opacity="0.5"/>
+  <text x="56" y="482" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="15">Pasca-Geger Pecinan, VOC menerapkan segregasi permukiman di luar benteng kota serta memicu</text>
+  <text x="56" y="505" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="15">tumbuhnya pusat budaya Peranakan di Cirebon, Brebes, Tegal, Pekalongan, Semarang, Lasem, &amp; Tuban.</text>
+  <text x="56" y="542" fill="#c8963e" font-family="JetBrains Mono, monospace" font-size="12">SUMBER: DARADJADI (2013), GEGER PACINAN 1740–1743: PERSEKUTUAN TIONGHOA-JAWA MELAWAN VOC</text>
+</svg>

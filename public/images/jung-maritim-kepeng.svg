@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="bg1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1c1915"/>
+      <stop offset="100%" stop-color="#2b241c"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg1)"/>
+  <rect x="24" y="24" width="752" height="552" fill="none" stroke="#c8963e" stroke-width="1.5" opacity="0.6"/>
+  <rect x="32" y="32" width="736" height="536" fill="none" stroke="#c8963e" stroke-width="0.6" stroke-dasharray="4 4" opacity="0.4"/>
+  <!-- Compass & Monsoon Wind Lines -->
+  <g stroke="#c8963e" stroke-width="1" opacity="0.3" fill="none">
+    <path d="M 80 140 Q 260 190 440 280"/>
+    <path d="M 120 110 Q 300 160 480 250"/>
+    <path d="M 60 180 Q 240 230 420 320"/>
+  </g>
+  <!-- Chinese Junk Ship Silhouette / Line Engraving -->
+  <g transform="translate(140, 175)" stroke="#ebd9b8" stroke-width="2" fill="none">
+    <path d="M 40 210 L 310 210 L 350 155 L 250 165 L 90 165 L 10 145 Z" fill="#3a2e21" stroke="#e5b869" stroke-width="2.2"/>
+    <!-- Masts & Battened Sails -->
+    <line x1="110" y1="165" x2="110" y2="35" stroke="#e5b869" stroke-width="2.5"/>
+    <line x1="195" y1="165" x2="195" y2="10" stroke="#e5b869" stroke-width="3"/>
+    <line x1="275" y1="165" x2="275" y2="55" stroke="#e5b869" stroke-width="2.2"/>
+    <path d="M 65 50 L 110 40 L 110 140 L 55 130 Z" fill="rgba(200,150,62,0.18)" stroke="#ebd9b8" stroke-width="1.5"/>
+    <line x1="62" y1="72" x2="110" y2="65" stroke="#c8963e" stroke-width="1"/>
+    <line x1="59" y1="95" x2="110" y2="90" stroke="#c8963e" stroke-width="1"/>
+    <line x1="57" y1="116" x2="110" y2="112" stroke="#c8963e" stroke-width="1"/>
+    <path d="M 135 25 L 195 15 L 195 145 L 125 135 Z" fill="rgba(200,150,62,0.24)" stroke="#ebd9b8" stroke-width="1.6"/>
+    <line x1="133" y1="50" x2="195" y2="42" stroke="#c8963e" stroke-width="1"/>
+    <line x1="131" y1="76" x2="195" y2="70" stroke="#c8963e" stroke-width="1"/>
+    <line x1="129" y1="102" x2="195" y2="97" stroke="#c8963e" stroke-width="1"/>
+    <line x1="127" y1="122" x2="195" y2="118" stroke="#c8963e" stroke-width="1"/>
+    <path d="M 230 68 L 275 58 L 275 145 L 222 138 Z" fill="rgba(200,150,62,0.18)" stroke="#ebd9b8" stroke-width="1.5"/>
+    <line x1="228" y1="90" x2="275" y2="82" stroke="#c8963e" stroke-width="1"/>
+    <line x1="225" y1="115" x2="275" y2="108" stroke="#c8963e" stroke-width="1"/>
+    <!-- Waves -->
+    <path d="M -20 220 Q 30 208 80 220 T 180 220 T 280 220 T 380 220" stroke="#7ea3a8" stroke-width="1.8"/>
+    <path d="M 0 236 Q 50 224 100 236 T 200 236 T 300 236 T 390 236" stroke="#7ea3a8" stroke-width="1.2" opacity="0.7"/>
+  </g>
+  <!-- Copper Cash Coin (Uang Kepeng / Picis) Emblem on Right -->
+  <g transform="translate(600, 275)">
+    <circle r="92" fill="#2c2216" stroke="#e5b869" stroke-width="3"/>
+    <circle r="78" fill="none" stroke="#c8963e" stroke-width="1.2" stroke-dasharray="3 3"/>
+    <rect x="-26" y="-26" width="52" height="52" fill="#1c1915" stroke="#e5b869" stroke-width="2.5"/>
+    <text x="0" y="-44" text-anchor="middle" fill="#ebd9b8" font-family="Spectral, Georgia, serif" font-size="15" font-weight="600">PICIS · KEPENG</text>
+    <text x="0" y="56" text-anchor="middle" fill="#c8963e" font-family="JetBrains Mono, monospace" font-size="12">1.000 KEPING / IKAT</text>
+  </g>
+  <!-- Archival Header & Footer Text -->
+  <text x="56" y="72" fill="#c8963e" font-family="JetBrains Mono, monospace" font-size="13" letter-spacing="2">PELAT ARSIP 01 · JALUR SUTRA MARITIM &amp; REVOLUSI FINANSIAL (ABAD V–XVII)</text>
+  <text x="56" y="106" fill="#f4f4f2" font-family="Spectral, Georgia, serif" font-size="26" font-weight="600">Pelayaran Jung Angin Muson &amp; Monetisasi Koin Kepeng</text>
+  <line x1="56" y1="455" x2="744" y2="455" stroke="#c8963e" stroke-width="0.8" opacity="0.5"/>
+  <text x="56" y="485" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="15">Siklus Muson Utara–Timur Laut (Nov–Mar) membawa porselen, sutra, &amp; koin kepeng tembaga;</text>
+  <text x="56" y="508" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="15">Muson Selatan–Tenggara (Mei–Sep) memulangkan lada Banten, cengkih-pala Maluku, &amp; cendana.</text>
+  <text x="56" y="542" fill="#c8963e" font-family="JetBrains Mono, monospace" font-size="12">SUMBER: KRONIK FAXIAN (FOGUO JI, ABAD V) · PRASASTI KENCANA (860 M) · ANTHONY REID (1450–1680)</text>
+</svg>

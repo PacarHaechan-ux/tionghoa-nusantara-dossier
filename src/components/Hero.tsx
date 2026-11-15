@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { heroData, backgroundData, exploitationData } from '../data/historyContent';
+import { heroData, backgroundData } from '../data/historyContent';
 import type { HistoricalImage } from '../data/historyContent';
 import {
   ArrowRight,
@@ -23,25 +23,25 @@ interface CuratorialPlate {
 
 const curatorialPlates: CuratorialPlate[] = [
   {
-    id: 'plate-vandenbosch',
-    shortLabel: 'Van den Bosch',
-    year: '1836',
-    title: 'Potret Gubernur Jenderal Johannes van den Bosch',
+    id: 'plate-maritim-kepeng',
+    shortLabel: 'Jalur Maritim & Kepeng',
+    year: 'Abad V–XVII',
+    title: 'Pelayaran Jung Angin Muson & Monetisasi Koin Kepeng',
     image: heroData.image,
   },
   {
-    id: 'plate-diponegoro',
-    shortLabel: 'Perang Jawa',
-    year: '1857',
-    title: 'Penangkapan Pangeran Diponegoro di Magelang',
-    image: backgroundData.crises[0].image!,
+    id: 'plate-batavia-voc',
+    shortLabel: 'Kapiten Batavia',
+    year: '1619–1740',
+    title: 'Kapitein Souw Beng Kong & Pembangunan Ekonomi Batavia',
+    image: backgroundData.crises[1].image!,
   },
   {
-    id: 'plate-kopi',
-    shortLabel: 'Kopi Jawa',
-    year: 'Arsip',
-    title: 'Pengolahan Kopi Ekspor di Perkebunan Jawa',
-    image: exploitationData.commodities[0].image!,
+    id: 'plate-pecinan-banten',
+    shortLabel: 'Pecinan Banten',
+    year: '1596–1726',
+    title: 'Syahbandar Kiyai Ngabehi Cakradana & Masjid Pacinan Tinggi',
+    image: backgroundData.crises[2].image!,
   },
 ];
 
@@ -66,7 +66,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenImage }) => {
         {/* Asymmetric 7:5 Rijksmuseum Curatorial Split */}
         <div className="hero-split-grid">
           <div className="hero-editorial-col">
-            <h1 className="hero-title">Cultuurstelsel</h1>
+            <h1 className="hero-title">{heroData.title}</h1>
             <p className="hero-subtitle">{heroData.subtitle}</p>
             <p className="hero-overview-text">{heroData.overview}</p>
 
@@ -74,7 +74,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenImage }) => {
               <span>{heroData.course}</span>
               <span className="colophon-dot" aria-hidden="true">·</span>
               <span>
-                Disusun oleh <strong>{heroData.authors[0].name}</strong> &amp; <strong>{heroData.authors[1].name}</strong>
+                Kelompok 8: <strong>{heroData.authors[0].name}</strong> &amp;{' '}
+                <strong>{heroData.authors[1].name}</strong>
               </span>
             </div>
 
@@ -94,7 +95,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenImage }) => {
                 onClick={() => scrollTo('timeline-section')}
                 id="hero-btn-timeline"
               >
-                <span>Garis Waktu (1830–1870)</span>
+                <span>Garis Waktu (Abad V–1932)</span>
               </button>
             </div>
           </div>
@@ -155,7 +156,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenImage }) => {
         </div>
 
         {/* Open 4-Column Archival Ledger Strip (1px Hairlines, Tabular Figures, Zero Icon Tiles) */}
-        <dl className="hero-ledger-strip" aria-label="Ringkasan data kunci Cultuurstelsel">
+        <dl className="hero-ledger-strip" aria-label="Ringkasan data kunci sejarah ekonomi dan sosial Tionghoa Nusantara">
           {heroData.highlights.map((item) => (
             <div key={item.label} className="ledger-stat-cell">
               <dd className="ledger-stat-value tabular-nums">{item.value}</dd>

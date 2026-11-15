@@ -111,7 +111,7 @@ export const QuickSearchModal: React.FC<QuickSearchModalProps> = ({ isOpen, onCl
                 setQuery(e.target.value);
                 setSelectedIndex(0);
               }}
-              placeholder="Ketik kata kunci, tokoh, tahun, pasal, atau karesidenan (mis. Van Rees, Pasal 4, Cirebon, Bouw)..."
+              placeholder="Ketik kata kunci, tokoh, tahun, regulasi, atau wilayah (mis. Kepeng, Cakradana, Opiumpacht, Banten, Sin Po)..."
               className="quick-search-input"
               aria-label="Cari materi di seluruh bab dan tab"
               id="quick-search-input-field"
@@ -172,8 +172,8 @@ export const QuickSearchModal: React.FC<QuickSearchModalProps> = ({ isOpen, onCl
                 Tidak ditemukan arsip untuk kata kunci <strong>“{query}”</strong>.
               </p>
               <p className="empty-secondary">
-                Coba gunakan istilah seperti <em>Batig Slot</em>, <em>Staatsblad</em>, <em>Breman</em>,{' '}
-                <em>Priangan</em>, <em>Cirebon</em>, <em>Nila</em>, atau <em>Van Rees</em>.
+                Coba gunakan istilah seperti <em>Kepeng</em>, <em>Geger Pecinan</em>, <em>Opiumpacht</em>,{' '}
+                <em>Banten</em>, <em>THHK</em>, <em>Sin Po</em>, atau <em>Liem Koen Hian</em>.
               </p>
             </div>
           ) : (

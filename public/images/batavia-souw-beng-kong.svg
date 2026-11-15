@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <rect width="800" height="600" fill="#1a1815"/>
+  <rect x="24" y="24" width="752" height="552" fill="none" stroke="#c8963e" stroke-width="1.5" opacity="0.6"/>
+  <text x="56" y="72" fill="#c8963e" font-family="JetBrains Mono, monospace" font-size="13" letter-spacing="2">PELAT ARSIP 02 · KEMITRAAN STRATEGIS VOC &amp; KAPITEIN DER CHINEZEN (1619)</text>
+  <text x="56" y="106" fill="#f4f4f2" font-family="Spectral, Georgia, serif" font-size="25" font-weight="600">Souw Beng Kong, Konstruksi Kanal Batavia &amp; Sistem Opsir Tionghoa</text>
+  <!-- Architectural Blueprint of Old Batavia Canal & Shophouses -->
+  <g transform="translate(56, 140)" stroke="#e5b869" fill="none">
+    <rect x="0" y="0" width="410" height="280" fill="#231f1a" stroke="#c8963e" stroke-width="1.5"/>
+    <!-- Shophouses (Ruko 2 Lantai) -->
+    <rect x="35" y="45" width="75" height="125" fill="#2e261d" stroke="#ebd9b8" stroke-width="1.5"/>
+    <line x1="35" y1="105" x2="110" y2="105" stroke="#c8963e" stroke-width="1.2"/>
+    <polygon points="30,45 72.5,18 115,45" fill="#3d2c1e" stroke="#e5b869" stroke-width="1.5"/>
+    <rect x="125" y="45" width="75" height="125" fill="#2e261d" stroke="#ebd9b8" stroke-width="1.5"/>
+    <line x1="125" y1="105" x2="200" y2="105" stroke="#c8963e" stroke-width="1.2"/>
+    <polygon points="120,45 162.5,18 205,45" fill="#3d2c1e" stroke="#e5b869" stroke-width="1.5"/>
+    <!-- Fortress Wall & Canal Bridge -->
+    <rect x="235" y="60" width="145" height="110" fill="#2a2219" stroke="#ebd9b8" stroke-width="1.5"/>
+    <path d="M 235 60 L 255 60 L 255 48 L 275 48 L 275 60 L 295 60 L 295 48 L 315 48 L 315 60 L 380 60" stroke="#e5b869" stroke-width="1.5"/>
+    <!-- Canal Water -->
+    <line x1="15" y1="190" x2="395" y2="190" stroke="#7ea3a8" stroke-width="2"/>
+    <line x1="30" y1="210" x2="380" y2="210" stroke="#7ea3a8" stroke-width="1.2" stroke-dasharray="8 4"/>
+    <text x="205" y="248" text-anchor="middle" fill="#ebd9b8" font-family="JetBrains Mono, monospace" font-size="12">KANAL BATAVIA · BENTENG · RUKO &amp; PENGGILINGAN GULA OMMELANDEN</text>
+  </g>
+  <!-- Right Panel: Hierarchy of Chinese Officers (Mayor, Kapiten, Letnan) -->
+  <g transform="translate(495, 140)">
+    <rect x="0" y="0" width="249" height="280" fill="#261f18" stroke="#8a1c14" stroke-width="2"/>
+    <text x="124" y="34" text-anchor="middle" fill="#e5b869" font-family="Spectral, Georgia, serif" font-size="18" font-weight="600">INSTITUSI KONG KOAN</text>
+    <text x="124" y="54" text-anchor="middle" fill="#ebd9b8" font-family="JetBrains Mono, monospace" font-size="11">INDIRECT RULE VOC (SEJAK 1619)</text>
+    <rect x="24" y="72" width="201" height="44" fill="#33261b" stroke="#c8963e" stroke-width="1.2"/>
+    <text x="124" y="99" text-anchor="middle" fill="#f4f4f2" font-family="Spectral, Georgia, serif" font-size="15" font-weight="600">MAYOR DER CHINEZEN</text>
+    <rect x="24" y="130" width="201" height="44" fill="#33261b" stroke="#c8963e" stroke-width="1.2"/>
+    <text x="124" y="157" text-anchor="middle" fill="#f4f4f2" font-family="Spectral, Georgia, serif" font-size="15" font-weight="600">KAPITEIN (Souw Beng Kong)</text>
+    <rect x="24" y="188" width="201" height="44" fill="#33261b" stroke="#c8963e" stroke-width="1.2"/>
+    <text x="124" y="215" text-anchor="middle" fill="#f4f4f2" font-family="Spectral, Georgia, serif" font-size="15" font-weight="600">LUITENANT DER CHINEZEN</text>
+    <text x="124" y="256" text-anchor="middle" fill="#c8963e" font-family="JetBrains Mono, monospace" font-size="11">PAJAK KEPALA: 1,5 REAL / BULAN</text>
+  </g>
+  <line x1="56" y1="450" x2="744" y2="450" stroke="#c8963e" stroke-width="0.8" opacity="0.5"/>
+  <text x="56" y="482" fill="#ebd9b8" font-family="Spectral, Georgia, serif" font-style="italic" font-size="16">“Daer is geen volck in de wereld, die ons beter dienen dan Chineezen.”</text>
+  <text x="56" y="508" fill="#c8963e" font-family="Source Sans 3, sans-serif" font-size="14">— Surat Gubernur Jenderal Jan Pieterszoon Coen kepada Direksi Heeren XVII (1619)</text>
+  <text x="56" y="542" fill="#9e9689" font-family="JetBrains Mono, monospace" font-size="12">SUMBER: BLUSSÉ (1988) · LOHANDA (2007) · ARSIP VOC BATAVIA</text>
+</svg>

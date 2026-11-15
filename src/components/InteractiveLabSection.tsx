@@ -80,19 +80,19 @@ export const InteractiveLabSection: React.FC = () => {
     const t = parseHashNavigationTarget(window.location.hash);
     return t?.sectionId === 'interactive-lab' && t.subTabId?.startsWith('marker-')
       ? t.subTabId
-      : 'marker-priangan';
+      : 'marker-banten';
   });
   const [mapZoom, setMapZoom] = useState<MapZoom>(1);
   const [mapRegionView, setMapRegionView] = useState<MapRegionView>('nusantara');
 
   // --- State Tab 2: Kalkulator Kolonial ---
   // Sub-alat A: Kurs Gulden
-  const [guldenInput, setGuldenInput] = useState<number>(2.11);
+  const [guldenInput, setGuldenInput] = useState<number>(3.5);
   // Sub-alat B: Konversi Satuan
-  const [unitType, setUnitType] = useState<string>('unit-bouw');
+  const [unitType, setUnitType] = useState<string>('unit-pikul');
   const [unitInputVal, setUnitInputVal] = useState<number>(1);
-  // Sub-alat C: Simulator Petani Jan Breman
-  const [farmerLandBouw, setFarmerLandBouw] = useState<number>(0.5);
+  // Sub-alat C: Simulator Struktur Ekonomi Kolonial
+  const [farmerLandBouw, setFarmerLandBouw] = useState<number>(1.0);
   const [selectedCrop, setSelectedCrop] = useState<'kopi' | 'tebu' | 'nila'>('nila');
 
   // --- State Tab 3: Skenario Dilema Sejarah ---
@@ -100,12 +100,12 @@ export const InteractiveLabSection: React.FC = () => {
     const t = parseHashNavigationTarget(window.location.hash);
     return t?.sectionId === 'interactive-lab' && t.subTabId?.startsWith('scenario-')
       ? t.subTabId
-      : 'scenario-cirebon-1845';
+      : 'scenario-batavia-1740';
   });
   const [chosenOption, setChosenOption] = useState<Record<string, DilemmaChoice | null>>({
-    'scenario-cirebon-1845': null,
-    'scenario-priangan-1840': null,
-    'scenario-parliament-1860': null
+    'scenario-batavia-1740': null,
+    'scenario-banten-1670': null,
+    'scenario-nasionalisme-1928': null
   });
 
   useEffect(() => {
@@ -208,7 +208,7 @@ export const InteractiveLabSection: React.FC = () => {
   }, [unitInputVal, selectedUnit]);
 
   const simResult = useMemo(() => {
-    const statutoryDays = 66; // Staatsblad 1834: max 66 hari per tahun
+    const statutoryDays = 240; // Standar kerja normal tahunan sebelum potongan utang/pacht
     let actualDays = 0;
     let plantloonPerBouw = 0;
     let landrentTax = 0;
@@ -216,23 +216,26 @@ export const InteractiveLabSection: React.FC = () => {
     let cropBurdenDesc = '';
 
     if (selectedCrop === 'kopi') {
-      actualDays = Math.round(farmerLandBouw * 180 + 30);
-      plantloonPerBouw = 14;
-      landrentTax = 10;
-      cropYieldStr = `${Math.round(farmerLandBouw * 14)} Pikul Kopi Mentah`;
-      cropBurdenDesc = 'Wajib tinggal di bivak rimba pegunungan selama 6–8 bulan dan memikul hasil panen ke gudang distrik.';
+      // Penambang Parit / Kongsi Timah Bangka & Emas Kalbar
+      actualDays = Math.round(farmerLandBouw * 160 + 130);
+      plantloonPerBouw = 42;
+      landrentTax = 36;
+      cropYieldStr = `${Math.round(farmerLandBouw * 18)} Pikul Bijih Timah / Emas Kongsi`;
+      cropBurdenDesc = 'Sistem bagi hasil parit kongsi lebih egaliter, namun monopoli harga beli pemerintah kolonial dan beban logistik beras memotong pendapatan bersih.';
     } else if (selectedCrop === 'tebu') {
-      actualDays = Math.round(farmerLandBouw * 150 + 40);
-      plantloonPerBouw = 32;
-      landrentTax = 22;
-      cropYieldStr = `${Math.round(farmerLandBouw * 350)} Pikul Batang Tebu`;
-      cropBurdenDesc = 'Menuntut giliran kerja malam hari di pabrik gula dan penyitaan sawah padi terbaik.';
+      // Pedagang Perantara Kecil & Distribusi Pasar Jawa (Sistem Pacht & Pas Jalan)
+      actualDays = Math.round(farmerLandBouw * 150 + 120);
+      plantloonPerBouw = 65;
+      landrentTax = 52;
+      cropYieldStr = `${Math.round(farmerLandBouw * 120)} Pikul Distribusi Padi, Garam & Tekstil`;
+      cropBurdenDesc = 'Wajib membayar sewa sub-pacht pasar, biaya surat jalan (Passenstelsel), serta menanggung risiko kredit macet panen di pedesaan.';
     } else {
-      actualDays = Math.round(farmerLandBouw * 210);
-      plantloonPerBouw = 12;
-      landrentTax = 15;
-      cropYieldStr = `${Math.round(farmerLandBouw * 80)} Pon Pasta Nila Kering`;
-      cropBurdenDesc = 'Pekerjaan merendam daun nila di bak fermentasi memicu penyakit kulit dan air limbah meracuni irigasi padi.';
+      // Kuli Kontrak Sinkeh Perkebunan Tembakau Deli (Koelie Ordonnantie 1880)
+      actualDays = Math.round(farmerLandBouw * 170 + 150);
+      plantloonPerBouw = 28;
+      landrentTax = 38;
+      cropYieldStr = `${Math.round(farmerLandBouw * 45)} Bal Tembakau Deli Sortir`;
+      cropBurdenDesc = 'Terikat Koelie Ordonnantie 1880 & Poenale Sanctie; potongan utang tiket kapal (voorschot), barak, dan meza membuat buruh sinkeh terlilit defisit utang.';
     }
 
     const grossEarning = Math.round(farmerLandBouw * plantloonPerBouw * 100) / 100;
@@ -258,10 +261,9 @@ export const InteractiveLabSection: React.FC = () => {
       <div className="interactive-lab-container">
         {/* Section Header */}
         <div className="section-header">
-          <h2 className="section-title">Laboratorium Sejarah: Peta Spasial, Komparator, & Simulasi Dilema</h2>
+          <h2 className="section-title">Laboratorium Sejarah: Peta Jaringan Nusantara, Kalkulator &amp; Simulasi Dilema</h2>
           <p className="section-subtitle">
-            Instrumen investigasi spasial berstandar geospasial Nusantara, kalkulator komparasi sosio-ekonomi Jan Breman,
-            dan simulasi pengambilan keputusan dilema moral para aktor sejarah Sistem Tanam Paksa (1830–1870).
+            Peta geospasial 13 simpul Pecinan, kongsi tambang, dan pelabuhan niaga; kalkulator mata uang kepeng/gulden &amp; struktur ekonomi kolonial; serta simulasi dilema tokoh sejarah (1670–1932).
           </p>
         </div>
 
@@ -322,28 +324,28 @@ export const InteractiveLabSection: React.FC = () => {
                   className={`map-filter-btn ${mapFilter === 'commodity' ? 'active' : ''}`}
                   onClick={() => handleFilterChange('commodity')}
                 >
-                  <MapPin size={14} /> Sentra Komoditas
+                  <MapPin size={14} /> Sentra Niaga &amp; Pecinan
                 </button>
                 <button
                   type="button"
                   className={`map-filter-btn ${mapFilter === 'famine' ? 'active' : ''}`}
                   onClick={() => handleFilterChange('famine')}
                 >
-                  <AlertTriangle size={14} /> Titik Kelaparan
+                  <AlertTriangle size={14} /> Tragedi &amp; Eksploitasi Kuli
                 </button>
                 <button
                   type="button"
                   className={`map-filter-btn ${mapFilter === 'resistance' ? 'active' : ''}`}
                   onClick={() => handleFilterChange('resistance')}
                 >
-                  <Flame size={14} /> Aksi Resistensi
+                  <Flame size={14} /> Perang Kongsi &amp; Aliansi
                 </button>
                 <button
                   type="button"
                   className={`map-filter-btn ${mapFilter === 'railway-hub' ? 'active' : ''}`}
                   onClick={() => handleFilterChange('railway-hub')}
                 >
-                  <Train size={14} /> Rel Kereta & Hub
+                  <Train size={14} /> Koridor Maritim &amp; Diaspora
                 </button>
               </div>
             </div>
@@ -356,14 +358,14 @@ export const InteractiveLabSection: React.FC = () => {
                   <div className="map-header-titles">
                     <span className="map-meta-title">
                       {mapRegionView === 'nusantara'
-                        ? 'ALGEMEENE KAART VAN NEDERLANDSCH-INDIË (NUSANTARA 95°–141° BT)'
-                        : 'DETAIL KAART VAN JAVA EN MADOERA (105°–115° BT • 1830–1870)'}
+                        ? 'ATLAS JARINGAN NIAGA, PECINAN & KONGSI NUSANTARA (95°–141° BT)'
+                        : 'DETAIL PETA PECINAN & PELABUHAN PULAU JAWA–BANTEN (105°–115° BT)'}
                     </span>
                     <span className="map-meta-scale">
                       Proyeksi Geospasial WGS84 Khatulistiwa •{' '}
                       {mapRegionView === 'nusantara'
-                        ? 'Klik Pulau Jawa atau sakelar kanan untuk perbesar detail 7 karesidenan'
-                        : 'Menampilkan garis pantai presisi tinggi Jawa, Selat Sunda, Madura & rel kereta kolonial'}
+                        ? 'Klik Pulau Jawa atau sakelar kanan untuk perbesar detail Banten, Batavia, Lasem, Semarang & Surabaya'
+                        : 'Menampilkan simpul Pecinan Banten, Cina Benteng Tangerang, Batavia, Pantura & jalur logistik Jawa'}
                     </span>
                   </div>
 
@@ -1008,19 +1010,19 @@ export const InteractiveLabSection: React.FC = () => {
                 <div className="map-legend-bar">
                   <div className="legend-item">
                     <span className="legend-dot dot-commodity" />
-                    <span>Sentra Komoditas Wajib</span>
+                    <span>Sentra Niaga, Pecinan &amp; Tambang</span>
                   </div>
                   <div className="legend-item">
                     <span className="legend-dot dot-famine" />
-                    <span>Tragedi Kelaparan / Krisis</span>
+                    <span>Tragedi 1740 &amp; Kuli Kontrak Deli</span>
                   </div>
                   <div className="legend-item">
                     <span className="legend-dot dot-resistance" />
-                    <span>Aksi Resistensi Petani</span>
+                    <span>Perang Kongsi &amp; Perlawanan</span>
                   </div>
                   <div className="legend-item">
                     <span className="legend-dot dot-railway" />
-                    <span>Hub Pelabuhan & Rel Kereta Api</span>
+                    <span>Koridor Maritim &amp; Pelabuhan</span>
                   </div>
                 </div>
               </div>
@@ -1170,13 +1172,13 @@ export const InteractiveLabSection: React.FC = () => {
                 <div className="calc-card-header">
                   <Scale className="calc-card-icon" size={20} />
                   <div>
-                    <h3 className="calc-card-title">Konverter Satuan Ukuran Hindia Belanda</h3>
-                    <p className="calc-card-desc">Konversi resmi ukuran tanah, bobot, dan sensus cacah era Tanam Paksa</p>
+                    <h3 className="calc-card-title">Konverter Satuan Niaga &amp; Moneter Nusantara</h3>
+                    <p className="calc-card-desc">Konversi satuan Pikul, Kati, Tahil, Koin Kepeng, dan Bouw lahan</p>
                   </div>
                 </div>
 
                 <div className="calc-input-group">
-                  <label htmlFor="unit-type-select" className="calc-input-label">Pilih Satuan Kolonial:</label>
+                  <label htmlFor="unit-type-select" className="calc-input-label">Pilih Satuan Historis:</label>
                   <select
                     id="unit-type-select"
                     value={unitType}
@@ -1205,44 +1207,43 @@ export const InteractiveLabSection: React.FC = () => {
                 </div>
 
                 <div className="calc-result-box">
-                  <span className="result-label">Ekuivalen Metrik Standar:</span>
+                  <span className="result-label">Ekuivalen Standar:</span>
                   <div className="result-value">
                     {unitInputVal} {selectedUnit.unitName.split(' ')[0]} = {convertedMetricValue}{' '}
                     {selectedUnit.unitCategory === 'luas'
                       ? 'Meter Persegi'
                       : selectedUnit.unitCategory === 'bobot'
                       ? 'Kilogram'
-                      : 'Kepala Keluarga (Cacah)'}
+                      : 'Keping Koin Kepeng (Picis)'}
                   </div>
                   <p className="result-explanation">{selectedUnit.historicalUsage}</p>
                 </div>
               </div>
             </div>
 
-            {/* Sub-Alat C: Simulator Beban Kerja Petani (Jan Breman Metric) */}
+            {/* Sub-Alat C: Simulator Struktur Ekonomi Kolonial */}
             <div className="farmer-simulator-section">
               <div className="sim-header">
                 <UserCheck className="sim-icon" size={22} />
                 <div>
-                  <h3 className="sim-title">Simulator Beban Petani & Neraca Pajak (Jan Breman Metric)</h3>
+                  <h3 className="sim-title">Simulator Struktur Ekonomi Kolonial: Kuli Deli, Perantara Jawa &amp; Kongsi Timah</h3>
                   <p className="sim-desc">
-                    Hitung hari kerja riil yang dirampas kolonial dan apakah petani Anda untung atau justru
-                    mengalami skandal "Nombok Pajak" (<em>deficit</em>).
+                    Bandingkan kontras tajam antara jeratan utang kuli kontrak (<em>sinkeh</em>) di bawah <em>Koelie Ordonnantie</em> 1880, beban pungutan sistem <em>Pacht</em> perantara di Jawa, dan bagi hasil kongsi tambang di Luar Jawa.
                   </p>
                 </div>
               </div>
 
               <div className="sim-controls-grid">
-                {/* Luas Lahan Slider */}
+                {/* Skala Kontrak / Unit Kerja Slider */}
                 <div className="sim-control-box">
                   <div className="control-header">
-                    <label htmlFor="land-size-slider">Luas Tanah Sawah Garapan Petani:</label>
-                    <span className="control-val">{farmerLandBouw} Bouw ({(farmerLandBouw * 0.7096).toFixed(2)} Hektar)</span>
+                    <label htmlFor="land-size-slider">Skala Unit Kerja / Volume Kontrak Tahunan:</label>
+                    <span className="control-val">{farmerLandBouw} Unit ({Math.round(farmerLandBouw * 12)} Bulan Kerja)</span>
                   </div>
                   <input
                     id="land-size-slider"
                     type="range"
-                    min="0.2"
+                    min="0.5"
                     max="2.0"
                     step="0.1"
                     value={farmerLandBouw}
@@ -1250,15 +1251,15 @@ export const InteractiveLabSection: React.FC = () => {
                     className="sim-slider"
                   />
                   <div className="slider-ticks">
-                    <span>0.2 Bouw (Sempit)</span>
-                    <span>1.0 Bouw (Sedang)</span>
-                    <span>2.0 Bouw (Luas)</span>
+                    <span>0.5 Unit (6 Bulan)</span>
+                    <span>1.0 Unit (1 Tahun)</span>
+                    <span>2.0 Unit (2 Tahun Kontrak)</span>
                   </div>
                 </div>
 
-                {/* Jenis Tanaman Selector */}
+                {/* Jenis Sektor Selector */}
                 <div className="sim-control-box">
-                  <span className="control-label-text">Komoditas Wajib yang Diperintahkan:</span>
+                  <span className="control-label-text">Pilih Kelompok Pekerja / Perantara:</span>
                   <div className="crop-selector-btns">
                     <button
                       type="button"
@@ -1266,7 +1267,7 @@ export const InteractiveLabSection: React.FC = () => {
                       onClick={() => setSelectedCrop('nila')}
                     >
                       <Leaf size={14} className="crop-btn-icon" />
-                      <span>Nila / Indigo (Cirebon)</span>
+                      <span>Kuli Kontrak Sinkeh (Deli 1880)</span>
                     </button>
                     <button
                       type="button"
@@ -1274,7 +1275,7 @@ export const InteractiveLabSection: React.FC = () => {
                       onClick={() => setSelectedCrop('tebu')}
                     >
                       <Sprout size={14} className="crop-btn-icon" />
-                      <span>Tebu / Gula (Pasuruan)</span>
+                      <span>Perantara Pasar &amp; Logistik (Jawa)</span>
                     </button>
                     <button
                       type="button"
@@ -1282,7 +1283,7 @@ export const InteractiveLabSection: React.FC = () => {
                       onClick={() => setSelectedCrop('kopi')}
                     >
                       <Coffee size={14} className="crop-btn-icon" />
-                      <span>Kopi Bivak (Priangan)</span>
+                      <span>Penambang Parit Kongsi (Bangka/Kalbar)</span>
                     </button>
                   </div>
                 </div>
@@ -1291,51 +1292,51 @@ export const InteractiveLabSection: React.FC = () => {
               {/* Output Metrik Simulator */}
               <div className="sim-metrics-results">
                 <div className="metric-card">
-                  <span className="metric-label">Hari Kerja Riil / Tahun</span>
+                  <span className="metric-label">Beban Hari KerjaEfektif</span>
                   <div className="metric-val highlight-amber">{simResult.actualDays} Hari</div>
                   <span className="metric-sub">
-                    Batas Staatsblad: <strong>{simResult.statutoryDays} hari</strong> (Kelebihan {simResult.excessDays} hari rodi!)
+                    Standar normal: <strong>{simResult.statutoryDays} hari</strong> (Ekstra {simResult.excessDays} hari kerja berat)
                   </span>
                 </div>
 
                 <div className="metric-card">
-                  <span className="metric-label">Taksiran Hasil Panen Wajib</span>
+                  <span className="metric-label">Output Produksi / Distribusi</span>
                   <div className="metric-val">{simResult.cropYieldStr}</div>
                   <span className="metric-sub">{simResult.cropBurdenDesc}</span>
                 </div>
 
                 <div className="metric-card">
-                  <span className="metric-label">Upah Tebasan Panen (<em>Plantloon</em>)</span>
+                  <span className="metric-label">Pendapatan Kotor Tahunan</span>
                   <div className="metric-val">ƒ {simResult.grossEarning.toFixed(2)}</div>
-                  <span className="metric-sub">Harga beli sepihak pemerintah kolonial</span>
+                  <span className="metric-sub">Sebelum potongan utang kontrak, sewa pacht &amp; pas jalan</span>
                 </div>
 
                 <div className="metric-card">
-                  <span className="metric-label">Kewajiban Pajak Tanah (<em>Landrent</em>)</span>
+                  <span className="metric-label">Potongan Pacht / Utang Kontrak</span>
                   <div className="metric-val">ƒ {simResult.taxDeduction.toFixed(2)}</div>
-                  <span className="metric-sub">Pajak tetap ditagih tunai meski panen gagal</span>
+                  <span className="metric-sub">Pungutan kolonial, bunga modal, atau potongan barak</span>
                 </div>
 
                 <div className={`metric-card balance-card ${simResult.isDeficit ? 'card-deficit' : 'card-surplus'}`}>
-                  <span className="metric-label">Neraca Bersih Petani</span>
+                  <span className="metric-label">Saldo Bersih Akhir</span>
                   <div className="metric-val">
                     {simResult.isDeficit ? `- ƒ ${Math.abs(simResult.netBalance).toFixed(2)}` : `+ ƒ ${simResult.netBalance.toFixed(2)}`}
                   </div>
                   <span className="metric-badge-status">
                     {simResult.isDeficit ? (
                     <span className="status-label status-deficit">
-                      <AlertTriangle size={13} /> Skandal Nombok Pajak
+                      <AlertTriangle size={13} /> Jeratan Utang Kuli Kontrak
                     </span>
                   ) : (
                     <span className="status-label status-surplus">
-                      <CheckCircle2 size={13} /> Surplus Minimal
+                      <CheckCircle2 size={13} /> Margin Bersih Terbatas
                     </span>
                   )}
                   </span>
                   <p className="balance-note">
                     {simResult.isDeficit
-                      ? 'Petani tidak menerima uang sepeser pun, justru harus berutang kepada lintah darat atau menggadaikan ternak untuk membayar sisa pajak tanah.'
-                      : 'Petani menerima sisa upah tunai, namun waktu bercocok tanam padi tersita sehingga ancaman rawan pangan tetap membayangi.'}
+                      ? 'Di bawah Koelie Ordonnantie 1880, potongan utang perjalanan (voorschot) dan kebutuhan barak membuat kuli sinkeh berutang di akhir kontrak dan terpaksa memperpanjang masa kerjanya.'
+                      : 'Meskipun mencatatkan saldo positif, sebagian besar surplus diserap oleh setoran monopoli ke kas kolonial dan biaya perizinan surat jalan (Passenstelsel).'}
                   </p>
                 </div>
               </div>

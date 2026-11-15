@@ -12,27 +12,29 @@ export const Footer: React.FC = () => {
       <div className="container">
         <div className="footer-top-row">
           <div className="footer-brand-block">
-            <h3 className="footer-title">Cultuurstelsel (1830–1870)</h3>
+            <h3 className="footer-title">Masyarakat Tionghoa di Nusantara (Abad V–XX)</h3>
             <span className="footer-subtitle">
-              Monograf Digital Sejarah Sosial Perekonomian Hindia Belanda
+              Dinamika dan Peran dalam Perekonomian Nusantara serta Kedudukannya dalam Struktur Sosial Kolonial
             </span>
             <p className="footer-about">
-              Publikasi akademik digital pengganti infografis kelompok yang membedah krisis fiskal kolonial,
-              regulasi Staatsblad 1834, surplus Batig Slot, bencana kelaparan Jawa, dan kritik parlemen abad ke-19.
+              Monograf digital akademik Kelompok 8 yang mengkaji jaringan niaga maritim dan koin kepeng, kemitraan dan tragedi era VOC, sistem Pacht dan kuli kontrak abad ke-19, stratifikasi hukum kolonial, akulturasi Pecinan Banten, hingga kebangkitan nasionalisme.
             </p>
           </div>
 
           <div className="footer-authors-block">
-            <h4 className="footer-col-title">Kolofon Penyusun</h4>
+            <h4 className="footer-col-title">Kolofon Penyusun (Kelompok 8)</h4>
             <ul className="footer-authors-list">
               <li>
-                <strong>Rokan</strong> — Penyusun &amp; Peneliti Sejarah
+                <strong>Dini Nurdiyah</strong> (NIM 2288250093)
               </li>
               <li>
-                <strong>Fiqrul</strong> — Penyusun &amp; Peneliti Sejarah
+                <strong>Gina Khairunisa Syihab</strong> (NIM 2288250054)
               </li>
               <li className="footer-course-item">
-                Mata Kuliah Sejarah Sosial Perekonomian
+                Mata Kuliah Sejarah Sosial Perekonomian · Dosen Pengampu: <strong>Eko Ribawati, M.Pd.</strong>
+              </li>
+              <li className="footer-course-item">
+                Program Studi Pendidikan Sejarah, FKIP Universitas Sultan Ageng Tirtayasa (2026)
               </li>
             </ul>
           </div>
@@ -53,7 +55,7 @@ export const Footer: React.FC = () => {
 
         <div className="footer-bottom-row">
           <p className="footer-copy">
-            © 2026 Proyek Kelompok Sejarah Sosial Perekonomian oleh Rokan &amp; Fiqrul · Disusun untuk rujukan akademik dan pembelajaran sejarah.
+            © 2026 Kelompok 8 Sejarah Sosial Perekonomian (Dini Nurdiyah &amp; Gina Khairunisa Syihab) · Prodi Pendidikan Sejarah FKIP Universitas Sultan Ageng Tirtayasa.
           </p>
         </div>
       </div>

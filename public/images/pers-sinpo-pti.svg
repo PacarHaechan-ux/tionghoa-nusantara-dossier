@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <rect width="800" height="600" fill="#1b1815"/>
+  <rect x="24" y="24" width="752" height="552" fill="none" stroke="#c8963e" stroke-width="1.5" opacity="0.6"/>
+  <text x="56" y="72" fill="#c8963e" font-family="JetBrains Mono, monospace" font-size="13" letter-spacing="2">PELAT ARSIP 08 · PERS MELAYU-TIONGHOA &amp; TIGA HALUAN POLITIK (1901–1932)</text>
+  <text x="56" y="106" fill="#f4f4f2" font-family="Spectral, Georgia, serif" font-size="24" font-weight="600">Harian Sin Po, Lagu “Indonesia Raya” (1928), &amp; Partai Tionghoa Indonesia</text>
+  <g transform="translate(56, 138)">
+    <rect x="0" y="0" width="216" height="280" fill="#281d1a" stroke="#8a1c14" stroke-width="1.6"/>
+    <text x="16" y="32" fill="#e06c64" font-family="JetBrains Mono, monospace" font-size="11.5">ALIRAN I · 1910</text>
+    <text x="16" y="58" fill="#f4f4f2" font-family="Spectral, Georgia, serif" font-size="18" font-weight="600">Kelompok Sin Po</text>
+    <text x="16" y="88" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="13.5">• Terbit 10 Okt 1910 (mingguan),</text>
+    <text x="16" y="110" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="13.5">  1 Apr 1912 (harian Batavia)</text>
+    <text x="16" y="136" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="13.5">• Haluan nasionalisme Tiongkok</text>
+    <text x="16" y="160" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="13.5">  &amp; menolak WNO Belanda</text>
+    <text x="16" y="186" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="13.5">• Mencetak perdana naskah lagu</text>
+    <text x="16" y="208" fill="#e5b869" font-family="Source Sans 3, sans-serif" font-size="13.5" font-weight="600">  “Indonesia Raya” (Nov 1928)</text>
+
+    <rect x="236" y="0" width="216" height="280" fill="#23201b" stroke="#c8963e" stroke-width="1.4"/>
+    <text x="252" y="32" fill="#e5b869" font-family="JetBrains Mono, monospace" font-size="11.5">ALIRAN II · 1928</text>
+    <text x="252" y="58" fill="#f4f4f2" font-family="Spectral, Georgia, serif" font-size="18" font-weight="600">Chung Hwa Hui (CHH)</text>
+    <text x="252" y="88" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="13.5">• Didukung intelektual lulusan</text>
+    <text x="252" y="110" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="13.5">  Belanda &amp; elite Cabang Atas</text>
+    <text x="252" y="136" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="13.5">• Tokoh: Kan Hok Hoei (H.H. Kan)</text>
+    <text x="252" y="160" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="13.5">• Jalur kooperatif parlemen</text>
+    <text x="252" y="182" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="13.5">  kolonial di dalam Volksraad</text>
+
+    <rect x="472" y="0" width="216" height="280" fill="#1e2620" stroke="#4a8c6f" stroke-width="1.6"/>
+    <text x="488" y="32" fill="#7bc4a4" font-family="JetBrains Mono, monospace" font-size="11.5">ALIRAN III · 1932</text>
+    <text x="488" y="58" fill="#f4f4f2" font-family="Spectral, Georgia, serif" font-size="18" font-weight="600">Partai Tionghoa (PTI)</text>
+    <text x="488" y="88" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="13.5">• Dipimpin Liem Koen Hian</text>
+    <text x="488" y="110" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="13.5">  &amp; harian Sin Tit Po Surabaya</text>
+    <text x="488" y="136" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="13.5">• Haluan Indonesierschap:</text>
+    <text x="488" y="158" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="13.5">  melebur dalam perjuangan</text>
+    <text x="488" y="180" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="13.5">  kemerdekaan Indonesia bersama</text>
+    <text x="488" y="202" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="13.5">  kaum pergerakan bumiputera</text>
+  </g>
+  <line x1="56" y1="450" x2="744" y2="450" stroke="#c8963e" stroke-width="0.8" opacity="0.5"/>
+  <text x="56" y="482" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="15">Pers Melayu-Tionghoa (Li Po 1901, Perniagaan 1903, Djawa Tengah 1909, Sin Po 1910, Pewarta Soerabaia)</text>
+  <text x="56" y="505" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="15">mematangkan bahasa Melayu Pasar sebagai lingua franca pergerakan nasional yang kelak menjadi Bahasa Indonesia.</text>
+  <text x="56" y="542" fill="#c8963e" font-family="JetBrains Mono, monospace" font-size="12">SUMBER: LEO SURYADINATA (1981) · AHMAT ADAM (1995)</text>
+</svg>

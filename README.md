@@ -1,123 +1,46 @@
-# 📜 Cultuurstelsel (1830–1870): Deep-Dive Archival Dossier
+# Dinamika dan Peran Masyarakat Tionghoa dalam Perekonomian Nusantara serta Kedudukannya dalam Struktur Sosial Kolonial
 
-> **Platform Edukasi & Arsip Interaktif Sejarah Sistem Tanam Paksa di Hindia Belanda**  
-> Menggabungkan estetika *vintage academic archival* dengan historiografi kritis dan riset sosiologis-historis mendalam.
-
----
-
-## 🏛️ Tentang Proyek
-
-Website ini dirancang sebagai platform eksplorasi sejarah interaktif berbasis web untuk mendalami **Sistem Tanam Paksa (*Cultuurstelsel*)** yang diberlakukan oleh Gubernur Jenderal **Johannes van den Bosch** di Hindia Belanda pada kurun waktu **1830 hingga 1870**.
-
-Menggunakan pendekatan historiografi kritis dan komparatif, platform ini tidak hanya memaparkan linimasa peristiwa, melainkan juga membedah:
-- **Sisi gelap & kontroversi birokrasi**: Nepotisme kontrak pabrik gula keluarga Van den Bosch, penyalahgunaan sistem *cultuurprocenten*, dan pengalihan dana kas kolonial tanpa izin parlemen.
-- **Dua realitas**: Komparasi pasal-pasal resmi *Staatsblad 1834 No. 22* dengan kenyataan penindasan dan eksploitasi di lapangan.
-- **Tiga Wajah Cultuurstelsel**: Komparasi mikrososiologi antara karesidenan **Priangan** (feodalisme murni & tanam paksa kopi), **Cirebon** (tragedi eksploitasi nila & skandal nombok pajak), dan **Pasuruan** (sentra industri gula & sirkulasi upah).
-- **Alokasi 690 Juta Gulden *Batig Slot***: Menelusuri ke mana mengalirnya surplus keuntungan Hindia Belanda dalam membiayai modernisasi infrastruktur domestik Kerajaan Belanda (kereta api *Staatsspoorwegen*, Terusan Noordzee, kompensasi pembebasan budak Surinam 1863, dan pengayaan konsorsium dagang NHM).
-- **Resistensi Petani Pribumi**: Dari aksi unjuk rasa 700 petani Pekalongan (1847) hingga sabotase bibit Sukapura dan pemogokan kerja.
-- **Sintesis 3 Lensa Sejarawan**: Perbandingan paradigma analisis antara **Clifford Geertz** (*Involusi Pertanian & Shared Poverty*), **Cornelis Fasseur** (*Perspektif Makro Birokrasi & Fiskal*), dan **Jan Breman** (*Kritik Arsip, Penindasan Kelas Bawah, & Resistensi Tersembunyi*).
+> **Monograf Digital & Laboratorium Interaktif Mata Kuliah Sejarah Sosial Perekonomian**  
+> **Dosen Pengampu:** Eko Ribawati, M.Pd.  
+> **Disusun oleh Kelompok 8:**  
+> 1. **Dini Nurdiyah** (`2288250093`)  
+> 2. **Gina Khairunisa Syihab** (`2288250054`)  
+> **Program Studi Pendidikan Sejarah, Fakultas Keguruan dan Ilmu Pendidikan, Universitas Sultan Ageng Tirtayasa (2026)**
 
 ---
 
-## ✨ Fitur Utama
+## Tentang Proyek
 
-1. **🏛️ Hero & Ringkasan 1 Menit (*Executive Summary*)**
-   - Ringkasan cepat angka kunci (*Key Figures*) dan pintasan navigasi instan antar-bab sejarah.
-   - Peta visual dan kutipan monumental Multatuli (*Max Havelaar*) serta Baron van Hoëvell.
+Aplikasi web monograf kuratorial ini menyajikan keseluruhan isi makalah **Kelompok 8** mengenai dinamika ekonomi dan kedudukan sosial masyarakat Tionghoa di Nusantara dari masa pra-kolonial (Jalur Sutra Maritim) hingga akhir masa kolonial Hindia Belanda (1932), termasuk kajian khusus mengenai komunitas Tionghoa di **Banten dan Tangerang**.
 
-2. **⚖️ Tabbed Dossier: Implementasi & Staatsblad 1834**
-   - **Tab 1: Regulasi vs Realitas**: Analisis 7 pasal hukum *Staatsblad 1834 No. 22* yang dikonfrontasikan langsung dengan fakta eksploitasi lapangan.
-   - **Tab 2: Tiga Wajah Cultuurstelsel**: Kartu komparasi mendalam indikator statistik Priangan, Cirebon, dan Pasuruan.
-   - **Tab 3: Dinamika Luar Jawa**: Dokumentasi ekspansi tanam paksa ke Minangkabau (Sistem Tanam Kopi Rodi), Minahasa, Maluku, Bangka, dan Madura.
-
-3. **📊 Tabbed Dossier: Eksploitasi & Finansial Kolonial**
-   - **Tab 1: Analisis Komoditas (1840–1860)**: Data neraca laba-rugi kopi, tebu/gula, nila (indigo), tembakau, dan teh.
-   - **Tab 2: Ekologi Lahan**: Pembeda dampak tanaman tahunan (*Perennials*) vs tanaman semusim sawah (*Annuals*).
-   - **Tab 3: Alokasi 690 Juta Gulden *Batig Slot***: Rincian pos pemanfaatan dana surplus kolonial di Negeri Belanda.
-   - **Tab 4: Data Makro & Kamus Kolonial**: Rekapitulasi *Kultuurverslagen*, glosarium ukuran kolonial (*Bouw, Pikul, Pon, Cacah*), dan 5 dekonstruksi statistik arsip oleh Jan Breman.
-
-4. **🌾 Tabbed Dossier: Dampak, Perlawanan, & Historiografi**
-   - **Tab 1: Tragedi Kemanusiaan & Kelaparan**: Krisis kelaparan Cirebon (1843), Demak-Grobogan (1848), dan kepunahan ternak kerbau.
-   - **Tab 2: Resistensi Rakyat**: Dokumentasi aksi protes terbuka, sabotase perkebunan, pelarian huma, dan pembakaran gudang tebu.
-   - **Tab 3: Pertarungan Politik Parlemen Belanda & UU Agraria 1870**: Dinamika liberalisasi parlemen pasca-Konstitusi Thorbecke 1848 hingga disahkannya *Agrarische Wet 1870*.
-   - **Tab 4: Matriks 3 Lensa Sejarawan**: Perbandingan komprehensif teori Geertz, Fasseur, dan Breman.
-
-5. **🔍 Lightbox Arsip Resolusi Tinggi**
-   - Modal zoom interaktif dengan metadata lengkap (sumber arsip, pelukis/fotografer, kurun waktu) untuk karya seni berlisensi domain publik (Raden Saleh, Gustave Wappers, potret tokoh arsip Tropenmuseum/Leiden).
+### Struktur Bab & Modul Interaktif
+1. **Bab I · Pendahuluan & Bab 2.1 · Aktivitas Ekonomi Sebelum Abad ke-19**
+   - Latar belakang masalah, rumusan masalah, tujuan penulisan, pelayaran jung angin muson, monetisasi koin kepeng (*picis*), kemitraan VOC dengan Kapitein Souw Beng Kong (1619), Tragedi Geger Pecinan (1740–1743), serta peran Syahbandar Kiyai Ngabehi Cakradana di Kesultanan Banten.
+2. **Bab 2.2 · Perkembangan Ekonomi Sejak Abad ke-19 hingga Akhir Masa Kolonial**
+   - Sistem sewa pajak (*Pachtstelsel* / *Opiumpacht* ~18% APBN kolonial), jaringan perdagangan perantara (*middleman*) di Jawa, perbedaan struktur ekonomi Jawa vs Luar Jawa (kongsi timah Bangka-Belitung, emas Kalimantan Barat, kuli kontrak Deli *Koelie Ordonnantie* 1880), serta kebangkitan modern pasca-1870 (Oei Tiong Ham Concern, *Siang Hwee*, THHK 1900, pers *Sin Po* 1928, dan PTI 1932).
+3. **Kronik Garis Waktu (Abad V – 1932)**
+   - 12 tonggak sejarah utama dari pelayaran maritim awal hingga berdirinya Partai Tionghoa Indonesia (PTI) oleh Liem Koen Hian.
+4. **Bab 2.3 · Kedudukan Sosial dalam Struktur Masyarakat Kolonial & Lokalitas Banten**
+   - Stratifikasi hukum tiga golongan (*Regeeringsreglement* 1854: Eropa, *Vreemde Oosterlingen*, *Inlander*), kebijakan segregasi *Wijkenstelsel* & *Passenstelsel*, diferensiasi *Peranakan* vs *Totok (Sinkeh)*, hierarki *Chineesche Officieren*, serta jejak Pecinan Banten (1596–1726), Masjid Pacinan Tinggi, dan akulturasi Cina Benteng Tangerang.
+5. **Konflik, Pergerakan Kebangsaan & Bab III Penutup (Kesimpulan & Saran)**
+   - Analisis tragedi kolonial, perlawanan bersenjata & intelektual, tiga aliran politik (*Sin Po*, *Chung Hwa Hui*, *PTI*), sintesis tiga lensa sejarawan, serta kesimpulan dan saran akademik Bab III.
+6. **Laboratorium Sejarah Interaktif**
+   - Peta Geospasial 13 simpul Nusantara & Jawa-Banten, Kalkulator Kurs Gulden/Kepeng & Satuan Niaga (*Pikul, Kati, Tahil, Kepeng, Bouw*), Simulator Struktur Ekonomi Kolonial, dan 3 Skenario Dilema Sejarah.
+7. **Suplemen Evaluasi: Teka-Teki Silang (11×12) & Kuis Sejarah**
+8. **Kutipan Kunci & Katalog Daftar Pustaka (Format APA)**
 
 ---
 
-## 🛠️ Tech Stack
+## Menjalankan Proyek Secara Lokal
 
-- **Framework**: [React 19](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
-- **Bundler & Tooling**: [Vite 8](https://vitejs.dev/)
-- **Linter**: [Oxlint](https://oxc.rs/)
-- **Icons**: [Lucide React](https://lucide.dev/)
-- **Styling**: Pure Modular Vanilla CSS dengan *CSS Custom Properties Design Tokens* bertema *Antique Parchment, Colonial Burgundy, & Wax Gold*.
-- **Fonts**: Google Fonts (*Cinzel*, *Playfair Display*, *Plus Jakarta Sans*).
+```bash
+npm install
+npm run dev
+```
 
----
+Untuk memeriksa tipe TypeScript dan mem-build bundel produksi:
 
-## 🚀 Panduan Menjalankan Proyek Secara Lokal
-
-### Prasyarat
-- [Node.js](https://nodejs.org/) (versi 18 ke atas disarankan)
-- Package manager: `npm` (atau `pnpm` / `yarn`)
-
-### Langkah Instalasi
-
-1. **Clone repository ini**:
-   ```bash
-   git clone https://github.com/RokanMarik/cultuurstelsel-dossier.git
-   cd cultuurstelsel-dossier
-   ```
-
-2. **Install dependencies**:
-   ```bash
-   npm install
-   ```
-
-3. **Jalankan development server**:
-   ```bash
-   npm run dev
-   ```
-   Buka peramban di `http://localhost:5173/`.
-
-4. **Build untuk produksi**:
-   ```bash
-   npm run build
-   ```
-   Hasil build siap deploy akan tersimpan di folder `dist/`.
-
----
-
-## 🌐 Panduan Deploy ke Vercel
-
-Proyek ini telah dikonfigurasi dengan standar Vite modern dan siap di-deploy langsung ke Vercel:
-
-1. Masuk ke dashboard [Vercel](https://vercel.com/) dan klik **"Add New" > "Project"**.
-2. Hubungkan akun GitHub Anda dan pilih repository **`cultuurstelsel-dossier`**.
-3. Vercel akan otomatis mendeteksi:
-   - **Framework Preset**: `Vite`
-   - **Build Command**: `npm run build`
-   - **Output Directory**: `dist`
-4. Klik **Deploy**. Website akan langsung online dalam hitungan detik!
-
----
-
-## 📚 Referensi Akademik & Arsip
-
-1. **Breman, Jan** (2014). *Keuntungan Kolonial dari Kerja Paksa: Sistem Priangan dari Tanam Paksa Hingga Kerja Rodi 1870–1915*. Yayasan Pustaka Obor Indonesia.
-2. **Breman, Jan** (1983). *Control of Land and Labour in Colonial Java*. Foris Publications.
-3. **Fasseur, Cornelis** (1992). *The Politics of Colonial Exploitation: Java, the Dutch, and the Cultivation System*. Cornell Southeast Asia Program.
-4. **Geertz, Clifford** (1963). *Agricultural Involution: The Processes of Ecological Change in Indonesia*. University of California Press.
-5. **Multatuli (Eduard Douwes Dekker)** (1860). *Max Havelaar: of de koffiveilingen der Nederlandsche Handel-Maatschappy*.
-6. **Ricklefs, M.C.** (2008). *A History of Modern Indonesia since c. 1200*. Stanford University Press.
-7. **Arsip Visual**: *Tropenmuseum*, *Nationaal Archief Belanda*, *Leiden University Libraries*, lukisan *Penangkapan Diponegoro* karya Raden Saleh (1857).
-
----
-
-## 📄 Lisensi
-
-Konten teks edukasi dan kode sumber dilisensikan di bawah [MIT License](LICENSE).  
-Materi arsip foto dan lukisan sejarah merupakan **Public Domain** yang bersumber dari arsip museum terbuka.
+```bash
+npm run build
+npm run lint
+```

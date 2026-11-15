@@ -81,7 +81,7 @@ export const BackgroundSection: React.FC<BackgroundSectionProps> = ({ onOpenImag
               <div className="crisis-cost-footer">
                 <Coins size={16} strokeWidth={1.5} className="crisis-cost-icon" />
                 <div className="crisis-cost-text">
-                  <span className="cost-label">Beban militer &amp; defisit</span>
+                  <span className="cost-label">Skala historis &amp; moneter</span>
                   <strong className="cost-value tabular-nums">{crisis.cost}</strong>
                 </div>
               </div>
@@ -107,26 +107,27 @@ export const BackgroundSection: React.FC<BackgroundSectionProps> = ({ onOpenImag
             </div>
 
             <aside className="parchment-card vandenbosch-aside-box">
-              <h4 className="aside-heading">Penolakan Sistem Landrente Raffles</h4>
+              <h4 className="aside-heading">Paradoks Kebijakan Kolonial (Bab 1.1)</h4>
               <p className="aside-body">
-                Sistem sewa tanah (<em>Landrente</em>) era Raffles dipandang Van den Bosch tidak efektif karena
-                masyarakat desa belum terbiasa dengan ekonomi moneter dan kekurangan uang tunai. Jawa harus menjadi
-                <em> wingewest</em> yang dieksploitasi untuk memperkaya negara induk.
+                Di satu sisi, pemerintah kolonial sangat bergantung pada masyarakat Tionghoa untuk menggerakkan
+                perdagangan perantara, pajak <em>pacht</em>, dan tenaga kerja. Namun di sisi lain, kecurigaan politik
+                memicu pembantaian Geger Pecinan 1740 serta segregasi hukum <em>Vreemde Oosterlingen</em>,{' '}
+                <em>Wijkenstelsel</em>, dan <em>Passenstelsel</em>.
               </p>
               <blockquote className="aside-quote">
-                “Ubah tenaga kerja dan tanah desa menjadi komoditas pasar dunia.”
+                “Dibutuhkan sebagai tulang punggung ekonomi, namun disekat secara hukum agar tak bersatu dengan pribumi.”
               </blockquote>
 
               {heroData.image && (
                 <div
                   className="vandenbosch-portrait-banner"
-                  onClick={() => onOpenImage?.(heroData.image, 'Johannes van den Bosch')}
+                  onClick={() => onOpenImage?.(heroData.image, 'Jalur Sutra Maritim & Koin Kepeng')}
                   role="button"
                   tabIndex={0}
-                  title="Klik untuk memperbesar potret resmi Van den Bosch"
+                  title="Klik untuk memperbesar pelat arsip Jalur Sutra Maritim & Koin Kepeng"
                   onKeyDown={(e) => {
                     if (e.key === 'Enter' || e.key === ' ') {
-                      onOpenImage?.(heroData.image, 'Johannes van den Bosch');
+                      onOpenImage?.(heroData.image, 'Jalur Sutra Maritim & Koin Kepeng');
                     }
                   }}
                 >
@@ -143,7 +144,7 @@ export const BackgroundSection: React.FC<BackgroundSectionProps> = ({ onOpenImag
                   />
                   <div className="vandenbosch-portrait-zoom-hint">
                     <ZoomIn size={13} strokeWidth={1.5} />
-                    <span>Potret Raden Saleh (1836)</span>
+                    <span>Pelat Arsip Maritim &amp; Kepeng</span>
                   </div>
                 </div>
               )}
@@ -151,14 +152,14 @@ export const BackgroundSection: React.FC<BackgroundSectionProps> = ({ onOpenImag
           </div>
         </div>
 
-        {/* Sisi Gelap & Kontroversi Johannes van den Bosch */}
+        {/* 6 Fokus Kajian Pra-Abad ke-19 */}
         <div className="controversy-block">
           <div className="monograph-sub-opener">
             <h3 className="controversy-title">
-              Johannes van den Bosch: Arsitek Fiskal vs Catatan Nepotisme &amp; Dana Rahasia
+              Enam Pilar Aktivitas Ekonomi &amp; Sosial Sebelum Abad ke-19 (Bab 2.1)
             </h3>
             <p className="controversy-subtitle">
-              Di balik klaim penyelamat kas monarki Belanda, tersimpan rekam jejak legalisasi korupsi struktural dan favoritisme kontrak keluarga
+              Dari monetisasi koin kepeng, kemitraan VOC di Batavia 1619, tragedi Geger Pecinan 1740, hingga kosmopolitanisme Kesultanan Banten
             </p>
           </div>
 
@@ -213,9 +214,9 @@ export const BackgroundSection: React.FC<BackgroundSectionProps> = ({ onOpenImag
         {/* Interpretations of Historians */}
         <div className="interpretations-block">
           <div className="monograph-sub-opener">
-            <h3 className="interp-title">Perspektif Para Sejarawan &amp; Ekonom terhadap Cultuurstelsel</h3>
+            <h3 className="interp-title">Perspektif Para Sejarawan terhadap Peran Ekonomi &amp; Sosial Tionghoa</h3>
             <p className="interp-subtitle">
-              Tidak ada konsensus tunggal — setiap ahli menekankan dimensi struktural yang berbeda dari rezim tanam wajib
+              Sintesis historiografis dari kajian maritim, kolonialisme VOC, sistem Pacht abad ke-19, hingga pergerakan nasionalisme
             </p>
           </div>
 
@@ -233,7 +234,7 @@ export const BackgroundSection: React.FC<BackgroundSectionProps> = ({ onOpenImag
         <div className="quotes-block">
           <div className="monograph-sub-opener">
             <h3 className="quotes-title">Kutipan Definitif Para Sejarawan</h3>
-            <p className="quotes-subtitle">Refleksi kritis ahli sejarah terhadap hakikat sistem Cultuurstelsel</p>
+            <p className="quotes-subtitle">Refleksi kritis para ahli sejarah terhadap dinamika masyarakat Tionghoa di Nusantara</p>
           </div>
 
           <div className="quotes-grid">

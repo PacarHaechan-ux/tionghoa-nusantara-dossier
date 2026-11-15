@@ -63,9 +63,9 @@ export const TimelineSection: React.FC = () => {
       <div className="container">
         {/* Monograph 2-Column Section Header */}
         <div className="section-header">
-          <h2 className="section-title">Kronik Sejarah Cultuurstelsel (1830–1915)</h2>
+          <h2 className="section-title">Kronik Sejarah Masyarakat Tionghoa di Nusantara (Abad V – 1932)</h2>
           <p className="section-subtitle">
-            Deretan peristiwa kunci, titik balik kebijakan kolonial, hingga penghapusan sistem tanam wajib di Jawa dan Nusantara
+            Lintasan peristiwa kunci dari pelayaran maritim dan koin kepeng, era VOC &amp; Kesultanan Banten, hingga kebangkitan nasionalisme
           </p>
         </div>
 

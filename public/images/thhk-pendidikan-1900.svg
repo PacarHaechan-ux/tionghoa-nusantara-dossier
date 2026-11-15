@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <rect width="800" height="600" fill="#18191c"/>
+  <rect x="24" y="24" width="752" height="552" fill="none" stroke="#c8963e" stroke-width="1.5" opacity="0.6"/>
+  <text x="56" y="72" fill="#c8963e" font-family="JetBrains Mono, monospace" font-size="13" letter-spacing="2">PELAT ARSIP 07 · KEBANGKITAN PENDIDIKAN MODERN &amp; POLITIK KEWARGANEGARAAN (1900–1910)</text>
+  <text x="56" y="106" fill="#f4f4f2" font-family="Spectral, Georgia, serif" font-size="24" font-weight="600">Tiong Hoa Hwee Koan (1900), HCS (1908), &amp; UU Kekawulaan WNO (1910)</text>
+  <g transform="translate(56, 140)">
+    <rect x="0" y="0" width="330" height="275" fill="#23201b" stroke="#c8963e" stroke-width="1.6"/>
+    <text x="20" y="34" fill="#e5b869" font-family="JetBrains Mono, monospace" font-size="12">17 MARET 1900 · BATAVIA</text>
+    <text x="20" y="62" fill="#f4f4f2" font-family="Spectral, Georgia, serif" font-size="20" font-weight="600">Tiong Hoa Hwee Koan (THHK)</text>
+    <text x="20" y="92" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="14">• Pelopor: Phoa Keng Hek &amp; Lie Kim Hok</text>
+    <text x="20" y="116" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="14">• Pemurnian ajaran Khonghucu dari adat</text>
+    <text x="20" y="138" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="14">  takhayul yang boros</text>
+    <text x="20" y="164" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="14">• Sekolah modern Tiong Hoa Hak Tong (1901):</text>
+    <text x="20" y="186" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="14">  Mandarin (Tjeng Im), Inggris, berhitung</text>
+    <text x="20" y="212" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="14">• Kesetaraan belajar anak laki-laki &amp; perempuan</text>
+    <text x="20" y="238" fill="#c8963e" font-family="JetBrains Mono, monospace" font-size="11.5">RUANG BACA POLITIK: SOOS PO SIA</text>
+
+    <rect x="358" y="0" width="330" height="275" fill="#212429" stroke="#8a1c14" stroke-width="1.6"/>
+    <text x="378" y="34" fill="#e06c64" font-family="JetBrains Mono, monospace" font-size="12">RESPONS KOLONIAL BELANDA (1908–1910)</text>
+    <text x="378" y="62" fill="#f4f4f2" font-family="Spectral, Georgia, serif" font-size="20" font-weight="600">Politik Pendidikan &amp; Hukum</text>
+    <text x="378" y="92" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="14">• 1899: Warga Jepang diberi status setara</text>
+    <text x="378" y="114" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="14">  Eropa, memicu protes ketimpangan hukum</text>
+    <text x="378" y="142" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="14">• 1908: Pendirian Hollandsch-Chineesche</text>
+    <text x="378" y="164" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="14">  School (HCS) berbahasa pengantar Belanda</text>
+    <text x="378" y="192" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="14">• 1910: Wet op het Nederlandsch</text>
+    <text x="378" y="214" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="14">  Onderdaanschap (WNO) berasaskan Ius Soli</text>
+    <text x="378" y="238" fill="#c8963e" font-family="JetBrains Mono, monospace" font-size="11.5">MEMBENDUNG PAN-TIONGKOK &amp; XINHAI 1911</text>
+  </g>
+  <line x1="56" y1="450" x2="744" y2="450" stroke="#c8963e" stroke-width="0.8" opacity="0.5"/>
+  <text x="56" y="482" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="15">Kekhawatiran Belanda terhadap bersatunya kaum Peranakan (Baba) dan Totok (Sinkeh) di bawah gerakan</text>
+  <text x="56" y="505" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="15">Sun Yat-sen mendorong kompromi pendirian HCS (1908) dan klaim kawula Belanda melalui WNO (1910).</text>
+  <text x="56" y="542" fill="#c8963e" font-family="JetBrains Mono, monospace" font-size="12">SUMBER: NIO JOE LAN (1940) · WILLIAMS (1960) · SOMERS (1965) · SURYADINATA (2020)</text>
+</svg>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <rect width="800" height="600" fill="#181a1b"/>
+  <rect x="24" y="24" width="752" height="552" fill="none" stroke="#c8963e" stroke-width="1.5" opacity="0.6"/>
+  <text x="56" y="72" fill="#c8963e" font-family="JetBrains Mono, monospace" font-size="13" letter-spacing="2">PELAT ARSIP 06 · EKSPANSI LUAR JAWA: KONGSI TAMBANG &amp; KULI KONTRAK SINKEH</text>
+  <text x="56" y="106" fill="#f4f4f2" font-family="Spectral, Georgia, serif" font-size="24" font-weight="600">Bangka-Belitung, Perang Kongsi Kalimantan Barat, &amp; Deli (1822–1930)</text>
+  <g transform="translate(56, 138)">
+    <rect x="0" y="0" width="216" height="280" fill="#202426" stroke="#c8963e" stroke-width="1.4"/>
+    <text x="16" y="32" fill="#e5b869" font-family="JetBrains Mono, monospace" font-size="11.5">BANGKA &amp; BELITUNG</text>
+    <text x="16" y="58" fill="#f4f4f2" font-family="Spectral, Georgia, serif" font-size="17" font-weight="600">Tambang Timah Hakka</text>
+    <text x="16" y="88" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="13.5">• Sistem kelompok parit/kongsi</text>
+    <text x="16" y="112" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="13.5">• Bangka: tambang kolonial</text>
+    <text x="16" y="136" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="13.5">• Belitung: konsesi John Loudon</text>
+    <text x="16" y="160" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="13.5">  (1852) &amp; Billiton Mij (1860)</text>
+    <text x="16" y="245" fill="#c8963e" font-family="JetBrains Mono, monospace" font-size="11">HEIDHUES (1992)</text>
+
+    <rect x="236" y="0" width="216" height="280" fill="#261e1c" stroke="#8a1c14" stroke-width="1.6"/>
+    <text x="252" y="32" fill="#e06c64" font-family="JetBrains Mono, monospace" font-size="11.5">KALIMANTAN BARAT</text>
+    <text x="252" y="58" fill="#f4f4f2" font-family="Spectral, Georgia, serif" font-size="17" font-weight="600">Tiga Perang Kongsi</text>
+    <text x="252" y="88" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="13.5">• Federasi otonom emas klan</text>
+    <text x="252" y="112" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="13.5">• Perang: 1822–24, 1850–54,</text>
+    <text x="252" y="136" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="13.5">  dan 1884–1885</text>
+    <text x="252" y="160" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="13.5">• Kongsi Thaikong (Monterado)</text>
+    <text x="252" y="184" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="13.5">  &amp; Kongsi Lanfang (Mandor)</text>
+    <text x="252" y="245" fill="#c8963e" font-family="JetBrains Mono, monospace" font-size="11">YUAN (2000) · HEIDHUES (2003)</text>
+
+    <rect x="472" y="0" width="216" height="280" fill="#241f18" stroke="#c8963e" stroke-width="1.4"/>
+    <text x="488" y="32" fill="#e5b869" font-family="JetBrains Mono, monospace" font-size="11.5">SUMATRA TIMUR (DELI)</text>
+    <text x="488" y="58" fill="#f4f4f2" font-family="Spectral, Georgia, serif" font-size="17" font-weight="600">Koelie Ordonnantie 1880</text>
+    <text x="488" y="88" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="13.5">• Deli Maatschappij (1860-an)</text>
+    <text x="488" y="112" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="13.5">• Jaringan calo (Khehtau) dari</text>
+    <text x="488" y="136" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="13.5">  Penang, Singapura, Swatow</text>
+    <text x="488" y="160" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="13.5">• Aturan pidana Poenale Sanctie</text>
+    <text x="488" y="184" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="13.5">• Jerat utang candu &amp; judi</text>
+    <text x="488" y="245" fill="#c8963e" font-family="JetBrains Mono, monospace" font-size="11">BREMAN (1989) · STOLER (1985)</text>
+  </g>
+  <line x1="56" y1="450" x2="744" y2="450" stroke="#c8963e" stroke-width="0.8" opacity="0.5"/>
+  <text x="56" y="482" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="15">Berbeda dengan Jawa yang didominasi pedagang perantara, ekspansi kolonial di Luar Jawa melahirkan</text>
+  <text x="56" y="505" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="15">kelas buruh tambang dan perkebunan (sinkeh) asal Fujian &amp; Guangdong di bawah rezim Poenale Sanctie.</text>
+  <text x="56" y="542" fill="#c8963e" font-family="JetBrains Mono, monospace" font-size="12">SUMBER: FURNIVALL (1939) · HEIDHUES (1992, 2003) · BREMAN (1989) · RAMAYANTI &amp; WISNU (2018)</text>
+</svg>

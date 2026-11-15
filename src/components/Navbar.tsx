@@ -23,20 +23,20 @@ interface NavItem {
 
 const navItems: NavItem[] = [
   { id: 'beranda', label: 'Beranda' },
-  { id: 'latar-belakang', label: 'Latar Belakang' },
-  { id: 'eksploitasi', label: 'Eksploitasi' },
+  { id: 'latar-belakang', label: 'Pra-Abad 19' },
+  { id: 'eksploitasi', label: 'Ekonomi Abad 19–20' },
   { id: 'timeline-section', label: 'Garis Waktu' },
-  { id: 'pelaksanaan', label: 'Staatsblad 1834' },
-  { id: 'dampak', label: 'Dampak' },
+  { id: 'pelaksanaan', label: 'Struktur Sosial' },
+  { id: 'dampak', label: 'Konflik & Politik' },
   { id: 'interactive-lab', label: 'Lab Sejarah' },
   { id: 'permainan-sejarah', label: 'TTS & Kuis' },
   { id: 'pustaka', label: 'Pustaka' },
 ];
 
 const quickDockItems = [
-  { id: 'latar-belakang', shortLabel: 'Latar', icon: History },
-  { id: 'eksploitasi', shortLabel: 'Fiskal', icon: Coins },
-  { id: 'dampak', shortLabel: 'Dampak', icon: Flame },
+  { id: 'latar-belakang', shortLabel: 'Pra-19', icon: History },
+  { id: 'eksploitasi', shortLabel: 'Ekonomi', icon: Coins },
+  { id: 'dampak', shortLabel: 'Sosial', icon: Flame },
   { id: 'interactive-lab', shortLabel: 'Lab', icon: Compass },
   { id: 'permainan-sejarah', shortLabel: 'Kuis', icon: Gamepad2 },
 ];
@@ -94,9 +94,9 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch }) => {
             onClick={(e) => scrollToSection(e, 'beranda')}
             id="nav-brand-logo"
           >
-            <span className="brand-title">Cultuurstelsel</span>
+            <span className="brand-title">Tionghoa Nusantara</span>
             <span className="brand-divider" aria-hidden="true">/</span>
-            <span className="brand-subtitle tabular-nums">1830–1870</span>
+            <span className="brand-subtitle tabular-nums">Abad V–XX</span>
           </a>
 
           <div className="desktop-nav-menu">

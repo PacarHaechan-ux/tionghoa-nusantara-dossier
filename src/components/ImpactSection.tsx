@@ -76,15 +76,15 @@ export const ImpactSection: React.FC<ImpactSectionProps> = ({ onOpenImage }) => 
       <div className="container">
         {/* Monograph 2-Column Section Header */}
         <div className="section-header">
-          <h2 className="section-title">Dampak Sosio-Ekonomi &amp; Transformasi Zaman</h2>
+          <h2 className="section-title">Dinamika Konflik, Pergerakan Kebangsaan &amp; Penutup (Bab II–III)</h2>
           <p className="section-subtitle">
-            Dari kelaparan petani dan resistensi pedesaan hingga pertarungan di Parlemen Den Haag dan debat sejarawan modern
+            Dari tragedi Geger Pecinan 1740 dan Perang Kongsi hingga kebangkitan THHK 1900, pers Sin Po 1928, PTI 1932, serta Kesimpulan &amp; Saran
           </p>
         </div>
 
         {/* 5 MAIN TABS NAVIGATION */}
         <div className="dossier-tabs-nav-wrapper">
-          <div className="dossier-tabs-nav" role="tablist" aria-label="Sub-bagian Dampak">
+          <div className="dossier-tabs-nav" role="tablist" aria-label="Sub-bagian Konflik, Politik & Penutup">
             <button
               type="button"
               role="tab"
@@ -93,7 +93,7 @@ export const ImpactSection: React.FC<ImpactSectionProps> = ({ onOpenImage }) => 
               onClick={() => setActiveMainTab('famines-impact')}
             >
               <Skull size={16} strokeWidth={1.5} />
-              <span>Kelaparan &amp; Dampak Sosio-Ekonomi</span>
+              <span>Tragedi Kolonial &amp; Dampak Sosial-Ekonomi</span>
             </button>
 
             <button
@@ -104,7 +104,7 @@ export const ImpactSection: React.FC<ImpactSectionProps> = ({ onOpenImage }) => 
               onClick={() => setActiveMainTab('resistance')}
             >
               <Flame size={16} strokeWidth={1.5} />
-              <span>Resistensi &amp; Perlawanan Rakyat</span>
+              <span>Perlawanan Bersenjata, Perang Kongsi &amp; Emansipasi</span>
             </button>
 
             <button
@@ -115,7 +115,7 @@ export const ImpactSection: React.FC<ImpactSectionProps> = ({ onOpenImage }) => 
               onClick={() => setActiveMainTab('politics')}
             >
               <Landmark size={16} strokeWidth={1.5} />
-              <span>Parlemen Belanda (1848–1870)</span>
+              <span>Pendidikan, Pers &amp; Tiga Haluan Politik</span>
             </button>
 
             <button
@@ -137,19 +137,19 @@ export const ImpactSection: React.FC<ImpactSectionProps> = ({ onOpenImage }) => 
               onClick={() => setActiveMainTab('van-rees')}
             >
               <Search size={16} strokeWidth={1.5} />
-              <span>Laporan Van Rees 1867</span>
+              <span>Bab III Penutup: Kesimpulan &amp; Saran</span>
             </button>
           </div>
         </div>
 
-        {/* TAB 1: KELAPARAN & DAMPAK SOSIO-EKONOMI */}
+        {/* TAB 1: TRAGEDI KOLONIAL & DAMPAK SOSIO-EKONOMI */}
         {activeMainTab === 'famines-impact' && (
           <div className="dossier-tab-content tab-fade-in">
             <div className="famine-cases-block">
               <div className="impact-sub-opener">
-                <h3 className="famine-title">Kasus Bencana Kelaparan Hebat di Pedesaan Jawa</h3>
+                <h3 className="famine-title">Tragedi Kekerasan Kolonial, Ekspedisi Militer &amp; Eksploitasi Kuli</h3>
                 <p className="famine-subtitle">
-                  Ketika pemaksaan komoditas ekspor mengorbankan ketahanan pangan dan merenggut ratusan ribu jiwa petani
+                  Rekam jejak pembantaian Batavia 1740, penghancuran republik kongsi Kalimantan Barat, serta perbudakan kuli kontrak di Deli dan Bangka
                 </p>
               </div>
 
@@ -162,12 +162,12 @@ export const ImpactSection: React.FC<ImpactSectionProps> = ({ onOpenImage }) => 
                     </div>
 
                     <div className="famine-meta-item">
-                      <span className="famine-meta-label">Pemicu utama</span>
+                      <span className="famine-meta-label">Akar penyebab struktural</span>
                       <p className="famine-meta-val">{famine.cause}</p>
                     </div>
 
                     <div className="famine-meta-item victim-row">
-                      <span className="famine-meta-label">Korban &amp; dampak demografi</span>
+                      <span className="famine-meta-label">Korban &amp; dampak kemanusiaan</span>
                       <strong className="famine-victim-text tabular-nums">{famine.victimCount}</strong>
                     </div>
 
@@ -179,9 +179,9 @@ export const ImpactSection: React.FC<ImpactSectionProps> = ({ onOpenImage }) => 
 
             <div className="impact-polarity-section">
               <div className="impact-sub-opener">
-                <h3 className="famine-title">Dampak Struktural terhadap Masyarakat Pedesaan Jawa</h3>
+                <h3 className="famine-title">Dampak Kebijakan Kolonial vs Kontribusi Historis Masyarakat Tionghoa</h3>
                 <p className="famine-subtitle">
-                  Pilih perspektif untuk menimbang distorsi destruktif dan modernisasi parsial secara berdampingan
+                  Pilih perspektif untuk menimbang luka struktural politik devide et impera dan warisan positif bagi Nusantara
                 </p>
               </div>
 
@@ -195,7 +195,7 @@ export const ImpactSection: React.FC<ImpactSectionProps> = ({ onOpenImage }) => 
                   onClick={() => setActiveImpactPolarity('negative')}
                 >
                   <XCircle size={16} strokeWidth={1.5} />
-                  <span>Dampak Negatif &amp; Penderitaan Petani</span>
+                  <span>Dampak Negatif Segregasi &amp; Eksploitasi Kolonial</span>
                 </button>
                 <button
                   type="button"
@@ -206,7 +206,7 @@ export const ImpactSection: React.FC<ImpactSectionProps> = ({ onOpenImage }) => 
                   onClick={() => setActiveImpactPolarity('positive')}
                 >
                   <CheckCircle size={16} strokeWidth={1.5} />
-                  <span>Dampak Ikutan &amp; Modernisasi Parsial</span>
+                  <span>Kontribusi Positif Ekonomi, Budaya &amp; Kebangsaan</span>
                 </button>
               </div>
 
@@ -231,18 +231,18 @@ export const ImpactSection: React.FC<ImpactSectionProps> = ({ onOpenImage }) => 
           </div>
         )}
 
-        {/* TAB 2: RESISTENSI & PERLAWANAN RAKYAT PRIBUMI */}
+        {/* TAB 2: PERLAWANAN BERSENJATA, PERANG KONGSI & EMANSIPASI */}
         {activeMainTab === 'resistance' && (
           <div className="dossier-tab-content tab-fade-in">
             <div className="impact-tab-lead">
               <div className="impact-lead-title-row">
                 <h3 className="impact-lead-title">
-                  Ragam Perlawanan Rakyat Pribumi: Terbuka, Bersenjata, &amp; Sabotase
+                  Ragam Perlawanan &amp; Agensi Historis: Dari Perang Sepanjang 1740 hingga PTI 1932
                 </h3>
-                <span className="badge badge-crimson">Senjata kaum lemah</span>
+                <span className="badge badge-crimson">Agensi &amp; solidaritas lintas etnis</span>
               </div>
               <p className="impact-lead-desc">
-                Rakyat Jawa tidak pernah pasrah menjadi korban bisu eksploitasi kolonial. Ketika konfrontasi bersenjata dihadapi kekerasan militer, petani melancarkan sabotase, protes terbuka, pelarian massal, hingga pelumpuhan dari dalam (<em>paralysis from within</em>).
+                Masyarakat Tionghoa tidak pernah pasif di bawah tekanan kolonial. Sejarah mencatat aliansi militer Tionghoa-Jawa dalam Geger Pecinan (1740–1743), perlawanan tiga Perang Kongsi di Kalimantan Barat (1822–1885), perlawanan kuli perkebunan, hingga perlawanan intelektual melalui sekolah modern dan pers antikolonial.
               </p>
             </div>
 
@@ -267,28 +267,28 @@ export const ImpactSection: React.FC<ImpactSectionProps> = ({ onOpenImage }) => 
 
             <figure className="quote-card breman-resistance-extract">
               <figcaption className="breman-extract-heading">
-                <span className="badge badge-gold">Tesis Jan Breman (2014)</span>
-                <h4>Sistem Runtuh Bukan Karena Kemurahan Hati Liberal, Melainkan Kemacetan dari Bawah</h4>
+                <span className="badge badge-gold">Refleksi Historiografi (Daradjadi, 2013 &amp; Onghokham, 2008)</span>
+                <h4>Trauma Kolonial atas Bersatunya Laskar Tionghoa dan Prajurit Jawa (1740–1743)</h4>
               </figcaption>
               <blockquote className="quote-text">
-                “Sistem Tanam Paksa pada akhirnya runtuh bukan semata karena kemenangan ideologi kelompok liberal di Den Haag, melainkan karena kebun-kebun kopi telah ditelantarkan, mesin administrasi kolonial macet di tingkat tapak, dan petani Jawa berhasil melumpuhkan efisiensi produksi dari dalam melalui ketidakpatuhan abadi.”
+                “Perang Geger Pecinan 1740–1743 membuktikan bahwa ketika masyarakat Tionghoa dan rakyat pribumi bersatu mengangkat senjata, kekuasaan VOC di seluruh Jawa nyaris runtuh. Trauma mendalam atas aliansi inilah yang mendorong pemerintah kolonial menciptakan sekat hukum Vreemde Oosterlingen, Wijkenstelsel, dan Passenstelsel agar kedua kelompok tidak pernah lagi bersatu.”
               </blockquote>
             </figure>
           </div>
         )}
 
-        {/* TAB 3: PERTARUNGAN POLITIK PARLEMEN BELANDA (1848–1870) */}
+        {/* TAB 3: PENDIDIKAN, PERS & TIGA HALUAN POLITIK (1900–1932) */}
         {activeMainTab === 'politics' && (
           <div className="dossier-tab-content tab-fade-in">
             <div className="impact-tab-lead">
               <div className="impact-lead-title-row">
                 <h3 className="impact-lead-title">
-                  Pertarungan Parlemen Belanda: Dari Kerahasiaan Menuju UU Agraria 1870
+                  Kebangkitan Modern &amp; Tiga Aliran Politik Tionghoa (1900–1932)
                 </h3>
-                <span className="badge badge-gold">Tweede Kamer &amp; UU Agraria 1870</span>
+                <span className="badge badge-gold">THHK · Sin Po · CHH · PTI</span>
               </div>
               <p className="impact-lead-desc">
-                Revisi Konstitusi 1848 oleh Prof. J.R. Thorbecke mengakhiri hak prerogatif mutlak raja atas tanah jajahan. Parlemen Belanda mulai menggunakan hak anggaran (<em>power of the purse</em>) untuk membongkar skandal kontrak gula hingga melahirkan UU Agraria 1870.
+                Memasuki abad ke-20, kebangkitan pendidikan <strong>Tiong Hoa Hwee Koan (1900)</strong> dan pers Melayu-Tionghoa melahirkan dinamika politik yang terbagi ke dalam tiga aliran utama menurut kajian <strong>Leo Suryadinata</strong>: Aliran <em>Sin Po</em>, <em>Chung Hwa Hui (CHH)</em>, dan <em>Partai Tionghoa Indonesia (PTI)</em>.
               </p>
             </div>
 
@@ -303,12 +303,12 @@ export const ImpactSection: React.FC<ImpactSectionProps> = ({ onOpenImage }) => 
                   <h4 className="pol-title">{pol.title}</h4>
 
                   <div className="pol-debate-box">
-                    <span className="pol-box-label">Pokok perdebatan &amp; regulasi</span>
+                    <span className="pol-box-label">Dinamika gerakan &amp; regulasi</span>
                     <p className="pol-box-text">{pol.coreDebate}</p>
                   </div>
 
                   <div className="pol-outcome-footer">
-                    <span className="pol-box-label outcome">Dampak &amp; hasil politik</span>
+                    <span className="pol-box-label outcome">Dampak &amp; capaian sejarah</span>
                     <p className="pol-box-text">{pol.outcomeAndImpact}</p>
                   </div>
                 </article>
@@ -318,19 +318,19 @@ export const ImpactSection: React.FC<ImpactSectionProps> = ({ onOpenImage }) => 
             <div className="parchment-card agrarische-wet-card">
               <div className="agrarische-header">
                 <FileText size={19} strokeWidth={1.5} className="agrarische-icon" />
-                <h4>Dua Pilar Hukum Undang-Undang Agraria 1870 (Agrarische Wet)</h4>
+                <h4>Tiga Aliran Politik Masyarakat Tionghoa Awal Abad ke-20 (Bab 2.2.3)</h4>
               </div>
               <div className="agrarische-ledger">
                 <div className="agrarische-pilar">
-                  <h5>1. Asas Domeinverklaring (pernyataan domain negara)</h5>
+                  <h5>1. Aliran Sin Po (Antikolonial &amp; Solidaritas Asia) vs Aliran CHH (Kooperatif Volksraad)</h5>
                   <p>
-                    Semua tanah yang tidak dapat dibuktikan kepemilikannya menurut hukum Barat dinyatakan sebagai <strong>milik negara</strong>. Atas dasar ini, pemerintah menyewakan lahan hutan dan tanah tidur kepada pengusaha perkebunan swasta melalui hak <em>erfpacht</em> hingga <strong>75 tahun</strong>.
+                    <strong>Aliran Sin Po (1910)</strong> menolak kompromi dengan Belanda, menolak duduk di <em>Volksraad</em>, dan menjadi pelopor pemuatan lagu <em>“Indonesia Raya”</em> (November 1928). Sebaliknya, <strong>Chung Hwa Hui / CHH (1928)</strong> yang dipimpin H.H. Kan mewakili elit peranakan berpendidikan Belanda yang memilih jalur parlementer kooperatif di dalam <em>Volksraad</em>.
                   </p>
                 </div>
                 <div className="agrarische-pilar">
-                  <h5>2. Perlindungan tanah adat &amp; kerja bebas</h5>
+                  <h5>2. Aliran Nasionalis Indonesia: Partai Tionghoa Indonesia / PTI (1932)</h5>
                   <p>
-                    Melarang penjualan tanah milik petani pribumi kepada pihak asing untuk mencegah hilangnya kepemilikan tanah rakyat. Namun, penutupan akses hutan memaksa petani miskin menjadi <strong>buruh upahan murah (proletarisasi)</strong> bagi korporasi perkebunan swasta.
+                    Didirikan di Surabaya pada 25 September 1932 oleh <strong>Liem Koen Hian</strong> dan Ko Kwat Tiong, <strong>PTI</strong> menegaskan bahwa masa depan kaum peranakan Tionghoa menyatu sepenuhnya dengan kemerdekaan bangsa Indonesia, bekerja sama erat dengan tokoh-tokoh pergerakan nasional seperti Soekarno, Hatta, dan Soetomo.
                   </p>
                 </div>
               </div>
@@ -343,11 +343,11 @@ export const ImpactSection: React.FC<ImpactSectionProps> = ({ onOpenImage }) => 
           <div className="dossier-tab-content tab-fade-in">
             <div className="impact-tab-lead">
               <div className="impact-lead-title-row">
-                <h3 className="impact-lead-title">Sintesis Tiga Lensa Sejarawan: Menimbang Cultuurstelsel</h3>
-                <span className="badge badge-gold">Metodologi &amp; debat akademis</span>
+                <h3 className="impact-lead-title">Sintesis Tiga Lensa Historiografi Sejarah Tionghoa Nusantara</h3>
+                <span className="badge badge-gold">Maritim · Kolonial · Nasionalisme</span>
               </div>
               <p className="impact-lead-desc">
-                Sejarah Tanam Paksa tidak monolitik. Perbedaan kesimpulan antara <strong>Clifford Geertz</strong>, <strong>Cornelis Fasseur</strong>, dan <strong>Jan Breman</strong> berakar pada perbedaan metodologi: ekologi budaya, arsip makro birokrasi, dan penelitian mikro pedesaan.
+                Memahami sejarah masyarakat Tionghoa secara utuh memerlukan penggabungan tiga lensa historiografi utama: <strong>Lensa Niaga Maritim &amp; Kota Kolonial Awal</strong> (Reid, Lombard, Blussé), <strong>Lensa Fiskal Pacht &amp; Buruh Luar Jawa</strong> (Rush, Diehl, Heidhues), serta <strong>Lensa Identitas, Pers &amp; Nasionalisme</strong> (Suryadinata, Adam, Fauziah).
               </p>
             </div>
 
@@ -356,41 +356,41 @@ export const ImpactSection: React.FC<ImpactSectionProps> = ({ onOpenImage }) => 
                 <thead>
                   <tr>
                     <th>Dimensi Analisis</th>
-                    <th>Clifford Geertz (1963)</th>
-                    <th>Cornelis Fasseur (1992)</th>
-                    <th>Jan Breman (2014)</th>
+                    <th>Reid, Lombard &amp; Blussé</th>
+                    <th>Rush, Diehl &amp; Heidhues</th>
+                    <th>Suryadinata, Adam &amp; Fauziah</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td data-label="Dimensi Analisis"><strong>Mazhab &amp; Landasan</strong></td>
-                    <td data-label="Clifford Geertz (1963)">{historiographicalSynthesisData[0].schoolName}</td>
-                    <td data-label="Cornelis Fasseur (1992)">{historiographicalSynthesisData[1].schoolName}</td>
-                    <td data-label="Jan Breman (2014)">{historiographicalSynthesisData[2].schoolName}</td>
+                    <td data-label="Dimensi Analisis"><strong>Mazhab &amp; Fokus Kajian</strong></td>
+                    <td data-label="Reid, Lombard & Blussé">{historiographicalSynthesisData[0].schoolName}</td>
+                    <td data-label="Rush, Diehl & Heidhues">{historiographicalSynthesisData[1].schoolName}</td>
+                    <td data-label="Suryadinata, Adam & Fauziah">{historiographicalSynthesisData[2].schoolName}</td>
                   </tr>
                   <tr>
-                    <td data-label="Dimensi Analisis"><strong>Fokus &amp; Sudut Pandang</strong></td>
-                    <td data-label="Clifford Geertz (1963)">{historiographicalSynthesisData[0].primaryPerspective}</td>
-                    <td data-label="Cornelis Fasseur (1992)">{historiographicalSynthesisData[1].primaryPerspective}</td>
-                    <td data-label="Jan Breman (2014)">{historiographicalSynthesisData[2].primaryPerspective}</td>
+                    <td data-label="Dimensi Analisis"><strong>Perspektif Utama</strong></td>
+                    <td data-label="Reid, Lombard & Blussé">{historiographicalSynthesisData[0].primaryPerspective}</td>
+                    <td data-label="Rush, Diehl & Heidhues">{historiographicalSynthesisData[1].primaryPerspective}</td>
+                    <td data-label="Suryadinata, Adam & Fauziah">{historiographicalSynthesisData[2].primaryPerspective}</td>
                   </tr>
                   <tr>
                     <td data-label="Dimensi Analisis"><strong>Sumber Data Primer</strong></td>
-                    <td data-label="Clifford Geertz (1963)">{historiographicalSynthesisData[0].primarySources}</td>
-                    <td data-label="Cornelis Fasseur (1992)">{historiographicalSynthesisData[1].primarySources}</td>
-                    <td data-label="Jan Breman (2014)">{historiographicalSynthesisData[2].primarySources}</td>
+                    <td data-label="Reid, Lombard & Blussé">{historiographicalSynthesisData[0].primarySources}</td>
+                    <td data-label="Rush, Diehl & Heidhues">{historiographicalSynthesisData[1].primarySources}</td>
+                    <td data-label="Suryadinata, Adam & Fauziah">{historiographicalSynthesisData[2].primarySources}</td>
                   </tr>
                   <tr>
-                    <td data-label="Dimensi Analisis"><strong>Penilaian Dampak Ekonomi</strong></td>
-                    <td data-label="Clifford Geertz (1963)">{historiographicalSynthesisData[0].economicAssessment}</td>
-                    <td data-label="Cornelis Fasseur (1992)">{historiographicalSynthesisData[1].economicAssessment}</td>
-                    <td data-label="Jan Breman (2014)">{historiographicalSynthesisData[2].economicAssessment}</td>
+                    <td data-label="Dimensi Analisis"><strong>Temuan Ekonomi Kunci</strong></td>
+                    <td data-label="Reid, Lombard & Blussé">{historiographicalSynthesisData[0].economicAssessment}</td>
+                    <td data-label="Rush, Diehl & Heidhues">{historiographicalSynthesisData[1].economicAssessment}</td>
+                    <td data-label="Suryadinata, Adam & Fauziah">{historiographicalSynthesisData[2].economicAssessment}</td>
                   </tr>
                   <tr>
-                    <td data-label="Dimensi Analisis"><strong>Penjelasan Sebab Keruntuhan</strong></td>
-                    <td data-label="Clifford Geertz (1963)">{historiographicalSynthesisData[0].collapseExplanation}</td>
-                    <td data-label="Cornelis Fasseur (1992)">{historiographicalSynthesisData[1].collapseExplanation}</td>
-                    <td data-label="Jan Breman (2014)">{historiographicalSynthesisData[2].collapseExplanation}</td>
+                    <td data-label="Dimensi Analisis"><strong>Penjelasan Transformasi Sosial</strong></td>
+                    <td data-label="Reid, Lombard & Blussé">{historiographicalSynthesisData[0].collapseExplanation}</td>
+                    <td data-label="Rush, Diehl & Heidhues">{historiographicalSynthesisData[1].collapseExplanation}</td>
+                    <td data-label="Suryadinata, Adam & Fauziah">{historiographicalSynthesisData[2].collapseExplanation}</td>
                   </tr>
                 </tbody>
               </table>
@@ -416,11 +416,11 @@ export const ImpactSection: React.FC<ImpactSectionProps> = ({ onOpenImage }) => 
 
                   <div className="hist-points-list">
                     <div className="hist-point">
-                      <span className="point-sublabel">Analisis dampak</span>
+                      <span className="point-sublabel">Temuan ekonomi &amp; sosial</span>
                       <p>{hist.economicAssessment}</p>
                     </div>
                     <div className="hist-point">
-                      <span className="point-sublabel">Sebab berakhirnya sistem</span>
+                      <span className="point-sublabel">Dinamika perubahan zaman</span>
                       <p>{hist.collapseExplanation}</p>
                     </div>
                   </div>
@@ -430,27 +430,27 @@ export const ImpactSection: React.FC<ImpactSectionProps> = ({ onOpenImage }) => 
           </div>
         )}
 
-        {/* TAB 5: LAPORAN VAN REES 1867 & REFORMASI PRIANGAN */}
+        {/* TAB 5: BAB III PENUTUP — KESIMPULAN & SARAN */}
         {activeMainTab === 'van-rees' && (
           <div className="dossier-tab-content tab-fade-in">
             <div className="impact-tab-lead">
               <div className="impact-lead-title-row">
                 <h3 className="impact-lead-title">
-                  Laporan Rahasia Ono van Rees (Oktober 1867): Membongkar Kebobrokan Preangerstelsel
+                  Bab III Penutup: Kesimpulan (3.1) &amp; Saran Akademik (3.2)
                 </h3>
-                <span className="badge badge-gold">Dokumen investigasi kolonial</span>
+                <span className="badge badge-gold">Sintesis Makalah Kelompok 8</span>
               </div>
               <p className="impact-lead-desc">
-                Setelah penyelidikan langsung selama enam bulan di dataran tinggi Priangan (1866–1867), Komisaris Pemerintah Ono van Rees menyusun laporan yang membongkar kebobrokan Sistem Priangan dan menjadi dasar pembubarannya. Bagian kedua laporan ini <strong>sengaja dirahasiakan</strong> dari Parlemen Belanda.
+                Rangkuman komprehensif atas ketiga rumusan masalah makalah—aktivitas ekonomi pra-abad ke-19, transformasi ekonomi abad ke-19 hingga akhir masa kolonial, serta kedudukan sosial dalam struktur kolonial dan di Banten—beserta rekomendasi akademik bagi pengajaran sejarah.
               </p>
             </div>
 
-            <h4 className="subsection-heading">Empat Temuan &amp; Rekomendasi Utama Laporan Van Rees</h4>
+            <h4 className="subsection-heading">Tiga Kesimpulan Utama &amp; Saran Kajian (Bab 3.1 &amp; 3.2)</h4>
             <div className="staatsblad-cards-grid">
               {vanReesReportData.map((section) => (
                 <article key={section.id} className="staatsblad-card parchment-card" id={section.id}>
                   <div className="staatsblad-card-header">
-                    <span className="rule-number-badge">Temuan {String(section.sectionNumber).padStart(2, '0')}</span>
+                    <span className="rule-number-badge">Bagian {String(section.sectionNumber).padStart(2, '0')}</span>
                     <span className={`badge ${section.sectionNumber === 4 ? 'badge-amber' : 'badge-red'}`}>
                       {section.badge}
                     </span>
@@ -464,17 +464,17 @@ export const ImpactSection: React.FC<ImpactSectionProps> = ({ onOpenImage }) => 
                     </ul>
                   </div>
                   <div className="source-citation-box">
-                    <span className="source-label">Signifikansi:</span> {section.significance}
+                    <span className="source-label">Intisari:</span> {section.significance}
                   </div>
                 </article>
               ))}
             </div>
 
-            {/* Monetization Phases — Open Section (Zero Nested Cards, WCAG-Safe Badges) */}
+            {/* 4 Fase Periodisasi Sejarah */}
             <div className="van-rees-monetization-open" id="van-rees-monetization-section">
               <div className="van-rees-monetization-header">
                 <ArrowUpRight size={19} strokeWidth={1.5} className="van-rees-gold-icon" />
-                <h4>Empat Fase Monetisasi Priangan: Dari Garam sebagai Alat Tukar hingga Ekonomi Uang</h4>
+                <h4>Empat Fase Evolusi Peran Ekonomi &amp; Kedudukan Sosial Tionghoa di Nusantara</h4>
               </div>
               <div className="van-rees-phases-grid">
                 {prianganMonetizationData.map((phase) => (
@@ -482,7 +482,7 @@ export const ImpactSection: React.FC<ImpactSectionProps> = ({ onOpenImage }) => 
                     <div className="van-rees-phase-top">
                       <strong className="van-rees-phase-title">{phase.title}</strong>
                       <span className={`badge ${getMonetizationBadgeClass(phase.monetizationLevel)}`}>
-                        {phase.monetizationLevel}
+                        Integrasi: {phase.monetizationLevel}
                       </span>
                     </div>
                     <span className="van-rees-phase-label tabular-nums">
@@ -502,21 +502,21 @@ export const ImpactSection: React.FC<ImpactSectionProps> = ({ onOpenImage }) => 
             <div className="van-rees-aftermath-open">
               <h4 className="van-rees-aftermath-top">
                 <CheckCircle size={17} strokeWidth={1.5} className="van-rees-green-icon" />
-                <span>Hasil Akhir: Ordonansi Staatsblad 1870</span>
+                <span>Pesan Kunci Makalah Kelompok 8 (Pendidikan Sejarah FKIP UNTIRTA)</span>
               </h4>
               <p>
-                Rekomendasi Van Rees menjadi cetak biru bagi <strong>Ordonansi Staatsblad 1870</strong>, yang secara resmi <strong>menghapuskan Sistem Priangan dan tradisi ngawula per 1 Januari 1871</strong>. Meskipun ditentang Gubernur Jenderal Mijer dan sebagian laporan dirahasiakan, dokumen ini membuka babak baru: masuknya perkebunan swasta (teh K.F. Holle), terbentuknya kelas buruh upahan, dan monetisasi pedesaan Priangan.
+                Sejarah masyarakat Tionghoa di Nusantara adalah bagian tak terpisahkan dari sejarah pembentukan ekonomi dan kebangsaan Indonesia. Memahami perbedaan antara <strong>rekayasa segregasi kolonial Belanda</strong> (<em>Vreemde Oosterlingen</em>, <em>Pachtstelsel</em>, <em>Wijkenstelsel</em>) dan <strong>realitas akulturasi serta perjuangan bersama rakyat Nusantara</strong> (dari Pecinan Banten dan Geger Pecinan 1740 hingga <em>Sin Po</em> 1928 dan PTI 1932) merupakan kunci untuk meruntuhkan prasangka warisan kolonial.
               </p>
             </div>
           </div>
         )}
 
-        {/* PERSISTENT SECTION: GALERI TOKOH PENGKRITIK SEJARAH */}
+        {/* PERSISTENT SECTION: GALERI TOKOH SEJARAH */}
         <div className="critics-block">
           <div className="impact-sub-opener">
-            <h3 className="critics-section-heading">Tokoh-Tokoh Pengkritik Cultuurstelsel</h3>
+            <h3 className="critics-section-heading">Tokoh-Tokoh Kunci dalam Sejarah Ekonomi &amp; Sosial Tionghoa Nusantara</h3>
             <p className="famine-subtitle">
-              Dari mantan pejabat kolonial, sastrawan, anggota parlemen, hingga pakar pertanian yang membongkar eksploitasi
+              Dari Kapiten Batavia pertama, Syahbandar Kesultanan Banten, pendiri sekolah modern THHK, hingga pelopor nasionalisme Indonesia
             </p>
           </div>
 

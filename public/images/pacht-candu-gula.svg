@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <rect width="800" height="600" fill="#1a1714"/>
+  <rect x="24" y="24" width="752" height="552" fill="none" stroke="#c8963e" stroke-width="1.5" opacity="0.6"/>
+  <text x="56" y="72" fill="#c8963e" font-family="JetBrains Mono, monospace" font-size="13" letter-spacing="2">PELAT ARSIP 05 · PACHTSTELSEL &amp; RANTAI DISTRIBUSI PEDESAAN JAWA (ABAD XIX)</text>
+  <text x="56" y="106" fill="#f4f4f2" font-family="Spectral, Georgia, serif" font-size="24" font-weight="600">Monopoli Sewa Pajak (Opiumpacht) &amp; Jaringan Perantara Cabang Atas</text>
+  <g transform="translate(56, 138)">
+    <rect x="0" y="0" width="330" height="280" fill="#261f18" stroke="#8a1c14" stroke-width="1.8"/>
+    <text x="22" y="36" fill="#e5b869" font-family="JetBrains Mono, monospace" font-size="12">TULANG PUNGGUNG FISKAL KOLONIAL</text>
+    <text x="22" y="76" fill="#f4f4f2" font-family="JetBrains Mono, monospace" font-size="36" font-weight="600">~18% APBN</text>
+    <text x="22" y="102" fill="#c8963e" font-family="Source Sans 3, sans-serif" font-size="14">Kontribusi Opiumpacht terhadap pendapatan</text>
+    <text x="22" y="122" fill="#c8963e" font-family="Source Sans 3, sans-serif" font-size="14">Hindia Belanda kurun 1886–1895 (Diehl, 1993)</text>
+    <line x1="22" y1="142" x2="308" y2="142" stroke="#c8963e" stroke-width="0.7" opacity="0.5"/>
+    <text x="22" y="168" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="14">• Diperkenalkan 1809, Ordonansi tahunan 1847</text>
+    <text x="22" y="192" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="14">• Kuota pasokan wajib (Tiban) &amp; tambahan (Siram)</text>
+    <text x="22" y="216" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="14">• Kongsi Keluarga Be (Semarang) &amp; Djie Bok Hien</text>
+    <text x="22" y="240" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="14">• Bazarpacht, Pandhuispacht, &amp; Zoutpacht</text>
+  </g>
+  <g transform="translate(408, 138)">
+    <rect x="0" y="0" width="336" height="280" fill="#211e19" stroke="#c8963e" stroke-width="1.5"/>
+    <text x="22" y="36" fill="#e5b869" font-family="JetBrains Mono, monospace" font-size="12">SIRKULASI EKONOMI DESA–PELABUHAN</text>
+    <text x="22" y="64" fill="#f4f4f2" font-family="Spectral, Georgia, serif" font-size="18" font-weight="600">Kontraktor Gula &amp; Logistik</text>
+    <text x="22" y="94" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="14">• Suikercontractanten: pemodal pabrik</text>
+    <text x="22" y="116" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="14">  penggilingan gula Pantura &amp; Jawa Timur</text>
+    <text x="22" y="144" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="14">• Kendali armada pedati, perahu sungai,</text>
+    <text x="22" y="166" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="14">  dan pergudangan pelabuhan (Santoso, 2025)</text>
+    <text x="22" y="194" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="14">• Penyalur tekstil, besi, minyak tanah, garam,</text>
+    <text x="22" y="216" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="14">  kredit tunai, &amp; penyerap upah plantloon</text>
+  </g>
+  <line x1="56" y1="450" x2="744" y2="450" stroke="#c8963e" stroke-width="0.8" opacity="0.5"/>
+  <text x="56" y="482" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="15">Staf pemegang pacht memperoleh hak istimewa keluar-masuk pedesaan, menjadikan mereka perantara</text>
+  <text x="56" y="505" fill="#ebd9b8" font-family="Source Sans 3, sans-serif" font-size="15">utama (middlemen) antara ekonomi kolonial Eropa di pelabuhan dan masyarakat agraris Jawa (Rush, 1990).</text>
+  <text x="56" y="542" fill="#c8963e" font-family="JetBrains Mono, monospace" font-size="12">SUMBER: RUSH (1990), OPIUM TO JAVA · DIEHL (1993) · ELSON (1994) · SARI (2022)</text>
+</svg>
