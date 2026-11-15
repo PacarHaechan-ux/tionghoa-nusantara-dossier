@@ -536,10 +536,10 @@ export const backgroundData = {
       impact: "Memasuki abad ke-19, pemerintah Hindia Belanda menjadikan jaringan saudagar Cabang Atas sebagai pemegang lelang pajak (pachtstelsel, dengan opiumpacht menyumbang ~18% APBN kolonial) dan penggerak logistik gula di Jawa, sembari menaklukkan federasi emas Kongsi Thaikong & Lanfang di Kalimantan Barat (1822–1885) serta mengikat ratusan ribu kuli kontrak (sinkeh) di tambang timah Bangka-Belitung dan kebun Deli dengan sanksi pidana Koelie Ordonnantie (1880). Tekanan segregasi Vreemde Oosterlingen (1854), Wijkenstelsel, dan Passenstelsel akhirnya melahirkan gelombang emansipasi modern: pendirian sekolah Tiong Hoa Hwee Koan (THHK, 17 Maret 1900) oleh Phoa Keng Hek & Lie Kim Hok, lantangnya pers Melayu-Tionghoa seperti Sin Po yang mencetak perdana lagu 'Indonesia Raya' (November 1928), hingga lahirnya Partai Tionghoa Indonesia (PTI, 1932) pimpinan Liem Koen Hian yang meneguhkan haluan Indonesierschap.",
       cost: "THHK 1900, Pers Sin Po 1928 & PTI 1932",
       image: {
-        src: "/images/pers-sinpo-pti.svg",
-        alt: "Ilustrasi Arsip Kebangkitan Pendidikan THHK 1900, Pers Sin Po 1928, dan Partai Tionghoa Indonesia 1932",
-        caption: "Transformasi masyarakat Tionghoa menuju kesadaran kebangsaan modern melalui sekolah Tiong Hoa Hwee Koan (1900), pers Melayu-Tionghoa (Sin Po mencetak 'Indonesia Raya' 1928), dan Partai Tionghoa Indonesia (1932).",
-        archiveSource: "Williams (1960) · Suryadinata (1981, 2020) · Adam (1995)"
+        src: "/images/phoa-keng-hek.jpg",
+        alt: "Potret Arsip Phoa Keng Hek, Presiden Pertama Tiong Hoa Hwee Koan (THHK 1900)",
+        caption: "Phoa Keng Hek (1857–1937), Presiden pertama Tiong Hoa Hwee Koan (THHK, 1900) yang mengawali kebangkitan pendidikan modern, pers Melayu-Tionghoa, dan kesadaran politik awal abad ke-20.",
+        archiveSource: "Nio Joe Lan (1940) · Williams (1960) · Suryadinata (1981, 2020)"
       }
     },
   ] as WarCrisis[],
@@ -1587,10 +1587,10 @@ export const implementationData = {
       ],
       historicalFigures: ["Phoa Keng Hek", "Lie Kim Hok", "Dr. Sun Yat-sen"],
       image: {
-        src: "/images/thhk-pendidikan-1900.svg",
-        alt: "Tiong Hoa Hwee Koan 1900 dan HCS 1908",
-        caption: "Kebangkitan pendidikan modern THHK (1900) serta respons kolonial melalui HCS (1908) dan WNO (1910).",
-        archiveSource: "Somers (1965) · Williams (1960) · Nio Joe Lan (1940)"
+        src: "/images/phoa-keng-hek.jpg",
+        alt: "Potret Arsip Phoa Keng Hek, Presiden Pertama Tiong Hoa Hwee Koan (1900)",
+        caption: "Phoa Keng Hek, Presiden pertama Tiong Hoa Hwee Koan (THHK, 17 Maret 1900) yang mempelopori kebangkitan pendidikan modern di Hindia Belanda.",
+        archiveSource: "Nio Joe Lan (1940) · Somers (1965) · Williams (1960)"
       }
     },
     {
@@ -1948,14 +1948,14 @@ export const impactData = {
       role: "Pendiri Tiong Hoa Hwee Koan (THHK) & Pembaru Pendidikan/Sastra",
       period: "17 Maret 1900 – Awal Abad ke-20",
       category: "Sastrawan & Moral",
-      keyContribution: "Memimpin pendirian organisasi pembaru Tiong Hoa Hwee Koan (THHK) di Batavia pada 17 Maret 1900, mengampanyekan pemurnian ajaran Konfusianisme (Khonghucu) dari adat takhayul yang boros, serta mendirikan jaringan sekolah modern Tiong Hoa Hak Tong sejak 1901 yang membuka pendidikan setara bagi anak laki-laki dan perempuan.",
+      keyContribution: "Memimpin pendirian organisasi pembaru Tiong Hoa Hwee Koan (THHK) di Batavia pada 17 Maret 1900 (dengan Phoa Keng Hek sebagai Presiden pertama), mengampanyekan pemurnian ajaran Konfusianisme (Khonghucu) dari adat takhayul yang boros, serta mendirikan jaringan sekolah modern Tiong Hoa Hak Tong sejak 1901 yang membuka pendidikan setara bagi anak laki-laki dan perempuan.",
       workOrCitation: "Nio Joe Lan (1940) · Williams (1960) · Somers (1965) · Adam (1995)",
       impactNote: "Memicu kebangkitan sosial-pendidikan modern Tionghoa di seluruh Hindia Belanda dan memaksa pemerintah kolonial mendirikan HCS pada 1908.",
       image: {
-        src: "/images/thhk-pendidikan-1900.svg",
-        alt: "Ilustrasi Arsip Tiong Hoa Hwee Koan Phoa Keng Hek dan Lie Kim Hok",
-        caption: "Phoa Keng Hek dan Lie Kim Hok, pelopor gerakan pendidikan modern Tiong Hoa Hwee Koan (THHK, 1900).",
-        archiveSource: "Nio Joe Lan (1940) · Williams (1960)"
+        src: "/images/phoa-keng-hek.jpg",
+        alt: "Potret Arsip Phoa Keng Hek, Presiden Pertama Tiong Hoa Hwee Koan (THHK 1900)",
+        caption: "Phoa Keng Hek (1857–1937), Presiden pertama Tiong Hoa Hwee Koan (THHK, 17 Maret 1900) dan pelopor gerakan pendidikan modern Tionghoa di Hindia Belanda.",
+        archiveSource: "Nio Joe Lan (1940), Riwajat 40 Taon T.H.H.K. Batavia · Williams (1960)"
       }
     },
     {
