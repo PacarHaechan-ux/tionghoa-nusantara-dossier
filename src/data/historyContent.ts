@@ -1978,16 +1978,16 @@ export const impactData = {
       id: "tokoh-kan-hok-hoei",
       name: "Kan Hok Hoei (H.H. Kan)",
       role: "Tokoh Elite Cabang Atas & Ketua Chung Hwa Hui (CHH)",
-      period: "1928 – Akhir Masa Kolonial",
+      period: "1881 – 1951 (CHH 1928)",
       category: "Parlemen & Politik",
       keyContribution: "Mewakili aliran politik kedua masyarakat Tionghoa melalui pendirian Chung Hwa Hui (CHH) pada 1928 yang didukung kalangan intelektual lulusan Belanda dan elite bisnis untuk menempuh jalur parlementer kooperatif di dalam Volksraad.",
       workOrCitation: "Suryadinata (1981, 2020) · Lohanda (2007)",
       impactNote: "Memperjuangkan pencabutan diskriminasi hukum dan penyetaraan status warga Tionghoa melalui lembaga perwakilan kolonial.",
       image: {
-        src: "/images/pers-sinpo-pti.svg",
-        alt: "Ilustrasi Arsip Tiga Aliran Politik Tionghoa Abad ke-20",
-        caption: "Peta tiga aliran politik masyarakat Tionghoa pada masa akhir kolonial: Sin Po, Chung Hwa Hui (1928), dan Partai Tionghoa Indonesia (1932).",
-        archiveSource: "Leo Suryadinata (1981)"
+        src: "/images/kan-hok-hoei.jpg",
+        alt: "Potret Arsip Kan Hok Hoei (H.H. Kan), Ketua Chung Hwa Hui (CHH 1928)",
+        caption: "Kan Hok Hoei (H.H. Kan, 1881–1951), tokoh terkemuka Cabang Atas Batavia, anggota Volksraad, dan Ketua Chung Hwa Hui (CHH, 1928).",
+        archiveSource: "KITLV / Tropenmuseum · Leo Suryadinata (1981)"
       }
     },
     {
