@@ -510,10 +510,10 @@ export const backgroundData = {
       impact: "Ketika Jan Pieterszoon Coen merebut Jayakarta dan mendirikan Batavia pada 1619, VOC menghadapi krisis tenaga kerja dan permusuhan sengit dari Kesultanan Banten serta Mataram. Coen menarik saudagar dan pekerja Tionghoa dari Banten serta Tiongkok Selatan, lalu menunjuk saudagar lada terkemuka Souw Beng Kong sebagai Kapitein der Chinezen pertama (yang kemudian berkembang menjadi institusi Mayor, Kapiten, dan Letnan). Para opsir ini memungut pajak kepala (hoofdgeld) 1,5 real/bulan bagi pria usia 16–60 tahun sebagai kompensasi bebas wajib militer/rodi benteng, mendata imigran jung, dan mengadili perkara perdata adat, sementara pemborong Tionghoa membangun tembok benteng, kanal, ruko, pabrik bata/kapur, serta penggilingan gula di Ommelanden.",
       cost: "Pajak Kepala 1,5 Real/Bulan & Konstruksi Batavia",
       image: {
-        src: "/images/batavia-souw-beng-kong.svg",
-        alt: "Ilustrasi Arsip Kapitein der Chinezen Souw Beng Kong dan Pembangunan Kanal Batavia 1619",
-        caption: "Sistem pemerintahan tidak langsung (indirect rule) VOC melalui pengangkatan Souw Beng Kong sebagai Kapitein der Chinezen pertama (1619) serta peran kontraktor Tionghoa membangun infrastruktur Batavia.",
-        archiveSource: "Blussé (1988) · Lohanda (2007) · Surat J.P. Coen kepada Heeren XVII"
+        src: "/images/makam-souw-beng-kong.jpg",
+        alt: "Situs Cagar Budaya Makam Kapitein Souw Beng Kong (1580–1644) di Mangga Dua, Jakarta",
+        caption: "Situs makam Kapitein der Chinezen pertama Batavia, Souw Beng Kong (1580–1644) di kawasan Mangga Dua, Jakarta—saksi bisu fondasi kemitraan awal VOC dan komunitas Tionghoa sejak 1619.",
+        archiveSource: "Cagar Budaya DKI Jakarta · Blussé (1988) · Lohanda (2007)"
       }
     },
     {
@@ -1495,10 +1495,10 @@ export const implementationData = {
       ],
       historicalFigures: ["Jan Pieterszoon Coen", "Souw Beng Kong (Kapitein der Chinezen Pertama)"],
       image: {
-        src: "/images/batavia-souw-beng-kong.svg",
-        alt: "Kapitein Souw Beng Kong dan Pembangunan Batavia 1619",
-        caption: "Institusi Kapitein der Chinezen dan pembangunan fisik kota Batavia sejak 1619.",
-        archiveSource: "Blussé (1988) · Lohanda (2007)"
+        src: "/images/makam-souw-beng-kong.jpg",
+        alt: "Situs Makam Kapitein Souw Beng Kong di Batavia (Mangga Dua, Jakarta)",
+        caption: "Situs makam bersejarah Kapitein Souw Beng Kong (1580–1644), Kapitein der Chinezen pertama di Batavia yang diangkat J.P. Coen pada 1619.",
+        archiveSource: "Cagar Budaya DKI Jakarta · Blussé (1988) · Lohanda (2007)"
       }
     },
     {
@@ -1904,10 +1904,10 @@ export const impactData = {
       workOrCitation: "Blussé (1988) · Lohanda (2007) · Arsip VOC Batavia (1619)",
       impactNote: "Menjadikan komunitas Tionghoa tulang punggung pembangunan fisik, logistik, dan fiskal kota Batavia sejak awal berdirinya.",
       image: {
-        src: "/images/batavia-souw-beng-kong.svg",
-        alt: "Ilustrasi Arsip Kapitein Souw Beng Kong di Batavia 1619",
-        caption: "Souw Beng Kong, Kapitein der Chinezen pertama di Batavia (1619) pada masa Gubernur Jenderal J.P. Coen.",
-        archiveSource: "Blussé (1988) · Lohanda (2007)"
+        src: "/images/makam-souw-beng-kong.jpg",
+        alt: "Situs Cagar Budaya Makam Kapitein Souw Beng Kong di Mangga Dua, Jakarta",
+        caption: "Situs makam Kapitein Souw Beng Kong (1580–1644), Kapitein der Chinezen pertama di Batavia (1619) pada masa Gubernur Jenderal J.P. Coen.",
+        archiveSource: "Cagar Budaya DKI Jakarta · Blussé (1988) · Lohanda (2007)"
       }
     },
     {
