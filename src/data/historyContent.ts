@@ -1610,9 +1610,9 @@ export const implementationData = {
       ],
       historicalFigures: ["Liem Koen Hian (Ketua PTI)", "Kan Hok Hoei (Ketua CHH)", "W.R. Supratman", "Leo Suryadinata"],
       image: {
-        src: "/images/pers-sinpo-pti.svg",
-        alt: "Pers Melayu-Tionghoa dan Tiga Haluan Politik",
-        caption: "Harian Sin Po, pencetakan perdana lagu 'Indonesia Raya' (1928), dan Partai Tionghoa Indonesia (1932).",
+        src: "/images/liem-koen-hian.jpg",
+        alt: "Potret Arsip Liem Koen Hian dan Partai Tionghoa Indonesia (PTI 1932)",
+        caption: "Liem Koen Hian (1897–1952), pendiri Partai Tionghoa Indonesia (PTI, 1932) yang meneguhkan haluan Indonesierschap bersama pergerakan nasional Indonesia.",
         archiveSource: "Adam (1995) · Suryadinata (1981, 2020)"
       }
     },
@@ -1994,16 +1994,16 @@ export const impactData = {
       id: "tokoh-liem-koen-hian",
       name: "Liem Koen Hian",
       role: "Pendiri Partai Tionghoa Indonesia (PTI) & Jurnalis Pergerakan",
-      period: "1929 – 1945 (PTI 1932)",
+      period: "1897 – 1952 (PTI 1932)",
       category: "Parlemen & Politik",
       keyContribution: "Memimpin surat kabar Sin Tit Po di Surabaya (1929) dan mendirikan Partai Tionghoa Indonesia (PTI) pada 1932 yang berhaluan Indonesierschap—mengajak etnis Tionghoa menolak orientasi politik kolonial Belanda maupun nasionalisme eksklusif Tiongkok untuk melebur penuh dalam perjuangan kemerdekaan Indonesia bersama kaum pergerakan nasional bumiputera.",
       workOrCitation: "Suryadinata (1981, 2020) · Adam (1995)",
       impactNote: "Menjadi tonggak integrasi politik masyarakat Tionghoa sebagai bagian utuh dari bangsa Indonesia yang merdeka.",
       image: {
-        src: "/images/pers-sinpo-pti.svg",
-        alt: "Ilustrasi Arsip Liem Koen Hian dan Partai Tionghoa Indonesia 1932",
-        caption: "Liem Koen Hian dan haluan Indonesierschap Partai Tionghoa Indonesia (PTI, 1932) dalam pergerakan kemerdekaan Indonesia.",
-        archiveSource: "Leo Suryadinata (1981)"
+        src: "/images/liem-koen-hian.jpg",
+        alt: "Potret Arsip Liem Koen Hian (1897–1952), Pendiri Partai Tionghoa Indonesia (PTI 1932)",
+        caption: "Liem Koen Hian (1897–1952), pendiri Partai Tionghoa Indonesia (PTI, 1932) dan pelopor haluan Indonesierschap dalam pergerakan kemerdekaan Indonesia.",
+        archiveSource: "Arsip Nasional / Leo Suryadinata (1981)"
       }
     },
   ] as HistoricalCritic[],
