@@ -65,7 +65,7 @@
 .impact-lead-desc {
   font-size: 0.975rem;
   color: var(--ink-secondary);
-  line-height: 1.7;
+  line-height: 1.78;
   max-width: var(--reading-measure);
 }
 
@@ -684,7 +684,7 @@
 .critic-avatar-zoom-overlay {
   position: absolute;
   inset: 0;
-  background-color: rgba(24, 24, 22, 0.5);
+  background-color: rgba(19, 42, 79, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;

@@ -1,6 +1,6 @@
 .footer-container {
   background-color: var(--bg-plate);
-  color: #f4f4f2;
+  color: #f3f8fc;
   padding-top: clamp(3rem, 5.5vw, 4.25rem);
   padding-bottom: 2.5rem;
   border-top: 1px solid var(--border-strong);
@@ -18,7 +18,7 @@
   font-size: 1.35rem;
   font-weight: 600;
   letter-spacing: -0.015em;
-  color: #f4f4f2;
+  color: #f3f8fc;
   margin-bottom: 0.25rem;
 }
 
@@ -32,7 +32,7 @@
 .footer-about {
   font-size: 0.9rem;
   line-height: 1.65;
-  color: #cfcfc7;
+  color: #cfe4f2;
   max-width: 56ch;
 }
 
@@ -41,7 +41,7 @@
   font-family: var(--font-serif-heading);
   font-size: 1rem;
   font-weight: 600;
-  color: #f4f4f2;
+  color: #f3f8fc;
   margin-bottom: 0.75rem;
 }
 
@@ -56,9 +56,9 @@
 
 .footer-authors-list li {
   font-size: 0.875rem;
-  color: #e4e4dc;
+  color: #e4f2fa;
   padding-bottom: 0.5rem;
-  border-bottom: 1px solid rgba(244, 244, 242, 0.12);
+  border-bottom: 1px solid rgba(243, 248, 252, 0.12);
 }
 
 .footer-authors-list li strong {
@@ -80,9 +80,9 @@
 }
 
 .back-to-top-btn {
-  background-color: rgba(244, 244, 242, 0.08);
-  color: #f4f4f2;
-  border: 1px solid rgba(244, 244, 242, 0.24);
+  background-color: rgba(243, 248, 252, 0.08);
+  color: #f3f8fc;
+  border: 1px solid rgba(243, 248, 252, 0.24);
   font-size: 0.875rem;
 }
 
@@ -96,12 +96,12 @@
 .footer-bottom-row {
   margin-top: 2.25rem;
   padding-top: 1.25rem;
-  border-top: 1px solid rgba(244, 244, 242, 0.12);
+  border-top: 1px solid rgba(243, 248, 252, 0.12);
 }
 
 .footer-copy {
   font-size: 0.8125rem;
-  color: #c2c2ba;
+  color: #b0d3ea;
   line-height: 1.6;
 }
 

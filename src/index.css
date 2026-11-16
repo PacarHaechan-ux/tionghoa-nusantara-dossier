@@ -1,77 +1,83 @@
 /* ==========================================================================
-   DESIGN SYSTEM: CULTUURSTELSEL EXHIBITION MONOGRAPH (1830–1870)
-   Character: Curatorial, Archival, Exact
-   Surfaces: Mineral Cotton Rag (#f4f4f2), Pure Sheet (#ffffff), Stone Ledger (#eaeae6)
+   DESIGN SYSTEM: PORSELEN BIRU-PUTIH & SAMUDRA (MARITIME BLUE MONOGRAPH)
+   Character: Curatorial, Archival, Calm & High-Ergonomics Reading
+   Palette: Deep Navy (#132A4F), Maritime Cerulean (#0B568D), Sky Monsoon (#5DBBE5), Soft Ice Blue (#9FE0F6)
+   Surfaces: Porcelain Ice-White (#f3f8fc), Pure Sheet (#ffffff), Soft Qinghua Wash (#e4f2fa)
    Typography: Spectral (Headings & Sources) + Source Sans 3 (Body/UI) + JetBrains Mono (Figures)
    ========================================================================== */
 
 :root {
-  /* Mineral Cotton Paper Ramp — Ultra-low chroma to avoid warm-cream cliché */
-  --bg-parchment: #f4f4f2;
-  --bg-parchment-light: #fafaf9;
+  /* Porcelain Blue-White & Maritime Ocean Surfaces */
+  --bg-parchment: #f3f8fc;
+  --bg-parchment-light: #f9fcff;
   --bg-parchment-card: #ffffff;
-  --bg-parchment-dark: #eaeae6;
-  --bg-parchment-accent: #e1e1dc;
-  --bg-plate: #181816;
-  --bg-plate-elevated: #22221f;
+  --bg-parchment-dark: #e4f2fa;
+  --bg-parchment-accent: #cfe9f8;
+  --bg-paper: #f3f8fc;
+  --bg-card: #ffffff;
+  --surface-recessed: #e4f2fa;
+  --bg-plate: #132a4f;
+  --bg-plate-elevated: #1b3a6b;
 
-  /* Three Primary Text Roles — Calibrated well above WCAG AA 4.5:1 */
-  --ink-primary: #171715;    /* ~16.2:1 on #f4f4f2 */
-  --ink-secondary: #3b3b36;  /* ~10.1:1 on #f4f4f2 */
-  --ink-muted: #575750;      /* ~6.5:1 on #f4f4f2 */
-  --ink-light: #5f5f58;      /* ~5.9:1 on #f4f4f2 (safe fallback) */
+  /* Three Primary Text Roles — Calibrated well above WCAG AAA (>= 12:1 for primary) */
+  --ink-primary: #0f223d;    /* ~15.4:1 on #f3f8fc */
+  --ink-secondary: #233e63;  /* ~10.2:1 on #f3f8fc */
+  --ink-muted: #456287;      /* ~5.8:1 on #f3f8fc */
+  --ink-light: #4e6b90;      /* safe fallback */
 
-  /* Single Primary Accent: Staatsblad Vermilion Seal */
-  --accent-crimson: #8a1c14;
-  --accent-crimson-light: #a1251b;
-  --accent-crimson-bg: rgba(138, 28, 20, 0.07);
+  /* Primary Accent: Maritime Cerulean (#0B568D) */
+  --accent-crimson: #0b568d;
+  --accent-crimson-light: #1269a8;
+  --accent-crimson-bg: rgba(11, 86, 141, 0.09);
+  --accent-burgundy: #0b568d;
 
-  /* Functional Data & Semantic Inks (Contrast >= 6.8:1 on light surfaces) */
-  --accent-gold: #6b4c0b;
-  --accent-gold-light: #825d10;
-  --accent-gold-on-dark: #dfb45b;
-  --accent-gold-bg: rgba(107, 76, 11, 0.08);
+  /* Secondary & Semantic Inks (Deep Navy #132A4F, Sky Monsoon #5DBBE5, Soft Ice Blue #9FE0F6) */
+  --accent-gold: #132a4f;
+  --accent-gold-light: #0b568d;
+  --accent-gold-on-dark: #9fe0f6;
+  --accent-gold-bg: rgba(93, 187, 229, 0.16);
 
-  --accent-verdigris: #184a50;
-  --accent-verdigris-light: #215f66;
-  --accent-verdigris-bg: rgba(24, 74, 80, 0.08);
+  --accent-verdigris: #096885;
+  --accent-verdigris-light: #0d80a3;
+  --accent-verdigris-bg: rgba(159, 224, 246, 0.25);
 
-  --accent-agrarian: #1d4e38;
-  --accent-agrarian-bg: rgba(29, 78, 56, 0.08);
+  --accent-agrarian: #0b568d;
+  --accent-agrarian-bg: rgba(93, 187, 229, 0.18);
 
   /* Compatibility Aliases for Component Styles */
-  --color-gold: #6b4c0b;
-  --color-amber: #75520c;
-  --color-parchment-dark: #171715;
-  --color-ink-dark: #171715;
-  --color-ink-medium: #3b3b36;
-  --color-ink-light: #575750;
+  --color-gold: #132a4f;
+  --color-amber: #0b568d;
+  --color-parchment-dark: #0f223d;
+  --color-ink-dark: #0f223d;
+  --color-ink-medium: #233e63;
+  --color-ink-light: #456287;
 
   /* 1px Hairline Ledger Rules */
-  --border-subtle: #dcdcd6;
-  --border-medium: #c8c8c0;
-  --border-strong: #acab9f;
-  --border-ornament: #8e8d82;
+  --border-subtle: #cfe4f2;
+  --border-medium: #b0d3ea;
+  --border-strong: #7bb4db;
+  --border-ornament: #5dbbe5;
 
-  /* Neutral Offset Shadows (Quiet & Soft — zero colored glow) */
-  --shadow-sm: 0 1px 3px rgba(23, 23, 21, 0.04);
-  --shadow-md: 0 6px 18px rgba(23, 23, 21, 0.06);
-  --shadow-lg: 0 16px 36px rgba(23, 23, 21, 0.12);
-  --shadow-card-hover: 0 8px 20px rgba(23, 23, 21, 0.07);
-  --shadow-gold: 0 4px 12px rgba(23, 23, 21, 0.08);
+  /* Maritime Offset Shadows */
+  --shadow-sm: 0 1px 3px rgba(19, 42, 79, 0.05);
+  --shadow-md: 0 6px 18px rgba(19, 42, 79, 0.07);
+  --shadow-lg: 0 16px 36px rgba(19, 42, 79, 0.14);
+  --shadow-card-hover: 0 8px 22px rgba(11, 86, 141, 0.10);
+  --shadow-gold: 0 4px 12px rgba(19, 42, 79, 0.10);
 
   /* Typography Families */
   --font-serif-heading: 'Spectral', Georgia, 'Times New Roman', serif;
   --font-serif-body: 'Spectral', Georgia, 'Times New Roman', serif;
   --font-sans: 'Source Sans 3', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-sans-ui: 'Source Sans 3', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Consolas, monospace;
 
   /* 4px Spatial Rhythm, Nested Radii, & Ergonomic Touch Targets */
   --touch-target-min: 44px;
-  --reading-measure: 66ch;
+  --reading-measure: 68ch;
   --space-container: clamp(1rem, 4vw, 2rem);
   --space-section: clamp(3.5rem, 6.5vw, 5.5rem);
-  --space-card: clamp(1.25rem, 2.5vw, 1.75rem);
+  --space-card: clamp(1.35rem, 2.6vw, 1.85rem);
 
   --radius-xs: 2px;
   --radius-sm: 4px;
@@ -103,7 +109,7 @@ html {
 
 /* Custom Browser Surfaces (Selection, Scrollbars, Caret, Focus Ring) */
 ::selection {
-  background-color: rgba(138, 28, 20, 0.16);
+  background-color: rgba(159, 224, 246, 0.55);
   color: var(--ink-primary);
 }
 
@@ -131,7 +137,8 @@ body {
   background-color: var(--bg-parchment);
   color: var(--ink-primary);
   caret-color: var(--accent-crimson);
-  line-height: 1.68;
+  line-height: 1.78;
+  letter-spacing: 0.005em;
   font-size: clamp(1rem, 0.96rem + 0.16vw, 1.0625rem);
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
@@ -352,7 +359,7 @@ table th {
 
 .staatsblad-official-text {
   font-size: 0.9375rem;
-  line-height: 1.64;
+  line-height: 1.75;
   color: var(--ink-secondary);
 }
 
@@ -371,7 +378,7 @@ table th {
   flex-direction: column;
   gap: 0.5rem;
   font-size: 0.9rem;
-  line-height: 1.6;
+  line-height: 1.72;
   color: var(--ink-secondary);
 }
 
@@ -509,14 +516,16 @@ table th {
 
 .badge-gold,
 .badge-amber {
-  background-color: var(--accent-gold-bg);
-  color: var(--accent-gold);
+  background-color: rgba(159, 224, 246, 0.32);
+  border: 1px solid rgba(93, 187, 229, 0.55);
+  color: #132a4f;
 }
 
 .badge-crimson,
 .badge-red {
-  background-color: var(--accent-crimson-bg);
-  color: var(--accent-crimson);
+  background-color: rgba(11, 86, 141, 0.1);
+  border: 1px solid rgba(11, 86, 141, 0.28);
+  color: #0b568d;
 }
 
 .badge-verdigris {
@@ -721,7 +730,7 @@ table th {
 .modal-overlay {
   position: fixed;
   inset: 0;
-  background-color: rgba(23, 23, 21, 0.74);
+  background-color: rgba(19, 42, 79, 0.74);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   z-index: 9999;

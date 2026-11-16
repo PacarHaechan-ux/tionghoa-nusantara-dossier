@@ -187,7 +187,7 @@
 
 .tts-hint-btn {
   background-color: var(--accent-gold-bg);
-  border-color: rgba(158, 111, 25, 0.45);
+  border-color: rgba(11, 86, 141, 0.45);
   color: var(--ink-primary);
 }
 
@@ -240,7 +240,7 @@
   padding: 1.35rem;
   border-radius: var(--radius-md);
   border: 2px solid var(--accent-gold);
-  background: linear-gradient(135deg, #fdf8eb 0%, #eef6f4 100%);
+  background: linear-gradient(135deg, #f9fcff 0%, #eef6f4 100%);
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -390,7 +390,7 @@
 }
 
 .tts-cell-playable.in-word {
-  background-color: #f6e7c1;
+  background-color: #e4f2fa;
 }
 
 .tts-cell-playable.is-solved {
@@ -420,7 +420,7 @@
 
 .tts-cell-playable.is-focused,
 .tts-cell-playable:focus-visible {
-  background-color: #ffdfa0;
+  background-color: #9fe0f6;
   box-shadow: inset 0 0 0 2.5px var(--accent-crimson);
   outline: none;
   z-index: 2;
@@ -567,12 +567,12 @@
 }
 
 .tts-clue-item:hover {
-  background-color: #f9efda;
+  background-color: #eef6fc;
   border-color: var(--border-medium);
 }
 
 .tts-clue-item.active {
-  background-color: #f7e6bd;
+  background-color: #e4f2fa;
   border-color: var(--accent-gold);
   color: var(--ink-primary);
   font-weight: 600;
@@ -580,7 +580,7 @@
 
 .tts-clue-item.solved {
   background-color: #e6f2ef;
-  border-color: rgba(27, 75, 82, 0.25);
+  border-color: rgba(9, 104, 133, 0.25);
 }
 
 .tts-clue-num {
@@ -678,7 +678,7 @@
 }
 
 .quiz-streak-pill.is-hot {
-  background-color: #fff0d6;
+  background-color: #eef6fc;
   border-color: var(--accent-gold);
   color: var(--accent-crimson);
   box-shadow: var(--shadow-gold);
@@ -772,7 +772,7 @@
 }
 
 .quiz-option-btn:hover:not(:disabled) {
-  background-color: #f8edd6;
+  background-color: #eef6fc;
   border-color: var(--accent-gold);
   transform: translateY(-1px);
 }
@@ -940,7 +940,7 @@
   outline: 1px solid var(--border-strong);
   outline-offset: -7px;
   border-radius: var(--radius-md);
-  background: radial-gradient(circle at top, #fffcf4 0%, var(--bg-parchment) 100%);
+  background: radial-gradient(circle at top, #f9fcff 0%, var(--bg-parchment) 100%);
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -960,14 +960,14 @@
   width: 64px;
   height: 64px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--accent-crimson), #651811);
-  color: #ffd98e;
+  background: linear-gradient(135deg, var(--accent-crimson), #132a4f);
+  color: #9fe0f6;
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: var(--shadow-md);
   margin-bottom: 0.9rem;
-  border: 2px solid #e6be6a;
+  border: 2px solid #9fe0f6;
 }
 
 .certificate-rank-title {

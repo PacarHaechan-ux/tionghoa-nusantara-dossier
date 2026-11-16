@@ -4,7 +4,7 @@
   left: 0;
   right: 0;
   z-index: 1000;
-  background-color: rgba(244, 244, 242, 0.94);
+  background-color: rgba(243, 248, 252, 0.92);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--border-subtle);
@@ -12,7 +12,7 @@
 }
 
 .navbar-header.scrolled {
-  background-color: rgba(244, 244, 242, 0.98);
+  background-color: rgba(243, 248, 252, 0.98);
   border-bottom-color: var(--border-medium);
 }
 
@@ -109,7 +109,7 @@
 }
 
 .nav-link.active {
-  color: var(--ink-primary);
+  color: var(--accent-crimson);
   font-weight: 600;
 }
 
@@ -265,7 +265,7 @@
     z-index: 995;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    background-color: rgba(244, 244, 242, 0.96);
+    background-color: rgba(243, 248, 252, 0.96);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     border-top: 1px solid var(--border-medium);

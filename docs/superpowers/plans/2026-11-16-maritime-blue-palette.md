@@ -46,14 +46,14 @@
 **Interfaces:**
 - Produces: Sistem tema CSS `--bg-parchment` (`#F3F8FC`), `--bg-parchment-light` (`#F9FCFF`), `--bg-parchment-card` (`#FFFFFF`), `--bg-parchment-dark` (`#E4F1FA`), `--bg-parchment-accent` (`#D3EAF8`), `--bg-plate` (`#132A4F`), `--bg-plate-elevated` (`#1A3868`), `--ink-primary` (`#0F223D`), `--ink-secondary` (`#243E63`), `--ink-muted` (`#466387`), `--accent-crimson` (`#0B568D`), `--accent-crimson-light` (`#1368A6`), `--accent-gold` (`#132A4F`), `--accent-verdigris` (`#0E6BA8`), `--border-subtle` (`#CFE4F2`), `--border-medium` (`#B3D4EA`), `--border-strong` (`#82B7DC`).
 
-- [ ] **Step 1: Perbarui token variabel CSS global dan tipografi kenyamanan baca di `src/index.css` & `index.html`**
+- [x] **Step 1: Perbarui token variabel CSS global dan tipografi kenyamanan baca di `src/index.css` & `index.html`**
   - Ubah `:root` di `src/index.css` agar menggunakan palet 4 warna biru (`#132A4F`, `#0B568D`, `#5DBBE5`, `#9FE0F6`) dan turunannya yang ramah mata.
-  - Tingkatkan kenyamanan baca paragraf (`line-height: 1.78`, `--reading-measure: 68ch`, seleksi teks `rgba(93, 187, 229, 0.28)`).
+  - Tingkatkan kenyamanan baca paragraf (`line-height: 1.78`, `--reading-measure: 68ch`, seleksi teks `rgba(159, 224, 246, 0.55)`).
   - Perbarui `<meta name="theme-color" content="#132A4F" />` di `index.html`.
 
-- [ ] **Step 2: Selaraskan warna hardcoded di seluruh berkas CSS komponen (`src/components/*.css`)**
+- [x] **Step 2: Selaraskan warna hardcoded di seluruh berkas CSS komponen (`src/components/*.css`)**
   - Ganti warna `rgba(138, 28, 20, ...)`, `rgba(107, 76, 11, ...)`, `#8a1c14`, `#6b4c0b`, dan gradasi kertas krem lama pada `Navbar.css`, `Hero.css`, `BackgroundSection.css`, `ImpactSection.css`, `ExploitationSection.css`, `ImplementationSection.css`, `TimelineSection.css`, `InteractiveLabSection.css`, `HistoricalGamesSection.css`, `BibliographySection.css`, `Footer.css`, `QuickSearchModal.css`, dan `ImageLightboxModal.css` ke nuansa biru maritim (`#132A4F`, `#0B568D`, `#5DBBE5`, `#9FE0F6`).
 
-- [ ] **Step 3: Verifikasi build & lint serta commit**
+- [x] **Step 3: Verifikasi build & lint serta commit**
   - Run: `npm run build && npm run lint`
   - Expected: `✓ built` dan `Found 0 warnings and 0 errors.`

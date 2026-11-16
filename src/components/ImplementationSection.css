@@ -27,7 +27,7 @@
 .residency-lead-desc {
   font-size: 0.975rem;
   color: var(--ink-secondary);
-  line-height: 1.7;
+  line-height: 1.78;
   max-width: var(--reading-measure);
 }
 
@@ -284,8 +284,8 @@
 }
 
 .law-col p {
-  font-size: 0.925rem;
-  line-height: 1.65;
+  font-size: 0.9375rem;
+  line-height: 1.74;
   color: var(--ink-secondary);
 }
 
@@ -334,8 +334,8 @@
 }
 
 .region-desc {
-  font-size: 0.9rem;
-  line-height: 1.65;
+  font-size: 0.925rem;
+  line-height: 1.74;
   color: var(--ink-secondary);
   flex-grow: 1;
 }
@@ -423,7 +423,7 @@
 
 .preanger-blueprint-lead {
   color: var(--ink-secondary);
-  line-height: 1.68;
+  line-height: 1.78;
   margin-bottom: 1.25rem;
   font-size: 0.95rem;
   max-width: var(--reading-measure);
