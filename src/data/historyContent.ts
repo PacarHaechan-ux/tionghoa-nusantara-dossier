@@ -237,6 +237,7 @@ export interface ParliamentaryDebateItem {
   factions: string;
   coreDebate: string;
   outcomeAndImpact: string;
+  image?: HistoricalImage;
 }
 
 export interface HistoriographyLensItem {
@@ -2072,7 +2073,13 @@ export const parliamentaryPoliticsData: ParliamentaryDebateItem[] = [
     title: "Ketimpangan Status Eropa bagi Jepang & Lahirnya THHK",
     factions: "Pembaru Peranakan (Phoa Keng Hek & Lie Kim Hok) vs Pemerintah Kolonial",
     coreDebate: "Pada 1899 pemerintah Belanda memberikan status hukum setara Eropa kepada warga Jepang, sementara masyarakat Tionghoa tetap dikurung dalam status Vreemde Oosterlingen tanpa fasilitas sekolah negeri.",
-    outcomeAndImpact: "Berdirinya Tiong Hoa Hwee Koan (THHK) di Batavia pada 17 Maret 1900 dan pembukaan sekolah modern Tiong Hoa Hak Tong (1901) yang mengajarkan Mandarin (Tjeng Im), Inggris, berhitung, dan sains secara setara bagi anak laki-laki dan perempuan."
+    outcomeAndImpact: "Berdirinya Tiong Hoa Hwee Koan (THHK) di Batavia pada 17 Maret 1900 dan pembukaan sekolah modern Tiong Hoa Hak Tong (1901) yang mengajarkan Mandarin (Tjeng Im), Inggris, berhitung, dan sains secara setara bagi anak laki-laki dan perempuan.",
+    image: {
+      src: "/images/thhk-sungailiat-1914.jpg",
+      alt: "Foto Arsip Gedung Sekolah Tiong Hoa Hwee Koan (THHK) Sungailiat, Bangka, 1914",
+      caption: "Gedung sekolah Tiong Hoa Hwee Koan (THHK) di Sungailiat, Bangka (1914)—bukti meluasnya jaringan sekolah modern THHK dari Batavia hingga ke Luar Jawa.",
+      archiveSource: "Koleksi KITLV / Tropenmuseum (1914) · Williams (1960)"
+    }
   },
   {
     id: "pol-1908-1910",
@@ -2080,7 +2087,13 @@ export const parliamentaryPoliticsData: ParliamentaryDebateItem[] = [
     title: "Pendirian HCS (1908) & UU Kekawulaan Belanda WNO (1910)",
     factions: "Pemerintah Hindia Belanda vs Gerakan Pan-Tiongkok & Soos Po Sia",
     coreDebate: "Kekhawatiran pemerintah kolonial bahwa pesatnya sekolah THHK dan ruang baca politik Soos Po Sia akan menyatukan kaum Peranakan dan Totok di bawah panji nasionalisme Tiongkok (Sun Yat-sen) yang antikolonial.",
-    outcomeAndImpact: "Belanda mendirikan Hollandsch-Chineesche School (HCS) berbahasa pengantar Belanda pada 1908 serta mengesahkan Wet op het Nederlandsch Onderdaanschap (WNO) pada 1910 yang mengklaim keturunan Tionghoa kelahiran Hindia Belanda sebagai kawula Belanda berdasarkan asas ius soli."
+    outcomeAndImpact: "Belanda mendirikan Hollandsch-Chineesche School (HCS) berbahasa pengantar Belanda pada 1908 serta mengesahkan Wet op het Nederlandsch Onderdaanschap (WNO) pada 1910 yang mengklaim keturunan Tionghoa kelahiran Hindia Belanda sebagai kawula Belanda berdasarkan asas ius soli.",
+    image: {
+      src: "/images/hcs-purwakarta.jpg",
+      alt: "Foto Arsip Murid dan Guru di Depan Gedung Hollandsch-Chineesche Zendingsschool (HCS) Purwakarta",
+      caption: "Para murid dan guru berfoto di depan gedung Hollandsch-Chineesche Zendingsschool (HCS) di Purwakarta—sekolah berbahasa pengantar Belanda yang didirikan sejak 1908 untuk mengimbangi pesatnya sekolah THHK.",
+      archiveSource: "Dinas Arsip dan Perpustakaan Purwakarta · Somers (1965) · Williams (1960)"
+    }
   },
   {
     id: "pol-pers-1901-1928",
@@ -2088,7 +2101,13 @@ export const parliamentaryPoliticsData: ParliamentaryDebateItem[] = [
     title: "Kebangkitan Pers Melayu-Tionghoa & Pencetakan Perdana “Indonesia Raya”",
     factions: "Li Po (1901), Perniagaan (1903), Djawa Tengah (1909), Sin Po (1910) & Sin Tit Po (1929)",
     coreDebate: "Pemanfaatan ruang publik pers berbahasa Melayu Pasar untuk menyuarakan penghapusan Wijkenstelsel dan Passenstelsel sekaligus mendebatkan arah masa depan politik masyarakat Tionghoa.",
-    outcomeAndImpact: "Bahasa Melayu Pasar dalam pers Melayu-Tionghoa matang menjadi lingua franca pergerakan nasional, mencapai puncaknya saat harian Sin Po mencetak perdana naskah lagu 'Indonesia Raya' karya W.R. Supratman pada November 1928 (Adam, 1995; Suryadinata, 1981)."
+    outcomeAndImpact: "Bahasa Melayu Pasar dalam pers Melayu-Tionghoa matang menjadi lingua franca pergerakan nasional, mencapai puncaknya saat harian Sin Po mencetak perdana naskah lagu 'Indonesia Raya' karya W.R. Supratman pada November 1928 (Adam, 1995; Suryadinata, 1981).",
+    image: {
+      src: "/images/koran-sin-po.jpg",
+      alt: "Sampul Arsip Sin Po Wekelijksche-Editie (Batavia, 9 Juni 1923)",
+      caption: "Sampul asli Sin Po Wekelijksche-Editie (Batavia, 9 Juni 1923)—surat kabar Melayu-Tionghoa pelopor kesadaran antikolonial yang pertama kali mencetak lagu 'Indonesia Raya' pada November 1928.",
+      archiveSource: "Koleksi Arsip Sin Po Batavia (1923) · Adam (1995)"
+    }
   },
   {
     id: "pol-3-aliran-1910-1932",
@@ -2096,7 +2115,13 @@ export const parliamentaryPoliticsData: ParliamentaryDebateItem[] = [
     title: "Tiga Haluan Politik Tionghoa: Sin Po, Chung Hwa Hui (1928) & PTI (1932)",
     factions: "Kelompok Sin Po · Chung Hwa Hui (Kan Hok Hoei) · Partai Tionghoa Indonesia (Liem Koen Hian)",
     coreDebate: "Perdebatan fundamental mengenai orientasi identitas politik: berorientasi ke nasionalisme Tiongkok (Sin Po), menempuh jalur kooperatif di Volksraad bersama Belanda (CHH), atau melebur dalam perjuangan kemerdekaan Indonesia (PTI).",
-    outcomeAndImpact: "Berdirinya Partai Tionghoa Indonesia (PTI) pada 1932 di bawah pimpinan Liem Koen Hian dengan haluan Indonesierschap yang mengajak etnis Tionghoa berjuang bersama kaum pergerakan nasional bumiputera menuju Indonesia merdeka (Suryadinata, 1981)."
+    outcomeAndImpact: "Berdirinya Partai Tionghoa Indonesia (PTI) pada 1932 di bawah pimpinan Liem Koen Hian dengan haluan Indonesierschap yang mengajak etnis Tionghoa berjuang bersama kaum pergerakan nasional bumiputera menuju Indonesia merdeka (Suryadinata, 1981).",
+    image: {
+      src: "/images/chung-hwa-hui-1932.jpg",
+      alt: "Foto Arsip Pengurus (Bestuur) Chung Hwa Hui (中華會) Periode November 1932 – November 1933",
+      caption: "Jajaran pengurus (Bestuur) organisasi Chung Hwa Hui (中華會) periode November 1932 – November 1933 dengan spanduk beraksara Mandarin Chung Hwa Hui.",
+      archiveSource: "Koleksi Arsip Tan Kian Hong (tankianhong.nl) · Suryadinata (1981)"
+    }
   }
 ];
 
