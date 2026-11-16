@@ -1450,10 +1450,10 @@ export const implementationData = {
       ],
       historicalFigures: ["Faxian (Peziarah Buddha Abad ke-5)", "Pejabat Juru Cina (Prasasti Kencana 860 M)"],
       image: {
-        src: "/images/peta-angin-muson.jpg",
-        alt: "Peta Siklus Angin Muson Pelayaran Laut Tiongkok–Nusantara",
-        caption: "Siklus angin muson timur laut (Nov–Mar) dan barat daya (Mei–Sep) yang mengatur ritme pelayaran jung Tiongkok menuju bandar-bandar Nusantara.",
-        archiveSource: "Kronik Foguo Ji (Abad V) · Prasasti Kencana (860 M) · Anthony Reid (1993)"
+        src: "/images/faxian.jpg",
+        alt: "Patung Peziarah Buddha Faxian (Abad ke-5 M), Penulis Kronik Foguo Ji",
+        caption: "Peziarah Buddha Faxian (abad ke-5 M) yang dalam kronik Foguo Ji mencatat pelayaran laut menuju Pulau Jawa (Yepoti) sebagai bukti tertulis asing tertua hubungan maritim Tiongkok–Nusantara.",
+        archiveSource: "Kronik Foguo Ji (Abad V M) · Prasasti Kencana (860 M)"
       }
     },
     {
@@ -1879,6 +1879,22 @@ export const impactData = {
     },
   ],
   historicalCritics: [
+    {
+      id: "tokoh-faxian",
+      name: "Faxian (Fa Hien)",
+      role: "Peziarah Buddha Abad ke-5 M & Penulis Kronik Foguo Ji",
+      period: "337 – ca. 422 M (Singgah di Jawa 414 M)",
+      category: "Perintis Awal",
+      keyContribution: "Biksu dan penjelajah asal Tiongkok yang berlayar melintasi Samudra Hindia dan singgah selama lima bulan di Pulau Jawa (Yepoti) pada tahun 414 M dalam perjalanan pulangnya dari India ke Tiongkok. Catatannya dalam kronik Foguo Ji (Catatan Negeri-Negeri Buddha) merupakan sumber tertulis asing tertua yang membuktikan aktifnya jalur pelayaran niaga laut antara Nusantara dan daratan Tiongkok.",
+      workOrCitation: "Foguo Ji (Catatan Negeri-Negeri Buddha, Abad ke-5 M)",
+      impactNote: "Bukti historis tertulis pertama bahwa Nusantara telah terhubung dalam jaringan pelayaran kapal dagang lintas samudra sejak awal abad ke-5 Masehi.",
+      image: {
+        src: "/images/faxian.jpg",
+        alt: "Patung Peziarah Buddha Faxian (Abad ke-5 M), Penulis Kronik Foguo Ji",
+        caption: "Faxian (337–422 M), biksu penjelajah Tiongkok penulis kronik Foguo Ji yang singgah di Pulau Jawa pada 414 M melintasi jalur pelayaran muson.",
+        archiveSource: "Kronik Foguo Ji (Abad ke-5 M)"
+      }
+    },
     {
       id: "tokoh-cakradana",
       name: "Kiyai Ngabehi Cakradana (Tantseko)",
